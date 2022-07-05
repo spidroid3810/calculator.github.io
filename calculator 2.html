@@ -1,0 +1,349 @@
+<!Doctype html>
+<html>
+<body>
+<head>
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/dark.css">
+<audio id="audio" src="https://docs.google.com/uc?export=download&id=1ivFUly0tInENc_VIdrxjsMF3i4LaVYZV"></audio>
+<div id="container">
+<div class="cal"><b>Calculator</div></b>
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator"  onclick="play()" id="clear">AC</button>
+					<button class="operator" onclick="play()" id="backspace">DEL</button>
+					<button class="operator" onclick="play()" id="%">%</button>
+					<button class="operator" onclick="play()" id="/">&#247;</button>
+					<button class="number" onclick="play()" id="7">7</button>
+					<button class="number" onclick="play()" id="8">8</button>
+					<button class="number" onclick="play()" id="9">9</button>
+					<button class="operator" onclick="play()" id="*">&times;</button>
+					<button class="number" onclick="play()" id="4">4</button>
+					<button class="number" onclick="play()" id="5">5</button>
+					<button class="number" onclick="play()" id="6">6</button>
+					<button class="operator" onclick="play()" id="-">-</button>
+					<button class="number" onclick="play()" id="1">1</button>
+					<button class="number" onclick="play()" id="2">2</button>
+					<button class="number" onclick="play()" id="3">3</button>
+					<button class="operator" onclick="play()" id="+">+</button>
+					<button class="number" onclick="play()" id="00">00</button>
+					<button class="number" onclick="play()" id="0">0</button>
+					<button class="operator" onclick="play()" id=".">.</button>
+					<button class="operator" onclick="play()" id="=">=</button>
+	                <a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img src="https://cdn-icons-png.flaticon.com/128/25/25657.png" height="50px" width="50px"></a>
+				</div>
+	
+			
+			
+		</div>
+		<script src="script.js"></script>
+		
+		</head>
+		</body>
+		</html>
+		
+		
+		<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+		
+		body{
+		font-family: 'Open Sans',sans-serif;
+		background: #11998e;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		
+		}
+		#container{
+		width: 90%;
+		height: 90%;
+		/* height: auto;
+		width: auto; */
+		/* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(2.png); */
+		/* margin: 0px auto;	 */
+		}
+		.name{
+		
+		color:whitesmoke;
+		text-align: center;
+		}
+		#calculator{
+		width: 325px;
+		height: 555px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+		margin: 0px auto;
+		top: -5%;
+		position: relative;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, 0.1);
+		
+		}
+		
+		.cal{
+		font-family: 'Poppins',sans-serif;
+		font-size: 40px;
+		position: relative; 
+		left: 5%;
+		color: #fff;
+		top: -5%;
+		}
+		
+		#result{
+		height: 120px;
+		}
+		#history{
+		text-align: right;
+		height: 20px;
+		margin: 0 20px;
+		padding-top: 20px;
+		font-size: 20px;
+		color:wheat;
+		}
+		#output{
+		text-align: right;
+		height: 60px;
+		margin: 10px 20px;
+		font-size: 30px;
+		color: wheat;
+		font-family: digital-7;
+		}
+		#keyboard{
+		height: 400px;
+		}
+		.operator, .number, .empty{
+		width: 50px;
+		height: 50px;
+		margin: 15px;
+		float: left;
+		border-radius: 20%;
+		border-width: 0;
+		font-weight: bold;
+		font-size: 15px;
+		color: white;
+		background: rgba(255, 255, 255, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		
+		}
+		.number:checked, .empty{
+		background: rgba(255, 255, 255, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		}
+		.number, .operator{
+		cursor: pointer;
+		}
+		.operator:active, .number:active{
+		font-size: 18px;
+		}
+		.operator:focus, .number:focus, .empty:focus{
+		outline: 0;
+		}
+	       
+	    .number, .operator{
+	    cursor: pointer;
+	    }
+	    .operator:active, .number:active{
+	    font-size: 18px;
+	    }
+	    .operator:focus, .number:focus, .empty:focus{
+	    outline: 0;
+	    }
+	  
+		.icon{
+		position: relative;
+		left: 42%;
+		top: 15%;
+		}
+		</style>
+		
+		<script type="text/javascript">
+		function getHistory(){
+		return document.getElementById("history-value").innerText;
+		}
+		function printHistory(num){
+		document.getElementById("history-value").innerText=num;
+		}
+		function getOutput(){
+		return document.getElementById("output-value").innerText;
+		}
+		function printOutput(num){
+		if(num==""){
+		document.getElementById("output-value").innerText=num;
+		}
+		else{
+		document.getElementById("output-value").innerText=getFormattedNumber(num);
+		}	
+		}
+		function getFormattedNumber(num){
+		if(num=="-"){
+		return "";
+		}
+		var n = Number(num);
+		var value = n.toLocaleString("en");
+		return value;
+		}
+		function reverseNumberFormat(num){
+		return Number(num.replace(/,/g,''));
+		}
+		var operator = document.getElementsByClassName("operator");
+		for(var i =0;i<operator.length;i++){
+		operator[i].addEventListener('click',function(){
+		if(this.id=="clear"){
+		printHistory("");
+		printOutput("");
+		}
+		else if(this.id=="backspace"){
+		var output=reverseNumberFormat(getOutput()).toString();
+		if(output){//if output has a value
+		output= output.substr(0,output.length-1);
+		printOutput(output);
+		}
+		}
+		else{
+		var output=getOutput();
+		var history=getHistory();
+		if(output==""&&history!=""){
+		if(isNaN(history[history.length-1])){
+		history= history.substr(0,history.length-1);
+		}
+		}
+		if(output!="" || history!=""){
+		output= output==""?output:reverseNumberFormat(output);
+		history=history+output;
+		if(this.id=="="){
+		var result=eval(history);
+		printOutput(result);
+		printHistory("");
+		}
+		else{
+		history=history+this.id;
+		printHistory(history);
+		printOutput("");
+		}
+		}
+		}
+		
+		});
+		}
+		var number = document.getElementsByClassName("number");
+		for(var i =0;i<number.length;i++){
+		number[i].addEventListener('click',function(){
+		var output=reverseNumberFormat(getOutput());
+		if(output!=NaN){ //if output is a number
+		output=output+this.id;
+		printOutput(output);
+		}
+		});
+		}
+		
+		
+		
+		</script>
+		
+		
+		
+		<!DOCTYPE html>
+		<html>
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		</head>
+		<body>
+		<div>
+		<input type="checkbox" class="checkbox" id="checkbox">
+		<label for="checkbox" class="label">
+		<i class="fa fa-moon-o"></i>
+		<i class="fa fa-sun-o"></i>
+		<div class='ball'>
+		</label>
+		</div>
+		</div>
+		</body>
+		</html>		
+		<style type="text/css">
+		* {
+		box-sizing: border-box;
+		}
+		body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		margin: 0;
+		transition: background 0.2s linear;
+
+		}
+		body.dark{
+		background: linear-gradient(to right,grey,#212F3D);
+		}
+		.checkbox {
+		opacity: 0;
+		position: absolute;
+		}
+		
+		.label {
+		width: 50px;
+		height: 26px;
+		background-color:#111;
+		display: flex;
+		border-radius:50px;
+		align-items: center;
+		justify-content: space-between;
+		padding: 5px;
+		position: absolute;
+		transform: scale(1.5);
+		top: 3.3%;
+		left: 75%;
+		}
+		
+		.ball {
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		position: absolute;
+		border: 2px solid limegreen;
+		top: 2px;
+		left: 2px;
+		border-radius: 50%;
+		transition: transform 0.2s linear;
+		}
+		
+		/*  target the elemenent after the label*/
+		.checkbox:checked + .label .ball {
+		transform: translateX(24px);
+		background-color: black;
+		}
+		
+		.fa-moon-o {
+		color: white;
+		}
+		
+		.fa-sun-o {
+		color: yellow;
+		}
+		
+		
+		</style>
+		
+		<script type="text/javascript">
+		const checkbox = document.getElementById('checkbox');
+		
+		checkbox.addEventListener('change', ()=>{
+		document.body.classList.toggle('dark');
+		})
+		
+		function play() {var audio = document.getElementById("audio"); audio.play();
+		}
+		
+		</script>
+		
+		
+		
