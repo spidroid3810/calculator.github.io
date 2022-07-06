@@ -11,7 +11,7 @@
 
 		}
 		body.dark{
-		background: linear-gradient(to right,#28282B,#212F3D);
+                background: linear-gradient(to right,yellow,orangered);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		}
 		.checkbox {
 		opacity: 0;
