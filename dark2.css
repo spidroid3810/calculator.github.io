@@ -11,7 +11,7 @@
 
 		}
 		body.dark{
-		background: linear-gradient(to right,#212F3D,#28282B);
+		background: linear-gradient(to right,#28282B,#212F3D);
 		}
 		.checkbox {
 		opacity: 0;
