@@ -104,9 +104,26 @@
 	    outline: 0;
 	    }
 	  
-		.icon{
+              .icon{
 		position: relative;
-		left: 42%;
-		top: 15%;
+		left: -10%;
+		top: 29%;
 		}
+	 
+	    .btn1{
+	    position: relative;
+	    left: 25%;
+	    top: 8%;
+	    position: relative;
+	    border-radius: 5px;
+	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	    border: 1px solid rgba(255, 255, 255, 0.5);
+	    background: rgba(255, 255, 255, 0.1);
+	    font-size: 15px;
+	    color: white;
+	    margin: 6px;
+	    padding: 10px;
+	    font-weight: bold;
+	    }
+	 
 	
