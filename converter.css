@@ -2,7 +2,8 @@ body{
 		font-family: 'Open Sans',sans-serif;
 		background: #11998e;  /* fallback for old browsers */
 		background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right,#212F3D,#28282B);
+		background: linear-gradient(to right,#28282B,#000000);
+		
 	
 		}
 
