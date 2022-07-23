@@ -8,7 +8,7 @@
 		height: 100vh;
 		margin: 0;
 		transition: background 0.2s linear;
-        
+
 		}
 		body.dark{
 		background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -31,7 +31,7 @@
 		position: absolute;
 		transform: scale(1.5);
 		top: -7.4%;
-		left: 80%;
+		left: 76%;
 		}
 		
 		.ball {
@@ -59,7 +59,5 @@
 		.fa-sun-o {
 		color: yellow;
 		}
-		
-	
 		
 		
