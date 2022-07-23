@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/dark.css">
@@ -10,8 +10,7 @@
 <body>
 <audio id="audio" src="Audio/Glass click.mp3"></audio>
 <div id="container">
-<ul class="navbar">
-<div class="cal"><b>Calculator<a href="index2.html">&nbsp;&nbsp;CurrencyConverter</a></div></b></ul>
+<div class="cal"><b>Calculator</div></b>
 			<div id="calculator">
 				<div id="result">
 					<div id="history">
@@ -41,21 +40,22 @@
 					<button class="number" onclick="play()" id="00">00</button>
 					<button class="number" onclick="play()" id="0">0</button>
 					<button class="operator" onclick="play()" id=".">.</button>
-					<button class="operator" onclick="play()" id="=" style="background-color:#1F51FF;color:#fff">=</button>
+					<button class="operator" onclick="play()" id="=">=</button>
+	                <a class="btn1" href="index2.html">Currency Converter</a>
 			<a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img src="Images/GitHub-Mark.png" height="50px" width="50px"></a>
 				
-                <div>
+                                <div>
 				<input type="checkbox" class="checkbox" id="checkbox">
 				<label for="checkbox" class="label">
 				<i class="fa fa-sun-o"></i>
-                <i class="fa fa-moon-o"></i>
+                                <i class="fa fa-moon-o"></i>
 				<div class='ball'>
 				</label>
 				</div>
 				</div>
 				</div>
 	
-</div>			
+			
 			
 		</div>
 		<script src="scripts/script.js"></script>
