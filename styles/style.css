@@ -5,7 +5,6 @@
 		background: #11998e;  /* fallback for old browsers */
 		background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
 		background: linear-gradient(to right,#28282B,#000000);
-		
 		}
 		#container{
 		width: 90%;
@@ -26,7 +25,7 @@
 		padding-top: 0px;
 		padding-bottom: 10px;
 		margin: 0px auto;
-		top: -5%;
+		top: -2%;
 		position: relative;
 		border-radius: 15px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -37,11 +36,12 @@
 		
 		.cal{
 		font-family: 'Poppins',sans-serif;
-		font-size: 40px;
+		font-size: 25px;
 		position: relative; 
-		left: 3%;
-		color: #fff;
+		left: -10%;
+		color: #1F51FF;
 		top: -5%;
+		padding: 10px;
 		}
 		
 		#result{
@@ -53,14 +53,14 @@
 		margin: 0 20px;
 		padding-top: 20px;
 		font-size: 20px;
-		color:wheat;
+		color:#fff;
 		}
 		#output{
 		text-align: right;
 		height: 60px;
 		margin: 10px 20px;
 		font-size: 30px;
-		color: wheat;
+		color: #fff;
 		font-family: digital-7;
 		}
 		#keyboard{
@@ -104,37 +104,34 @@
 	    outline: 0;
 	    }
 	    .operator{
-             Color:#1F51FF;
-            }
-             .number{
-              Color: #111;
-             }
-              .icon{
+	    color: #1F51FF;
+	    }	    
+	    	    
+	    	    
+       .icon{
 		position: relative;
-		left: -10%;
-		top: 29%;
+		left: 42%;
+		top: 13%;
 		}
-            img{
+        img{
 	    background-color: white;
 	    border-radius: 15px;
 	    }
 	 
-	    .btn1{
-	    position: relative;
-	    left: 25%;
-	    top: 8%;
-	    position: relative;
-	    border-radius: 5px;
-	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	    border: 1px solid rgba(255, 255, 255, 0.5);
-	    background: rgba(255, 255, 255, 0.1);
-	    font-size: 15px;
-	    color: white;
-	    margin: 6px;
-	    padding: 10px;
-	    font-weight: bold;
-	    }
+	    
 	 
 	     a{
-	    text-decoration: none; 
+	     text-decoration: none; 
+	     color: #fff;
 	     }
+	     
+	     .navbar{
+	     background-color: #111;
+	     position: absolute;
+	     top: -8.4%;
+	     width: 111%;
+	     left: -5.5%;
+	     }
+	     
+	     
+	     
