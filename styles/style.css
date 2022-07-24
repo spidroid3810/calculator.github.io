@@ -103,7 +103,12 @@
 	    .operator:focus, .number:focus, .empty:focus{
 	    outline: 0;
 	    }
-	  
+	    .operator{
+             Color:#1F51FF;
+            }
+             .number{
+              Color: #111;
+             }
               .icon{
 		position: relative;
 		left: -10%;
