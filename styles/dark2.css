@@ -11,7 +11,7 @@
 
 		}
 		body.dark{
-                background: linear-gradient(to right,#ef32d9,#89fffd);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background: linear-gradient(to right,#11998e,#89fffd);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		
                 }
 		.checkbox {
@@ -31,7 +31,7 @@
 		position: absolute;
 		transform: scale(1.5);
 		top: -7.4%;
-		left: 76%;
+		left: 80%;
 		}
 		
 		.ball {
