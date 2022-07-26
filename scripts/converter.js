@@ -54,3 +54,36 @@ function clearVal() {
 	window.location.reload();
 	document.getElementsByClassName("finalValue").innerHTML = "";
 };
+
+// Switch between Dark and Light Modes
+
+function themeSwitcher() {
+
+ var dark = document.getElementById(
+  "dark-mode");
+
+ var th = document.getElementById(
+  "theme");
+
+ if (th.getAttribute('href') ==
+  'light2.css') {
+
+  th.href = 'dark2.css';
+
+  dark.innerHTML =
+   '<i class="bi-brightness-high-fill"></i>';
+
+ } else {
+
+  th.href = 'light2.css';
+
+  dark.innerHTML =
+   '<i class="fa fa-moon-o"></i>';
+
+ }
+
+}
+
+function play() {var audio = document.getElementById("audio"); audio.play();
+		}
+		
