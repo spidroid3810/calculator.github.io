@@ -1,66 +1,56 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles/style.css">
-<link rel="stylesheet" href="styles/dark.css">
-<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejaGfcTcywIGVlwVHoiKsiLnYHTz2wlSSMQ&usqp=CAU">
+
+    <title>Simple JS Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="light.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="script.js"></script>
 </head>
 <body>
 <audio id="audio" src="Audio/Glass click.mp3"></audio>
-<div id="container">
 <ul class="navbar">
-<div class="cal"><b>Calculator<a href="index2.html">&nbsp;&nbsp;CurrencyConverter</a></div></b></ul>
-			<div id="calculator">
-				<div id="result">
-					<div id="history">
-						<p id="history-value"></p>
-					</div>
-					<div id="output">
-						<p id="output-value"></p>
-					</div>
-				</div>
-				<div id="keyboard">
-					<button class="operator"  onclick="play()" id="clear">AC</button>
-					<button class="operator" onclick="play()" id="backspace">DEL</button>
-					<button class="operator" onclick="play()" id="%">%</button>
-					<button class="operator" onclick="play()" id="/">&#247;</button>
-					<button class="number" onclick="play()" id="7">7</button>
-					<button class="number" onclick="play()" id="8">8</button>
-					<button class="number" onclick="play()" id="9">9</button>
-					<button class="operator" onclick="play()" id="*">×</button>
-					<button class="number" onclick="play()" id="4">4</button>
-					<button class="number" onclick="play()" id="5">5</button>
-					<button class="number" onclick="play()" id="6">6</button>
-					<button class="operator" onclick="play()" id="-">-</button>
-					<button class="number" onclick="play()" id="1">1</button>
-					<button class="number" onclick="play()" id="2">2</button>
-					<button class="number" onclick="play()" id="3">3</button>
-					<button class="operator" onclick="play()" id="+">+</button>
-					<button class="number" onclick="play()" id="00">00</button>
-					<button class="number" onclick="play()" id="0">0</button>
-					<button class="operator" onclick="play()" id=".">.</button>
-					<button class="operator" onclick="play()" id="=" style="border:1px solid #1F51FF;color:#fff">=</button>
-			<a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img src="Images/GitHub-Mark.png" height="50px" width="50px"></a>
-				
-                <div>
-				<input type="checkbox" class="checkbox" id="checkbox">
-				<label for="checkbox" class="label">
-				<i class="fa fa-sun-o"></i>
-                <i class="fa fa-moon-o"></i>
-				<div class='ball'>
-				</label>
-				</div>
-				</div>
-				</div>
-	
-</div>			
-			
-		</div>
-		<script src="scripts/script.js"></script>
-		<script src="scripts/darkmode.js"></script>
-		
-		</body>
-		</html>
-		
+<h1>Calculator<a href="index2.html">&nbsp;&nbsp;CurrencyConverter</a></h1>
+</ul>
+    <div class="container"> 
+        <div class="row-1">
+            <input type="text" id="result" placeholder="" readonly>
+             </div>
+        <div class="btnrow-1">
+            <button class="operator" onclick="clearScreen()" id="clear" >AC</button>
+            <button class="operator" onclick="backSpace()" id="backSpace">Del</button>
+            <button class="operator" onclick="updScreen('%')">%</button>
+            <button class="operator" onclick="updScreen('/')">÷</button>
+                 </div>
+        <div class="btnrow-1">
+            <button onclick="updScreen(7)">7</button>
+            <button onclick="updScreen(8)">8</button>
+            <button onclick="updScreen(9)" >9</button>
+            <button class="operator" onclick="updScreen('*')" >×</button>
+             </div>
+        <div class="btnrow-1">
+            <button onclick="updScreen(4)" >4</button>
+            <button onclick="updScreen(5)">5</button>
+            <button onclick="updScreen(6)">6</button>
+            <button class="operator" onclick="updScreen('-')">-</button>
+             </div>
+        <div class="btnrow-2">
+            <button onclick="updScreen(1)">1</button>
+            <button onclick="updScreen(2)">2</button>
+            <button onclick="updScreen(3)" >3</button>
+            <button class="operator" onclick="updScreen('+')" >+</button>
+             </div>
+        <div class="btnrow-1">
+            <button onclick="themeSwitcher()" id="dark-mode" ><i class="fa fa-moon-o"></i></button>
+            <button onclick="updScreen(0)">0</button>
+            <button onclick="updScreen('.')">.</button>
+            <button onclick="result.value = eval(result.value)" id="equal">=</button>
+             </div>
+    </div>
+   
+    
+   
+</body>
+</html>
