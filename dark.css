@@ -104,3 +104,11 @@ text-decoration: none;
 color:#1F51FF;
 
 }
+
+.icon,img{
+justify-content: center;
+align-items: center;
+margin-top: -20px;
+margin-left: 75px;
+border-radius: 15px;
+}
