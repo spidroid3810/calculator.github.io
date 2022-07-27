@@ -20,8 +20,13 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+.navbar{
+ padding:  15px;
+ height: 40px;
+ background-color: #111;
 }
 }
+
 .row-1 {
     margin-top: 10px;
 }
