@@ -12,6 +12,16 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+
+@media (prefers-color-scheme: light) {
+  /* styles */
+body{
+    background: linear-gradient(to right,#28282B,#000000);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+}
+
 }
 .row-1 {
     margin-top: 10px;
