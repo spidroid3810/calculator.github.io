@@ -54,5 +54,8 @@ function themeSwitcher() {
 function play() {var audio = document.getElementById("audio"); audio.play();
 		}
 
+ window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+ console.log(`changed to ${e.matches ? "dark" : "light"} mode`)
+ });
 		
  
