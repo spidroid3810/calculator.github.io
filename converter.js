@@ -66,16 +66,16 @@ function themeSwitcher() {
   "theme");
 
  if (th.getAttribute('href') ==
-  'light2.css') {
+  'dark2.css') {
 
-  th.href = 'dark2.css';
+  th.href = 'light2.css';
 
   dark.innerHTML =
    '<i class="bi-brightness-high-fill"></i>';
 
  } else {
 
-  th.href = 'light2.css';
+  th.href = 'dark2.css';
 
   dark.innerHTML =
    '<i class="fa fa-moon-o"></i>';

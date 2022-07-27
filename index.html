@@ -4,7 +4,7 @@
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="light.css" id="theme">
+    <link rel="stylesheet" href="dark.css" id="theme">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <script src="script.js"></script>
@@ -19,37 +19,39 @@
             <input type="text" id="result" placeholder="" readonly>
              </div>
         <div class="btnrow-1">
-            <button class="operator" onclick="clearScreen()" id="clear" >AC</button>
-            <button class="operator" onclick="backSpace()" id="backSpace">Del</button>
-            <button class="operator" onclick="updScreen('%')">%</button>
-            <button class="operator" onclick="updScreen('/')">÷</button>
+            <button class="operator" onclick="clearScreen();play()" id="clear" >AC</button>
+            <button class="operator" onclick="backSpace();play()" id="backSpace">Del</button>
+            <button class="operator" onclick="updScreen('%');play()">%</button>
+            <button class="operator" onclick="updScreen('/');play()">÷</button>
                  </div>
         <div class="btnrow-1">
-            <button onclick="updScreen(7)">7</button>
-            <button onclick="updScreen(8)">8</button>
-            <button onclick="updScreen(9)" >9</button>
-            <button class="operator" onclick="updScreen('*')" >×</button>
+            <button onclick="updScreen(7);play()">7</button>
+            <button onclick="updScreen(8);play()">8</button>
+            <button onclick="updScreen(9);play()" >9</button>
+            <button class="operator" onclick="updScreen('*');play()" >×</button>
              </div>
         <div class="btnrow-1">
-            <button onclick="updScreen(4)" >4</button>
-            <button onclick="updScreen(5)">5</button>
-            <button onclick="updScreen(6)">6</button>
+            <button onclick="updScreen(4);play()" >4</button>
+            <button onclick="updScreen(5);play()">5</button>
+            <button onclick="updScreen(6);play()">6</button>
             <button class="operator" onclick="updScreen('-')">-</button>
              </div>
         <div class="btnrow-2">
-            <button onclick="updScreen(1)">1</button>
-            <button onclick="updScreen(2)">2</button>
-            <button onclick="updScreen(3)" >3</button>
+            <button onclick="updScreen(1);play()">1</button>
+            <button onclick="updScreen(2);play()">2</button>
+            <button onclick="updScreen(3);play()" >3</button>
             <button class="operator" onclick="updScreen('+')" >+</button>
              </div>
         <div class="btnrow-1">
-            <button onclick="themeSwitcher()" id="dark-mode" ><i class="fa fa-moon-o"></i></button>
-            <button onclick="updScreen(0)">0</button>
-            <button onclick="updScreen('.')">.</button>
-            <button onclick="result.value = eval(result.value)" id="equal">=</button>
+            <button onclick="themeSwitcher();play()" id="dark-mode" ><i class="fa fa-moon-o"></i></button>
+            <button onclick="updScreen(0);play()">0</button>
+            <button onclick="updScreen('.');play()">.</button>
+            <button onclick="result.value = eval(result.value);play()" id="equal">=</button>
              </div>
     </div>
    
+    <a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img src="Images/GitHub-Mark.png" height="50px" width="50px"></a>
+    
     
    
 </body>

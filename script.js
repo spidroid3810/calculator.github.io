@@ -33,16 +33,16 @@ function themeSwitcher() {
   "theme");
 
  if (th.getAttribute('href') ==
-  'light.css') {
+  'dark.css') {
 
-  th.href = 'dark.css';
+  th.href = 'light.css';
 
   dark.innerHTML =
    '<i class="bi-brightness-high-fill"></i>';
 
  } else {
 
-  th.href = 'light.css';
+  th.href = 'dark.css';
 
   dark.innerHTML =
    '<i class="fa fa-moon-o"></i>';
