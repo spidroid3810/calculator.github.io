@@ -11,9 +11,18 @@ body{
     background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    Color: red;
 }
 }
+
+@media (prefers-color-scheme: light) {
+  /* styles */
+body{
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+}
+
 .row-1 {
     margin-top: 10px;
 }
