@@ -54,7 +54,30 @@ function themeSwitcher() {
 function play() {var audio = document.getElementById("audio"); audio.play();
 		}
 
-console.log(window.matchMedia("(prefers-color-scheme: dark)").matches);
+		
+ let body = document.querySelector("body");
+ let content = document.getElementById("content");
+ 
+ window
+ .matchMedia("(prefers-color-scheme: dark)")
+ .addEventListener("change", function (e) {
+ const colorScheme = e.matches ? "dark" : "light";
+ console.log(colorScheme);
+ 
+ if (colorScheme === "dark") {
+ body.style.background = "linear-gradient(to right, #38ef7d, #11998e)";
+ content.setAttribute("class", "light");
+ } else {
+ body.style.background = "linear-gradient(to right,#28282B,#000000)";
+ content.setAttribute("class", "dark");
+ }
+ });
+  
+
+
+
+
+
 
 
 
