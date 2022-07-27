@@ -53,4 +53,17 @@ function themeSwitcher() {
 
 function play() {var audio = document.getElementById("audio"); audio.play();
 		}
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", event => {
+    if (event.matches) {
+      //dark mode
+    } else {
+      //light mode
+    }
+})
+
+
+
 		
