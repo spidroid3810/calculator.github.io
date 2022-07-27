@@ -5,13 +5,14 @@
     margin: 0;
     padding: 0;
 }
-
+@media (prefers-color-scheme: dark) {
+	
 body{
     background: linear-gradient(to right,#28282B,#000000);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-
+}
 .row-1 {
     margin-top: 10px;
 }
