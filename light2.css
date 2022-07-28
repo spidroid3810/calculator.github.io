@@ -16,7 +16,9 @@ body{
 h1{
     color: #1F51FF;
     font-family: 'Poppins', sans-serif;
-    overflow: scroll;
+    text-align: center;
+    margin-top: 0;
+    font-size:28px;
  
 }
 

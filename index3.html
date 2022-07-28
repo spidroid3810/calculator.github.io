@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dark3.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    
+    <title>Discount Calculator</title>
+</head>
+<body>
+<ul class="navbar">
+<h1><a href="index2.html"><</a>&nbsp;&nbsp;DiscountCalculator</h1>
+</ul>
+    <div class="container"> 
+        <form action="#">
+            <div class="input-item">
+                <label for="amount"> Enter bill amount: </label>
+                <input type="text" id="amount">
+            </div>
+
+            <div class="input-item">
+                <label for="discount-percentage">Select discount %</label>
+                <select name="percentage" id="discount-percentage">
+                    <option value="0">0</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+            </div>
+
+            <div class="input-item">
+                <label for="discount-amount"> Discount amount: </label>
+                <input type="text" id="discount-amount" class="cal" disabled>
+            </div>
+            
+            <div class="input-item">
+                <label for="pay" aria-disabled="true"> Final Pay:</label>
+                <input type="text" id="pay" class="cal" disabled>
+       </div>
+       <div class="text-center">
+            <button type="submit" class="calculate">calculate</button>
+            <button onClick="clearVal();play()" class="reset">Reset</button>
+            <button onclick="themeSwitcher();play()" id="dark-mode" ><i class="fa fa-moon-o"></i></button>
+            
+        </div>
+        </form>
+    </div>
+
+    <script src="discount.js"></script>
+</body>
+</html>

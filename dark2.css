@@ -19,8 +19,8 @@ body{
 h1{
     font-family: 'Poppins', sans-serif;
     color: #1F51FF;
-    overflow: scroll;
-      
+    font-size: 28px;
+    text-align: center;
 }
 
 .container{
