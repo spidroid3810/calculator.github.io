@@ -20,7 +20,7 @@ const pages = document.querySelectorAll(".page");
  "theme");
  
  if (th.getAttribute('href') ==
- 'style.css') {
+ 'light.css') {
  
  th.href = 'dark.css';
  
@@ -29,7 +29,7 @@ const pages = document.querySelectorAll(".page");
  
  } else {
  
- th.href = 'style.css';
+ th.href = 'light.css';
  
  dark.innerHTML =
  '<i class="fa fa-moon-o"></i>';
