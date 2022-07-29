@@ -7,8 +7,9 @@
 }
 
 body{
-background: linear-gradient(to right,#28282B,#000000);
- }
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
 
 h1{
     color: #1F51FF;
@@ -22,9 +23,9 @@ h1{
 button{
   padding: 8px;
   width: 100px;
-  border: 2px solid white;
+  border: 2px solid #111;
   background-color: transparent;
-  color: #fff;
+  color: #111;
   cursor: pointer;
   border-radius: 5px;
   transition: 0.1s;
@@ -53,11 +54,10 @@ button:hover{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-	gap: 10px;
+  gap: 10px;
   transition: all 0.7s;
-  color: white;
+  color: #111;
 }
-
 
 
 .container2{
@@ -123,7 +123,7 @@ input[type="text"]{
     font-family: 'Poppins', sans-serif;
     margin: 30px 3px;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    
 }
 p {
  text-align: center;
@@ -131,9 +131,9 @@ p {
 
 .navbar{
  padding:  15px;
- height: 40px;
- background-color: #111;
+ background-color: #fff;
  width: 500%;
+ 
 }
 
 .operator{
@@ -228,7 +228,6 @@ input[type="text2"]{
     margin: 3px 3px;
     background: rgba(255, 255, 255, 0.1);
     padding-left: 25px;
-    color: #fff;
 }
 
 .container4{
@@ -322,7 +321,7 @@ label {
 }
 
     input[type="text3"]{
-    color: white;
+    color: #111;
     width: 270px;
     height: 55px;
     padding-left: 25px;
@@ -345,3 +344,4 @@ label {
    
   
  }
+ 
