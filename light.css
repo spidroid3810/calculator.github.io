@@ -151,8 +151,8 @@ color:#1F51FF;
 .icon,img{
 justify-content: center;
 align-items: center;
-margin-top: -20px;
-margin-left: 75px;
+margin-top: -10px;
+margin-left: 5px;
 border-radius: 15px;
 }
 
@@ -188,7 +188,6 @@ border-radius: 15px;
 
 .navbar2{
  padding:15px;
-
 }
 
 #sel1,#sel2{
