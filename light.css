@@ -5,10 +5,25 @@
 	padding: 0;
   font-family: 'Poppins', sans-serif;
 }
-@media (prefers-color-scheme: light) {
-	
-body{
+
+.day{
 background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+ } 
+
+.night{
+background: linear-gradient(to right,#28282B,#000000);
+
+}
+
+@media (prefers-color-scheme: light) {
+ 
+.day.light-scheme{
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+ } 
+  
+.night.light-scheme{
+background-image: linear-gradient(to right,#28282B,#000000);
+
  } 
   
   .navbar{
@@ -31,9 +46,6 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
   color: #111;
   }
   
-  .load{
-  background: #fff;
-  }
   
   #loader {
   position: absolute;
@@ -63,7 +75,12 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
 
 
 @media (prefers-color-scheme: dark) {
-body{
+
+.day.dark-scheme{
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+ } 
+
+.night.dark-scheme{
 background: linear-gradient(to right,#28282B,#000000);
 
 }
@@ -88,9 +105,7 @@ background: linear-gradient(to right,#28282B,#000000);
     color: #fff;
 }
 
-.load{
-background: #111;
-}
+
 
 #loader {
   position: absolute;
@@ -112,7 +127,7 @@ font-size: 25px;
 position: absolute;
 top: 320%;
 left: 38%;
-color: #fff;
+color: #111;
 }
 
 
