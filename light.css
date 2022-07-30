@@ -75,6 +75,26 @@ input[type="text"]{
   
 }
 
+.btn{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80px;
+    height: 55px;
+    margin: 10px 10px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+
+.amt,.input-group-text{
+font-size: 20px;
+color: #111;
+margin: 2px;
+padding: 15px;
+font-weight: bold;
+}
 
 }
 
@@ -147,7 +167,26 @@ input[type="text"]{
 
 }
 
+.btn{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80px;
+    height: 55px;
+    margin: 10px 10px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
 
+.amt,.input-group-text{
+font-size: 20px;
+color:#fff ;
+margin: 2px;
+padding: 15px;
+font-weight: bold;
+}
 
 
 }
@@ -288,18 +327,7 @@ border-radius: 15px;
     
 }
 
-.btn{
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    width: 80px;
-    height: 55px;
-    margin: 10px 10px;
-    outline: none;
-    border-radius: 10px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-}
+
 
 
 .navbar2{
@@ -316,13 +344,7 @@ background-color:#1F51FF;
 
 }
 
-.amt,.input-group-text{
-font-size: 20px;
-color:#fff ;
-margin: 2px;
-padding: 15px;
-font-weight: bold;
-}
+
 
 .form-control,input,#dark2-mode{
  border-radius: 5px;
