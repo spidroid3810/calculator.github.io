@@ -22,7 +22,7 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
  } 
   
 .night.light-scheme{
-background-image: linear-gradient(to right,#28282B,#000000);
+background: linear-gradient(to right,#28282B,#000000);
 
  } 
   
@@ -46,6 +46,9 @@ background-image: linear-gradient(to right,#28282B,#000000);
   color: #111;
   }
   
+  .load{
+   background: #fff;
+  }
   
   #loader {
   position: absolute;
@@ -105,7 +108,9 @@ background: linear-gradient(to right,#28282B,#000000);
     color: #fff;
 }
 
-
+.load{
+background: #111;
+}
 
 #loader {
   position: absolute;
@@ -127,7 +132,7 @@ font-size: 25px;
 position: absolute;
 top: 320%;
 left: 38%;
-color: #111;
+color: #fff;
 }
 
 
