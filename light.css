@@ -74,9 +74,6 @@ input[type="text"]{
   
 }
 
-.load{
-background: #fff;
-}
 
 }
 
@@ -150,11 +147,10 @@ input[type="text"]{
 }
 
 
-.load{
-background: #111;
-}
+
 
 }
+
 h1{
     color: #1F51FF;
     font-family: 'Poppins', sans-serif;
@@ -246,19 +242,8 @@ button:hover{
 #equal:hover{
     background-color: rgb(37, 35, 59);
 }
-input[type="text"]{
-    width: 270px;
-    height: 65px;
-    padding-left: 25px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    margin: 30px 3px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-}
+
+
 p {
  text-align: center;
 }
