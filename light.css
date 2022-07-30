@@ -10,6 +10,7 @@
  
 body{
 background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+color: #111;
  } 
  
   
@@ -81,7 +82,7 @@ input[type="text"]{
 
 body{
 background: linear-gradient(to right,#28282B,#000000);
-
+color: #fff;
 }
 
 .navbar{
