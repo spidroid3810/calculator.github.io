@@ -13,7 +13,7 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
  
  .navbar{
  padding:  15px;
- background-color: #111;
+ background-color: #fff;
  width: 500%;
  
  }
@@ -27,7 +27,12 @@ body{
 background: linear-gradient(to right,#28282B,#000000);
 color: #fff;
 }
-
+.navbar{
+ padding:  15px;
+ background-color: #111;
+ width: 500%;
+ 
+}
 }
 h1{
     color: #1F51FF;
@@ -147,12 +152,7 @@ p {
  text-align: center;
 }
 
-.navbar{
- padding:  15px;
- background-color: #fff;
- width: 500%;
- 
-}
+
 
 .operator{
 color:#1F51FF; 
