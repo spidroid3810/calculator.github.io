@@ -73,7 +73,7 @@ const pages = document.querySelectorAll(".page");
  var myVar;
  
  function myFunction() {
- myVar = setTimeout(showPage, 0000);
+ myVar = setTimeout(showPage, 3000);
  }
  
  function showPage() {
