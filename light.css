@@ -12,6 +12,12 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
  } 
 }
 
+@media (prefers-color-scheme: dark) {
+body{
+background: linear-gradient(to right,#28282B,#000000);
+}
+
+}
 h1{
     color: #1F51FF;
     font-family: 'Poppins', sans-serif;
