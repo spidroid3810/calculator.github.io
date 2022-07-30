@@ -38,6 +38,7 @@ const pages = document.querySelectorAll(".page");
  
  }
  
+ 
  // Clear screen with C button.
  function backSpace() {
  var bsp = document.getElementById("result").value;
@@ -78,3 +79,13 @@ const pages = document.querySelectorAll(".page");
  document.getElementById("loader").style.display = "none";
  document.getElementById("myDiv").style.display = "block";
  }
+ 
+ window
+ .matchMedia("(prefers-color-scheme: dark)")
+ .addEventListener("change", event => {
+ if (event.matches) {
+ //dark mode
+ } else {
+ //light mode
+ }
+ })
