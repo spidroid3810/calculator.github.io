@@ -74,6 +74,9 @@ input[type="text"]{
   
 }
 
+.load{
+background: #fff;
+}
 
 }
 
@@ -126,7 +129,7 @@ font-size: 25px;
 position: absolute;
 top: 320%;
 left: 38%;
-color: #fff;
+color: #111;
 }
 
 input[type="text"]{
@@ -147,7 +150,9 @@ input[type="text"]{
 }
 
 
-
+.load{
+background: #111;
+}
 
 }
 h1{
