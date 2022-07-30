@@ -38,6 +38,20 @@ background: linear-gradient(to right,#28282B,#000000);
   
   }
 
+.operator,.number{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 55px;
+    height: 55px;
+    margin: 10px 10px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
 }
 
 h1{
@@ -107,18 +121,7 @@ button:hover{
 }
 
 
-.operator,.number{
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    width: 55px;
-    height: 55px;
-    margin: 10px 10px;
-    outline: none;
-    border-radius: 10px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-}
+
 
 
 button:hover{
