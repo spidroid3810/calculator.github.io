@@ -11,7 +11,7 @@
 
 body{
 background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-color: #111; 
+ 
  }
  
  
@@ -32,7 +32,7 @@ button{
   width: 100px;
   border: 2px solid white;
   background-color: transparent;
-  color: #fff;
+  color: #111;
   cursor: pointer;
   border-radius: 5px;
   transition: 0.1s;
@@ -96,7 +96,7 @@ button:hover{
     border-radius: 10px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    
+    color: #111;
 }
 
 
@@ -192,6 +192,7 @@ border-radius: 15px;
     border-radius: 10px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    color: #111;
 }
 
 
@@ -211,7 +212,7 @@ background-color:#1F51FF;
 
 .amt,.input-group-text{
 font-size: 20px;
-color: ;
+color: #111;
 margin: 2px;
 padding: 15px;
 font-weight: bold;
@@ -237,7 +238,7 @@ input[type="text2"]{
     margin: 3px 3px;
     background: rgba(255, 255, 255, 0.1);
     padding-left: 25px;
-    color: #fff;
+    color: #111;
 }
 
 .container4{
@@ -292,6 +293,7 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #111;
 }
 
 
@@ -331,7 +333,7 @@ label {
 }
 
     input[type="text3"]{
-    color: white;
+    color: #111;
     width: 270px;
     height: 55px;
     padding-left: 25px;
@@ -342,7 +344,7 @@ label {
     font-family: 'Poppins', sans-serif;
     margin: 3px 3px;
     background: rgba(255, 255, 255, 0.1);
-    
+   
     }
     
  .navbar3{
@@ -361,4 +363,7 @@ label {
  border-radius: 10px;
  }
  
+ h3{
+ color: #111;
  
+ }
