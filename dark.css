@@ -6,16 +6,11 @@
   font-family: 'Poppins', sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  /* styles */
-  body{
-  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  } 
-}  
-  
+	
 body{
-background: linear-gradient(to right,#28282B,#000000);
+ background: linear-gradient(to right,#28282B,#000000);
  }
-
+} 
 h1{
     color: #1F51FF;
     font-family: 'Poppins', sans-serif;
@@ -357,3 +352,5 @@ label {
  height: 55px;
  border-radius: 10px;
  }
+ 
+ 
