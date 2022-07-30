@@ -59,6 +59,18 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
   color: #111;
   }
   
+input[type="text"]{
+    width: 270px;
+    height: 65px;
+    padding-left: 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 3px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #111;
   
 }
 
@@ -114,6 +126,20 @@ top: 320%;
 left: 38%;
 color: #111;
 }
+
+input[type="text"]{
+    width: 270px;
+    height: 65px;
+    padding-left: 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 3px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+
 
 
 }
