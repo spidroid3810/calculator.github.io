@@ -25,14 +25,15 @@ const pages = document.querySelectorAll(".page");
  th.href = 'dark.css';
  
  dark.innerHTML =
- '<i class="bi-brightness-high-fill"></i>';
+ '<i class="fa fa-moon-o"></i>';
  
  } else {
  
  th.href = 'light.css';
  
  dark.innerHTML =
- '<i class="fa fa-moon-o"></i>';
+ 
+ '<i class="bi-brightness-high-fill"></i>';
  
  }
  
