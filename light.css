@@ -47,9 +47,7 @@ background: linear-gradient(to right,#28282B,#000000);
   color: #111;
   }
   
-  .load{
-   background: #fff;
-  }
+  
   
   #loader {
   position: absolute;
@@ -109,9 +107,7 @@ background: linear-gradient(to right,#28282B,#000000);
     color: #fff;
 }
 
-.load{
-background: #111;
-}
+
 
 #loader {
   position: absolute;
@@ -133,7 +129,7 @@ font-size: 25px;
 position: absolute;
 top: 320%;
 left: 38%;
-color: #fff;
+color: #111;
 }
 
 
