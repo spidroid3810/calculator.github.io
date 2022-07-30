@@ -5,33 +5,16 @@
 	padding: 0;
   font-family: 'Poppins', sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-	
-body{
- background: linear-gradient(to right,#28282B,#000000);
- }
-.navbar{
-  padding:  15px;
-  background-color: #111;
-  width: 500%;
-  
-  }
-}
+
+
  
-@media (prefers-color-scheme: light) {
-	
+
 body{
 background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 color: #111; 
- } 
- 
- .navbar{
- padding:  15px;
- background-color: #fff;
- width: 500%;
- 
  }
-}
+ 
+ 
  
  
  
