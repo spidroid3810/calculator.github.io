@@ -17,6 +17,11 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
   width: 500%;
   
   }
+  
+  .operator,.number{
+  color: #111;
+  }
+  
 }
 
 
