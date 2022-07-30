@@ -73,6 +73,8 @@ input[type="text"]{
     color: #111;
   
 }
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,7 +126,7 @@ font-size: 25px;
 position: absolute;
 top: 320%;
 left: 38%;
-color: #111;
+color: #fff;
 }
 
 input[type="text"]{
@@ -143,6 +145,10 @@ input[type="text"]{
 
 
 }
+
+
+
+
 }
 h1{
     color: #1F51FF;
