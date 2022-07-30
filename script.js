@@ -80,12 +80,4 @@ const pages = document.querySelectorAll(".page");
  document.getElementById("myDiv").style.display = "block";
  }
  
- window
- .matchMedia("(prefers-color-scheme: dark)")
- .addEventListener("change", event => {
- if (event.matches) {
- //dark mode
- } else {
- //light mode
- }
- })
+ const isDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
