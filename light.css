@@ -27,7 +27,8 @@ background: linear-gradient(to right,#28282B,#000000);
  } 
   
   .navbar{
-  padding:  15px;
+  padding: 15px;
+  height: 40px;
   background-color: #fff;
   width: 500%;
   
@@ -89,10 +90,10 @@ background: linear-gradient(to right,#28282B,#000000);
 }
 
 .navbar{
-  padding:  15px;
+  padding: 15px;
   background-color: #111;
   width: 500%;
-  
+  height: 40px;
   }
 
 .operator,.number{
