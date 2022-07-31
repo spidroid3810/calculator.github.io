@@ -81,21 +81,4 @@ const pages = document.querySelectorAll(".page");
  document.getElementById("myDiv").style.display = "block";
  }
  
-let loadColorScheme = (scheme) => {
-	let head = document.getElementsByTagName("head")[0];
-	let link = document.createElement("link");
-
-link.type = "text/css";
-	link.rel = "stylesheet";
-	link.href = `./css/${scheme}.css`;
-
-head.appendChild(link);
-};
-// assuming the if else block is inside window.matchMedia()
-if (colorScheme === "dark") {
-	loadColorScheme("dark.css");
-	// loads /css/dark.css
-} else {
-	loadColorScheme("light.css");
-	// loads /css/light.css
-}
+window.matchMedia('(prefers-color-scheme: dark)').matches
