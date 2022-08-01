@@ -9,7 +9,7 @@ dark">
 <link rel="stylesheet" href="light.css" id="theme">
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body class="light" onload="myFunction()" style="margin:0;">
+<body onload="myFunction()" style="margin:0;">
 <div id="loader">Glass&nbsp;Calculator
 <h2>Made&nbsp;by&nbsp;SPIDRIOD</h2>
 </div>
@@ -20,7 +20,8 @@ dark">
     <div class="pages">
     <div class="page one">
     <ul class="navbar">
-    <h1>Calculator&nbsp;<a onclick="slide('next')" class="arrow">&nbsp;&nbsp;></a>   
+    <h1>
+    Calculator&nbsp;<a onclick="slide('next')" class="arrow">&nbsp;&nbsp;></a>   
     </h1>
     </ul>
      <div class="container2"> 
@@ -59,7 +60,6 @@ dark">
              </div>
       
         </div>
-       <a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="50px" width="50px"></a>
        
     </div>
     
@@ -227,7 +227,7 @@ dark">
      
      <!-- reset button -->
      <button class="btn btn-primary m-2"
-     onclick="</clearVal();play()">
+     onclick="clearVal();play()">
      Reset
      </button>
      
@@ -250,7 +250,6 @@ dark">
      </div>
      
      
-     <a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="50px" width="50px"></a>
      
      
     </div>
@@ -290,16 +289,14 @@ dark">
     <input type="text3" id="pay" style="color:#1F51FF" disabled>
     </div>
     <div class="text-center">
-    <button onclick="play()" type="submit" class="calculate">calculate</button>
-    <button onClick="</clearScreen();play()" class="reset">Reset</button>
+    <button onclick="play()" type="submit" name="calculate" class="calculate" >calculate</button>
+    <button onClick="clearScreen();play()" class="reset">Reset</button>
    
     </div>
     </form>
     </div>
     
-   <a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="50px" width="50px"></a>
    
-    
     </div>
   
     </div>
@@ -307,9 +304,10 @@ dark">
     </div>
 </div>
 
+
 <script src="script.js"></script>
-<script src="discount.js"></script>
 <script src="converter.js"></script>
+<script src="discount.js"></script>
 </body> 
 </html>
  
