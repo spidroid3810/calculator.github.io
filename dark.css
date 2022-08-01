@@ -179,7 +179,7 @@ color: #111;
 
 .fa-calculator{
 color: #111;
-font-size:50px;
+font-size:100px;
 text-align:center;
 padding-left:115px;
 align-item: center;
@@ -338,7 +338,20 @@ h3{
  border: 5px solid #fff;
  border-radius:50px;
  padding: 5px;
+ -moz-transition: all .5s linear;
+ -webkit-transition: all .5s linear;
+ transition: all .5s linear;
  }
+ 
+ i.material-icons:hover {
+ background-color: transparent;
+ -moz-transition:rotateZ(0deg);
+ -webkit-transform:rotateZ(180deg);
+ transform: rotateZ(180deg);
+ cursor: pointer;
+ box-shadow: none;
+ }
+ 
  
  #loader {
  position: absolute;
@@ -366,7 +379,7 @@ h3{
  
  .fa-calculator{
  color: #fff;
- font-size:50px;
+ font-size:100px;
  text-align:center;
  padding-left:115px;
  align-item: center;
