@@ -169,9 +169,31 @@ input[type="text3"]{
 color: #111;
 position: relative;
 left: -50px;
+border: 5px solid #111;
+border-radius:50px;
+padding: 5px;
 }
 
-
+.fa-calculator{
+color: #fff;
+font-size:50px;
+text-align:center;
+padding-left:115px;
+align-item: center;
+margin-top: -200px;
+}
+.fa-calculator {
+	-webkit-animation: pulse 400ms infinite alternate;
+	        animation: pulse 400ms infinite alternate;
+}
+@-webkit-keyframes pulse {
+	0% { color: #111; }
+	100% { color: limegreen; }
+}
+@keyframes pulse {
+	0% { color: #111; }
+	100% { color: limegreen; }
+}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -337,6 +359,43 @@ input[type="text3"]{
 color: #fff;
 position: relative;
 left: -50px;
+border: 5px solid #fff;
+border-radius:50px;
+padding: 5px;
+-moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+i.material-icons:hover {
+		background-color: transparent;
+		-webkit-transform:rotateZ(180deg);
+		transform: rotateZ(0deg);
+		-moz-transform:rotate(0deg);
+		cursor: pointer;
+		box-shadow: none;
+		
+}
+
+.fa-calculator{
+color: #fff;
+font-size:100px;
+padding-left:115px;
+text-align:center;
+align-item: center;
+margin-top: -200px;
+}
+
+.fa-calculator {
+	-webkit-animation: pulse 400ms infinite alternate;
+	        animation: pulse 400ms infinite alternate;
+}
+@-webkit-keyframes pulse {
+	0% { color: #fff; }
+	100% { color: limegreen; }
+}
+@keyframes pulse {
+	0% {color: #fff; }
+	100% { color: limegreen; }
 }
 
 }
@@ -594,4 +653,8 @@ border-radius: 10px;
 
 
 
-	
+
+
+
+
+
