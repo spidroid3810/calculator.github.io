@@ -132,6 +132,37 @@ h3{
  
  }
 
+.material-icons{
+ color: #111;
+ position: relative;
+ left: -50px;
+ }
+
+#loader {
+  position: absolute;
+  left: 25%;
+  top: 45%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  font-size: 39px;
+  color: #1F51FF;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  background:#fff;
+}
+
+h2{
+font-family: 'Poppins', sans-serif;
+font-size: 25px;
+position: absolute;
+top: 320%;
+left: 38%;
+color: #111;
+}
+
+
 
 }
 
@@ -262,8 +293,42 @@ h3{
  color: #fff;
  
  }
+ 
+ .material-icons{
+ color: #fff;
+ position: relative;
+ left: -50px;
+ }
+ 
+ #loader {
+ position: absolute;
+ left: 25%;
+ top: 45%;
+ z-index: 1;
+ width: 120px;
+ height: 120px;
+ margin: -76px 0 0 -76px;
+ font-size: 39px;
+ color: #1F51FF;
+ font-weight: bold;
+ font-family: 'Poppins', sans-serif;
+ background:#111;
+ }
+ 
+ h2{
+ font-family: 'Poppins', sans-serif;
+ font-size: 25px;
+ position: absolute;
+ top: 320%;
+ left: 38%;
+ color: #fff;
+ }
+ 
+ 
+ 
+ }
 
-}
+
 
 
 h1{

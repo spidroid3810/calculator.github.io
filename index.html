@@ -7,7 +7,8 @@ dark">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 <link rel="stylesheet" href="light.css" id="theme">
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="preconnect" href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
 </head>
 <body onload="myFunction()" style="margin:0;">
 <div id="loader">Glass&nbsp;Calculator
@@ -21,12 +22,13 @@ dark">
     <div class="page one">
     <ul class="navbar">
     <h1>
-    Calculator&nbsp;<a onclick="slide('next')" class="arrow">&nbsp;&nbsp;></a>   
-    </h1>
+    <i onclick="themeSwitcher()" class="material-icons">brightness_4</i></button>Calculator&nbsp;<a onclick="slide('next')" class="arrow">&nbsp;&nbsp;></a>
+     </h1>
+    </ul>
     </ul>
      <div class="container2"> 
         <div class="row-1">
-            <input type="text" id="result" placeholder="" readonly>
+            <input type="text" id="result" placeholder="" readonly class="area">
              </div>
         <div class="btnrow-1">
             <button class="operator" onclick="clearScreen();play()" id="clear" >AC</button>
@@ -53,7 +55,7 @@ dark">
             <button class="operator" onclick="updScreen('+')" >+</button>
              </div>
         <div class="btnrow-1">
-            <button class="number" onclick="themeSwitcher();play()" id="dark-mode" ><i class="bi-brightness-high-fill"></i></button>
+            <button class="number" onclick="updScreen('00');play()">00</button>
             <button class="number" onclick="updScreen(0);play()">0</button>
             <button class="number" onclick="updScreen('.');play()">.</button>
             <button class="operator" onclick="result.value = eval(result.value);play()" id="equal">=</button>
@@ -96,7 +98,7 @@ dark">
      <br>
      <select class="form-control from" id="sel1" onclick="play()">
      <option value="">Select One …</option>
-     <option value="USD"><img src="images/Github-Mark.png">USD</option>
+     <option value="USD">USD&nbsp;🇺🇸</option>
      <option value="AED">AED</option>
      <option value="ARS">ARS</option>
      <option value="AUD">AUD</option>
@@ -221,7 +223,7 @@ dark">
      <br>
      <!-- convert button -->
      <button class="btn btn-primary convert m-2"
-     type="submit" onclick="play()">
+     type="submit" name="convert" onclick="play()">
      Convert
      </button>
      
@@ -303,8 +305,7 @@ dark">
     
     </div>
 </div>
-
-
+<script src="dark.js"></script>
 <script src="script.js"></script>
 <script src="converter.js"></script>
 <script src="discount.js"></script>

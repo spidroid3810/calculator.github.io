@@ -165,6 +165,11 @@ input[type="text3"]{
     
     }
     
+.material-icons{
+color: #111;
+position: relative;
+left: -50px;
+}
 
 
 }
@@ -327,8 +332,12 @@ input[type="text3"]{
     background: rgba(255, 255, 255, 0.1);
     
     }
-
-
+    
+.material-icons{
+color: #fff;
+position: relative;
+left: -50px;
+}
 
 }
 
@@ -586,4 +595,3 @@ border-radius: 10px;
 
 
 	
-
