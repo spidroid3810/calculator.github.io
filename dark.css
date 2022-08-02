@@ -64,7 +64,7 @@ padding: 15px;
 font-weight: bold;
 }
 
-input[type="text2"]{
+input[type="text"]{
     width: 270px;
     height: 55px;
     border: none;
@@ -111,7 +111,7 @@ input[type="text2"]{
     color: #111;
 }
 
-input[type="text3"]{
+input[type="text"]{
     color: #111;
     width: 270px;
     height: 55px;
@@ -199,7 +199,7 @@ background: linear-gradient(to right,#28282B,#000000);
 }
 
 .navbar{
- padding:  15px;
+ padding:15px;
  height: 40px;
  background-color: #343434;
  width: 500%;
@@ -301,7 +301,7 @@ input[type="text2"]{
     color: #fff;
 }
 
-input[type="text3"]{
+input[type="text"]{
     color: #fff;
     width: 270px;
     height: 55px;
@@ -424,7 +424,7 @@ button:hover{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-	gap: 10px;
+  gap: 10px;
   transition: all 0.7s;
   color: white;
 }

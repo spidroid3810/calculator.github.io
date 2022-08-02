@@ -290,7 +290,7 @@ font-weight: bold;
 }
 
 
-input[type="text2"]{
+input[type="text"]{
     width: 270px;
     height: 55px;
     border: none;
@@ -342,7 +342,7 @@ color: #fff;
     color: #fff;
 }
 
-input[type="text3"]{
+#amount,#discount-amount,#pay{
     color: #fff;
     width: 270px;
     height: 55px;
@@ -635,9 +635,6 @@ width: 80px;
 height: 55px;
 border-radius: 10px;
 }
-
-
-
 
 
 
