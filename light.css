@@ -238,7 +238,7 @@ background: linear-gradient(to right,#28282B,#000000);
   color: #1F51FF;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  background-color:#fff;
+  background:#111;
 }
 
 h2{
@@ -606,9 +606,6 @@ label {
     height:55px;
     
 }
-
-
-
 
 
 
