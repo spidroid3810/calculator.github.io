@@ -165,10 +165,10 @@ input[type="text3"]{
     }
 
 .fas {
-color: #111;
+color: #343434;
 position: relative;
 left: -50px;
-border: 3px solid #111;
+border: 3px solid #343434;
 border-radius:50px;
 padding: 5px;
 transition: all .5s linear;
@@ -238,7 +238,7 @@ background: linear-gradient(to right,#28282B,#000000);
   color: #1F51FF;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  background:#111;
+  background-color:#fff;
 }
 
 h2{
@@ -623,8 +623,6 @@ label {
     }
 }
 
-    
-    
  .navbar3{
  padding:15px;
  }
