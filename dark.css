@@ -177,8 +177,7 @@ color: #fff;
 font-size:100px;
 text-align:center;
 padding-left:125px;
-align-item: center;
-margin-top: -200px;
+margin-top: 200px;
 }
 .fa-calculator {
 	-webkit-animation: pulse 400ms infinite alternate;
