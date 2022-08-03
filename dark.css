@@ -41,21 +41,18 @@ color: #111;
   }
   
   .name{
-  position: relative;
   font-size: 39px;
   color: #1F51FF;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  top: 45%;
-  left: 5%;
+  margin-left:10px;
   }
+  
   
   h2{
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
-  position: absolute;
-  top: 520%;
-  left: 15%;
+  margin: 250px 55px;
   color: #111;
   }
   
@@ -232,25 +229,20 @@ background: linear-gradient(to right,#28282B,#000000);
   }
   
   .name{
-  position: absolute;
   font-size: 39px;
   color: #1F51FF;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  top: 49%;
-  left: 5%;
+  margin-left:10px;
   }
   
 
 h2{
 font-family: 'Poppins', sans-serif;
 font-size: 25px;
-position: absolute;
-top: 520%;
-left: 15%;
+margin: 250px 55px;
 color: #fff;
 }
-
 
 input[type="text"]{
     width: 270px;
