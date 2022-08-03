@@ -185,12 +185,12 @@ margin-top: 200px;
 @media (prefers-color-scheme: dark) {
 
 body{
-background: linear-gradient(to right,#28282B,#000000);
+background: linear-gradient(to right,#282C2F,#202020);
 }
 
 .navbar{
   padding: 15px;
-  background-color: #343434;
+  background-color: #202124;
   width: 500%;
   height: 40px;
   }
