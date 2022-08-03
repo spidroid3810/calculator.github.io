@@ -172,25 +172,14 @@ transition: all .5s linear;
 
 
 
-.fa-calculator{
+.calc{
 color: #fff;
 font-size:100px;
 text-align:center;
 padding-left:135px;
 margin-top: 200px;
 }
-.fa-calculator {
-	-webkit-animation: pulse 400ms infinite alternate;
-	        animation: pulse 400ms infinite alternate;
-}
-@-webkit-keyframes pulse {
-	0% { color: #111; }
-	100% { color: limegreen; }
-}
-@keyframes pulse {
-	0% { color: #111; }
-	100% { color: limegreen; }
-}
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -361,26 +350,14 @@ transition: all .5s linear;
 
 
 
-.fa-calculator{
+.calc{
 color: #fff;
 font-size:100px;
-padding-left:135px;
+padding-left:127px;
 text-align:center;
 margin-top: 200px;
 }
 
-.fa-calculator {
-	-webkit-animation: pulse 400ms infinite alternate;
-	        animation: pulse 400ms infinite alternate;
-}
-@-webkit-keyframes pulse {
-	0% { color: #fff; }
-	100% { color: limegreen; }
-}
-@keyframes pulse {
-	0% {color: #fff; }
-	100% { color: limegreen; }
-}
 
 }
 
