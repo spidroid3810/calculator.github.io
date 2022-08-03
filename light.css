@@ -47,7 +47,7 @@ color: #111;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   top: 45%;
-  left: 3%;
+  left: 5%;
   }
   
   h2{
@@ -238,7 +238,7 @@ background: linear-gradient(to right,#28282B,#000000);
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   top: 45%;
-  left: 3%;
+  left: 5%;
   }
   
 
@@ -425,7 +425,7 @@ button:hover{
 
 .pages {
   display: flex;
-	width: 300%;
+	width: 100%;
 	box-sizing: border-box;	
 }
 
