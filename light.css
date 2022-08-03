@@ -176,7 +176,7 @@ transition: all .5s linear;
 color: #fff;
 font-size:100px;
 text-align:center;
-padding-left:125px;
+padding-left:135px;
 margin-top: 200px;
 }
 .fa-calculator {
@@ -365,7 +365,7 @@ transition: all .5s linear;
 .fa-calculator{
 color: #fff;
 font-size:100px;
-padding-left:130px;
+padding-left:135px;
 text-align:center;
 margin-top: 200px;
 }
