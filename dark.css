@@ -148,7 +148,7 @@ color: #111;
 }
 
 
-input[type="text3"]{
+#amount,#discount-amount,#pay{
     color: #111;
     width: 270px;
     height: 55px;
