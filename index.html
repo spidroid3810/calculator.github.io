@@ -12,11 +12,11 @@ dark">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
 </head>
 <body onload="myFunction()" style="margin:0;">
-<div id="loader"><i class="fa fa-calculator"></i>Glass&nbsp;Calculator
+<div id="loader"><i class="fa fa-calculator"></i><div class="name">Glass&nbsp;Calculator
 
 <h2>Made&nbsp;by&nbsp;SPIDRIOD</h2>
 </div>
-</body>
+</div>
 <div style="display:none;" id="myDiv" class="animate-bottom">
 <audio id="audio" src="Audio/Glass click.mp3"></audio>
     <div class="container">
@@ -86,7 +86,7 @@ dark">
      Amount To Convert:
      </label>
      <br><br>
-     <input type="text2"
+     <input type="text"
      class="form-control searchBox" placeholder="0.00" id="amount" onclick="play()">
      </div>
      
@@ -225,7 +225,7 @@ dark">
      <br>
      <!-- convert button -->
      <button class="btn btn-primary convert m-2"
-     type="submit" name="convert" onclick="play()">
+      name="convert" onclick="play()">
      Convert
      </button>
      
@@ -270,7 +270,7 @@ dark">
     <form action="#">
     <div class="input-item">
     <label for="amount"> Enter bill amount: </label>
-    <input type="text3" id="amount" onclick="play()">
+    <input type="text" id="amount" onclick="play()">
     </div>
     
     <div class="input-item">
@@ -287,12 +287,12 @@ dark">
     
     <div class="input-item">
     <label for="discount-amount"> Discount amount: </label>
-    <input type="text3" id="discount-amount" style="color:#1F51FF" disabled>
+    <input type="text" id="discount-amount" style="color:#1F51FF" disabled>
     </div>
     
     <div class="input-item">
     <label for="pay" aria-disabled="true"> Final Pay:</label>
-    <input type="text3" id="pay" style="color:#1F51FF" disabled>
+    <input type="text" id="pay" style="color:#1F51FF" disabled>
     </div>
     <div class="text-center">
     <button onclick="play()" type="submit" class="calculate" >calculate</button>
