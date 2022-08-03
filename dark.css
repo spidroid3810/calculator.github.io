@@ -64,7 +64,7 @@ padding: 15px;
 font-weight: bold;
 }
 
-input[type="text"]{
+input[type="text2"]{
     width: 270px;
     height: 55px;
     border: none;
@@ -111,7 +111,7 @@ input[type="text"]{
     color: #111;
 }
 
-input[type="text"]{
+#amount,#discount-amount,#pay{
     color: #111;
     width: 270px;
     height: 55px;
@@ -150,7 +150,7 @@ h3{
   }
   
   .name{
-  position: relative;
+  position: absolute;
   font-size: 39px;
   color: #1F51FF;
   font-weight: bold;
@@ -302,7 +302,7 @@ input[type="text2"]{
     color: #fff;
 }
 
-input[type="text"]{
+#amount,#discount-amount,#pay{
     color: #fff;
     width: 270px;
     height: 55px;
@@ -336,11 +336,11 @@ h3{
  #loader {
  height: 702px;
  width: 360px;
- background: #fff;
+ background: #111;
  }
  
  .name{
- position: relative;
+ position: absolute;
  font-size: 39px;
  color: #1F51FF;
  font-weight: bold;
