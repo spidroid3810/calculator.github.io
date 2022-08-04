@@ -127,7 +127,7 @@ function themeChanger() {
  th.href = 'light.css';
  
  dark.innerHTML =
- 'dark mode';
+ 'light mode';
  
  } else {
  
@@ -135,7 +135,7 @@ function themeChanger() {
  
  dark.innerHTML =
  
- 'light mode';
+ 'dark mode';
  
  }
  
