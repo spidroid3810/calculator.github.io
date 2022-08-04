@@ -20,7 +20,7 @@ const pages = document.querySelectorAll(".page");
  "theme");
  
  if (th.getAttribute('href') ==
- 'light.css') {
+ 'dark.css') {
  
  th.href = 'dark.css';
  
@@ -29,7 +29,7 @@ const pages = document.querySelectorAll(".page");
  
  } else {
  
- th.href = 'light.css';
+ th.href = 'dark.css';
  
  dark.innerHTML =
  
@@ -85,4 +85,59 @@ const pages = document.querySelectorAll(".page");
 
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-    
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+function themeChanger() {
+ 
+ var dark = document.getElementById(
+ "light-mode");
+ 
+ var th = document.getElementById(
+ "theme");
+ 
+ if (th.getAttribute('href') ==
+ 'light.css') {
+ 
+ th.href = 'light.css';
+ 
+ dark.innerHTML =
+ 'dark mode';
+ 
+ } else {
+ 
+ th.href = 'light.css';
+ 
+ dark.innerHTML =
+ 
+ 'light mode';
+ 
+ }
+ 
+ }
+ 
