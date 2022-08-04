@@ -168,7 +168,7 @@ border: 3px solid #343434;
 border-radius:50px;
 padding: 5px;
 transition: all .5s linear;
-top: -200%;
+top: -199%;
 font-size:20px;
 
 }
@@ -425,7 +425,7 @@ border: 3px solid #fff;
 border-radius:50px;
 padding: 5px;
 transition: all .5s linear;
-top: -200%;
+top: -199%;
 font-size:20px;
 }
 
