@@ -162,14 +162,14 @@ input[type="text3"]{
 
 .fas {
 color: #343434;
-position: relative;
-left: -150%;
+position: absolute;
 border: 3px solid #343434;
 border-radius:50px;
 padding: 5px;
 transition: all .5s linear;
-top: -199%;
 font-size:20px;
+top: 1%;
+left: 5%;
 }
 
 
@@ -206,7 +206,7 @@ margin-top: 200px;
   padding: 10px;
   border: 1px solid #888;
   width: 60%;
-  height: 25%;
+  height: 30%;
   border-radius: 20px;
   font-size: 20px;
 }
@@ -217,7 +217,7 @@ margin-top: 200px;
   font-size: 20px;
   font-weight: bold;
   position: relative;
-  left: -2%;
+  left: -11%;
   top: 30%;
 }
 
@@ -417,13 +417,13 @@ color: #fff;
     
 .fas {
 color: #fff;
-position: relative;
-left: -150%;
+position: absolute;
 border: 3px solid #fff;
 border-radius:50px;
 padding: 5px;
 transition: all .5s linear;
-top: -199%;
+top: 1%;
+left: 5%;
 font-size:20px;
 }
 
@@ -461,7 +461,7 @@ margin-top: 200px;
   padding: 10px;
   border: 1px solid #888;
   width: 60%;
-  height: 25%;
+  height: 30%;
   border-radius: 20px;
   font-size: 20px;
 }
@@ -472,8 +472,8 @@ margin-top: 200px;
   font-size: 20px;
   font-weight: bold;
   position: relative;
-  left: -2%;
-  top: 30%;
+  left: -11%;
+  top: 25%;
 }
 
 .close:hover,
