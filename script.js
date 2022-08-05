@@ -40,6 +40,7 @@ const pages = document.querySelectorAll(".page");
  }
  
  
+ 
  // Clear screen with C button.
  function backSpace() {
  var bsp = document.getElementById("result").value;
@@ -142,3 +143,15 @@ function themeSwitcher() {
  }
  
  
+function themeSwitcher() {
+  // all values retrieved from localStorage will be strings
+  const wasthemeSwitcher = localStorage.getItem('themeSwitcher') === 'true';
+  localStorage.setItem('themeSwitcher', !wasthemeSwitcher);
+  const element = document.body;
+  element.classList.toggle('dark-mode', !wasthemeSwitcher);
+}
+
+function onload() {
+  document.body.classList.toggle('dark-mode', localStorage.getItem('themeSwitcher') === 'true');
+}
+
