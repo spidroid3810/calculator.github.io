@@ -82,7 +82,7 @@ const pages = document.querySelectorAll(".page");
  document.getElementById("myDiv").style.display = "block";
  }
  
-
+prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
    
 // Get the modal
