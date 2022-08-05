@@ -11,7 +11,7 @@ const pages = document.querySelectorAll(".page");
  );
  }
  
- function themeChanger() {
+ function themeSwitcher() {
  
  var dark = document.getElementById(
  "dark-mode");
@@ -135,9 +135,9 @@ function themeSwitcher() {
  
  dark.innerHTML =
  
- 'dark mode';
+ 'light mode';
  
- }
+ } 
  
  }
  
