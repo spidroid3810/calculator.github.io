@@ -11,7 +11,7 @@ dark">
 <link rel="preconnect" href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
 </head>
-<body onload="myFunction()" style="margin:0;">
+<body onload="myFunction();onload()" style="margin:0;">
 <div id="loader"><img class="calc" src="Images/calculator.png" height="100px" width="100px"><div class="name">Glass&nbsp;Calculator
 
 <h2>Made&nbsp;by&nbsp;SPIDRIOD</h2>
@@ -74,7 +74,7 @@ dark">
             <!-- Modal content -->
             <div class="modal-content">
             <p class="theme">Theme</p>
-              <input onclick="themeChanger()" id="btn-1" type="radio" name="theme">
+              <input onclick="themeChanger();darkmode()" id="btn-1" type="radio" name="theme">
               <label  class="th1">Dark</label><br><br>
               <input onclick="themeSwitcher()" id="btn-2" type="radio" name="theme">
               <label class="th1" >Light</label>

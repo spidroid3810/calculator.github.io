@@ -84,8 +84,7 @@ const pages = document.querySelectorAll(".page");
  
 
 
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
+   
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -143,5 +142,16 @@ function themeSwitcher() {
  }
  
  
+function darkmode(){
+  // all values retrieved from localStorage will be strings
+  const wasdarkmode = localStorage.getItem('darkmode') === 'true';
+  localStorage.setItem('darkmode', !wasdarkmode);
+  const element = document.body;
+  element.classList.toggle('dark-mode', !wasdarkmode);
+}
+
+function onload() {
+  document.body.classList.toggle('dark-mode', localStorage.getItem('darkmode') === 'true');
+}
 
 
