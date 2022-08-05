@@ -22,7 +22,7 @@ const pages = document.querySelectorAll(".page");
  if (th.getAttribute('href') ==
  'dark.css') {
  
- th.href = 'dark.css';
+ th.href = 'light.css';
  
  dark.innerHTML =
  'dark mode';
@@ -124,7 +124,7 @@ function themeChanger() {
  if (th.getAttribute('href') ==
  'light.css') {
  
- th.href = 'light.css';
+ th.href = 'dark.css';
  
  dark.innerHTML =
  'light mode';
