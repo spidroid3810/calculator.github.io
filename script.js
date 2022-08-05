@@ -11,7 +11,7 @@ const pages = document.querySelectorAll(".page");
  );
  }
  
- function themeSwitcher() {
+ function themeChanger() {
  
  var dark = document.getElementById(
  "dark-mode");
@@ -113,7 +113,7 @@ window.onclick = function(event) {
 
 
 
-function themeChanger() {
+function themeSwitcher() {
  
  var dark = document.getElementById(
  "light-mode");
@@ -140,6 +140,5 @@ function themeChanger() {
  }
  
  }
- 
  
  
