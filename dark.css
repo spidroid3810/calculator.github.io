@@ -10,7 +10,6 @@
 body {
 background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 color: #111;
-min-height: 100vh; 
  } 
  
   
@@ -258,7 +257,6 @@ font-weight:bold;
 
 body{
 background: linear-gradient(to right,#282C2F,#090909);
-min-height: 100vh;
 }
 
 .navbar{
