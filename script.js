@@ -57,7 +57,7 @@ const pages = document.querySelectorAll(".page");
  
 
 
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: light)');
 
     const setTheme = () => {
     const currentTheme = localStorage.getItem('theme');
