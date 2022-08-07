@@ -58,46 +58,44 @@ const pages = document.querySelectorAll(".page");
 
 
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-    const setTheme = () => {
-    const currentTheme = localStorage.getItem('theme');
+  // Switch between Dark and Light Modes
     
-    // Default to light theme
-    if (!currentTheme) {
-    localStorage.setItem('theme', 'light');
-    document.documentElement.dataset.theme = 'light';
-    return;
+    //We're going to use "check" to get the ckeckbox element
+    const check=document.getElementById("check")
+    
+    //If darkMode doesn’t exist in the LocalStorage, create it. False by default
+    if (localStorage.getItem('darkMode')===null){
+    localStorage.setItem('darkMode', "false");
     }
     
-    document.documentElement.dataset.theme = currentTheme;
+    //Create a link tag to later link the CSS file we want
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    document.getElementsByTagName('HEAD')[0].appendChild(link);
+    
+    //Or we can create the tag in the HTML and later reference in our code
+    //const link=document.getElementsByTagName("link");  
+    
+    //checkStatus is only called one time in the program, when you reload the page
+    //It gives the page it's default look, depening on waht darkMode is set to it will load one css or another
+    checkStatus()
+    
+    function checkStatus(){
+    if (localStorage.getItem('darkMode')==="true"){
+    check.checked = true;                           //the checkbox is checked (if you load the page by default it isn’t)
+    link.href = 'light.css';                   //since it's true we load the dark theme CSS
+    }else{
+    check.checked = false;                          //the checkbox is unchecked
+    link.href = 'dark.css';
+    }
     }
     
-    // Set theme on page load
-    setTheme();
-    
-    const transition = () => {
-    document.documentElement.classList.add('transition');
-    
-    setTimeout(() => {
-    document.documentElement.classList.remove('transition');
-    }, 1000)
+    function changeStatus(){                                //This function gets called every time the checkbox is clicked
+    if (localStorage.getItem('darkMode')==="true"){     //if darkMode was active and this function is called it means the user now wants light
+    localStorage.setItem('darkMode', "false");      //so we set it to false, to indicate we are in light mode
+    link.href = 'dark.css';
+    } else{
+    localStorage.setItem('darkMode', "true");       //same code but adapted for dark theme
+    link.href = '';
     }
-    
-    // Handle theme toggle
-    const themeToggleBtn = document.querySelector('.js-toggle-theme');
-    
-    themeToggleBtn.addEventListener('click', () => {  
-    const { theme } = document.documentElement.dataset;
-    const themeTo = theme === 'light' ? 'dark' : 'light';
-    const themeLabel = `Activate ${theme} mode`;
-    
-    document.documentElement.dataset.theme = themeTo;
-    localStorage.setItem('theme', themeTo);
-    
-    themeToggleBtn.setAttribute('aria-label', themeLabel);
-    themeToggleBtn.setAttribute('title', themeLabel);
-    
-    transition();
-    });
-    
-    
+    }
