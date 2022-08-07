@@ -9,7 +9,7 @@
 :root {
  --bg-color: linear-gradient(to right,#282C2F,#090909);
  --text-color: #ffffff;
- --nav-bar: #111;
+ --nav-bar: #202124;
  --heading-color: #1F51FF;
  --load-screen: #111;
  --icon-color: #fff;
@@ -310,7 +310,7 @@ color:#1F51FF;
 }
 
 
-.icon,img{
+.icon{
 justify-content: center;
 align-items: center;
 margin-top: -10px;

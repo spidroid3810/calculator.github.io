@@ -17,7 +17,7 @@
 [data-theme="dark"] {
   --bg-color: linear-gradient(to right,#282C2F,#090909);
   --text-color: #ffffff;
-  --nav-bar: #111;
+  --nav-bar: #202124;
   --load-screen: #111;
   --icon-color: #fff;
   
@@ -310,7 +310,7 @@ color:#1F51FF;
 }
 
 
-.icon,img{
+.icon{
 justify-content: center;
 align-items: center;
 margin-top: -10px;
@@ -445,7 +445,6 @@ border-radius: 10px;
 
 
 .calc{
-font-size:100px;
 text-align:center;
 margin-left:127px;
 margin-top: 200px;
