@@ -5,17 +5,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
-[data-theme="light"]{
-  --bg-color: linear-gradient(to right, #38ef7d, #11998e); 
-  --text-color: #000000;
-  --nav-bar: #fff;
-  --load-screen: #fff;
-  --icon-color: #343434;
- }
-
  
- :root{
+ [data-theme="dark"]{
  --bg-color: linear-gradient(to right,#282C2F,#090909);
  --text-color: #ffffff;
  --nav-bar: #202124;
@@ -24,6 +15,13 @@
  --icon-color: #fff;
 }
 
+:root{
+  --bg-color: linear-gradient(to right, #38ef7d, #11998e); 
+  --text-color: #000000;
+  --nav-bar: #fff;
+  --load-screen: #fff;
+  --icon-color: #343434;
+ }
 
 body{
 background: var(--bg-color);
