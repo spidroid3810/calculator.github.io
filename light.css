@@ -52,7 +52,7 @@ background: var(--bg-color);
 
 
 #loader {
-  height: 702px;
+  height: 720px;
   width: 360px;
   background: var(--load-screen);
   }
