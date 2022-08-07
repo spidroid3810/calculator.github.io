@@ -15,7 +15,7 @@
  --icon-color: #fff;
 }
 
-[data-theme="dark"]{
+[data-theme="light"]{
   --bg-color: linear-gradient(to right, #38ef7d, #11998e); 
   --text-color: #000000;
   --nav-bar: #fff;
