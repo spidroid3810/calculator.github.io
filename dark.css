@@ -6,7 +6,7 @@
 }
 
  
- [data-theme="dark"]{
+:root{
  --bg-color: linear-gradient(to right,#282C2F,#090909);
  --text-color: #ffffff;
  --nav-bar: #202124;
@@ -15,7 +15,7 @@
  --icon-color: #fff;
 }
 
-:root{
+ [data-theme="dark"]{
   --bg-color: linear-gradient(to right, #38ef7d, #11998e); 
   --text-color: #000000;
   --nav-bar: #fff;
