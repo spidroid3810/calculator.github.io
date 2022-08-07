@@ -11,33 +11,6 @@ const pages = document.querySelectorAll(".page");
  );
  }
  
- function themeSwitcher() {
- 
- var dark = document.getElementById(
- "dark-mode");
- 
- var th = document.getElementById(
- "theme");
- 
- if (th.getAttribute('href') ==
- 'dark.css') {
- 
- th.href = 'light.css';
- 
- dark.innerHTML =
- 'dark mode';
- 
- } else {
- 
- th.href = 'dark.css';
- 
- dark.innerHTML =
- 
- 'light mode';
- 
- }
- 
- }
  
  
  
@@ -82,65 +55,49 @@ const pages = document.querySelectorAll(".page");
  document.getElementById("myDiv").style.display = "block";
  }
  
-prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-   
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-function themeSwitcher() {
- 
- var dark = document.getElementById(
- "light-mode");
- 
- var th = document.getElementById(
- "theme");
- 
- if (th.getAttribute('href') ==
- 'light.css') {
- 
- th.href = 'dark.css';
- 
- dark.innerHTML =
- 'light mode';
- 
- } else {
- 
- th.href = 'light.css';
- 
- dark.innerHTML =
- 
- 'light mode';
- 
- } 
- 
- }
- 
- 
-
-
+    const setTheme = () => {
+    const currentTheme = localStorage.getItem('theme');
+    
+    // Default to light theme
+    if (!currentTheme) {
+    localStorage.setItem('theme', 'light');
+    document.documentElement.dataset.theme = 'light';
+    return;
+    }
+    
+    document.documentElement.dataset.theme = currentTheme;
+    }
+    
+    // Set theme on page load
+    setTheme();
+    
+    const transition = () => {
+    document.documentElement.classList.add('transition');
+    
+    setTimeout(() => {
+    document.documentElement.classList.remove('transition');
+    }, 1000)
+    }
+    
+    // Handle theme toggle
+    const themeToggleBtn = document.querySelector('.js-toggle-theme');
+    
+    themeToggleBtn.addEventListener('click', () => {  
+    const { theme } = document.documentElement.dataset;
+    const themeTo = theme === 'light' ? 'dark' : 'light';
+    const themeLabel = `Activate ${theme} mode`;
+    
+    document.documentElement.dataset.theme = themeTo;
+    localStorage.setItem('theme', themeTo);
+    
+    themeToggleBtn.setAttribute('aria-label', themeLabel);
+    themeToggleBtn.setAttribute('title', themeLabel);
+    
+    transition();
+    });
+    
+    

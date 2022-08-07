@@ -5,263 +5,34 @@
   font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
  
-body {
-background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-color: #111;
- } 
- 
-  
-  .navbar{
-  padding: 15px;
-  height: 40px;
-  background-color: #fff;
-  width: 500%;
-  
-  }
-  
-  .operator,.number{
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  width: 55px;
-  height: 55px;
-  margin: 10px 10px;
-  outline: none;
-  border-radius: 10px;
-  font-size: 15px;
-  font-family: 'Poppins', sans-serif;
-  color: #111;
-  }
-  
-  #loader {
-  height: 702px;
-  width: 360px;
-  background: #fff;
-  }
-  
-  .name{
-  font-size: 39px;
-  color: #1F51FF;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  margin-left:10px;
-  }
-  
-  
-  h2{
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  margin: 250px 55px;
-  color: #111;
-  }
-  
-input[type="text"]{
-    width: 270px;
-    height: 65px;
-    padding-left: 25px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    margin: 30px 3px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #111;
-  
-}
-
-.btn{
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    width: 80px;
-    height: 55px;
-    margin: 10px 10px;
-    outline: none;
-    border-radius: 10px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    color: #111;
-}
-
-.amt,.input-group-text{
-font-size: 20px;
-color: #111;
-margin: 2px;
-padding: 15px;
-font-weight: bold;
-}
-
-input[type="text2"]{
-    width: 270px;
-    height: 55px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    margin: 3px 3px;
-    background: rgba(255, 255, 255, 0.1);
-    padding-left: 25px;
-    color: #111;
-}
-
-h3{
-color: #111;
-
-}
-
-.input-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #111;
-}
-
-.calculate {
-    padding:2px;
-    background: #1F51FF;
-    text-transform: capitalize;
-    font-weight: ;
-    border: none;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    font-size:15px;
-    color: #111;
-}
-
-.reset {
-    padding: ;
-    background: #1F51FF;
-    text-transform: capitalize;
-    font-weight: ;
-    border: none;
-    border-radius: 10px;
-    border: none;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    margin: 10px ;
-    font-size:15px;
-    color: #111;
+:root {
+ --bg-color: linear-gradient(to right,#282C2F,#090909);
+ --text-color: #ffffff;
+ --nav-bar: #111;
+ --heading-color: #1F51FF;
+ --load-screen: #111;
+ --icon-color: #fff;
 }
 
 
-#amount,#discount-amount,#pay{
-    color: #111;
-    width: 270px;
-    height: 55px;
-    padding-left: 25px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    margin: 3px 3px;
-    background: rgba(255, 255, 255, 0.1);
-    
-    }
-
-.fas {
-color: #343434;
-position: absolute;
-border: 3px solid #343434;
-border-radius:50px;
-padding: 5px;
-transition: all .5s linear;
-font-size:20px;
-top: 2.5%;
-left: 5%;
-}
+[data-theme="dark"] {
+  --bg-color: linear-gradient(to right, #38ef7d, #11998e); 
+  --text-color: #000000;
+  --nav-bar: #fff;
+  --load-screen: #fff;
+  --icon-color: #343434;
+ }
 
 
-
-.calc{
-color: #fff;
-font-size:100px;
-text-align:center;
-padding-left:135px;
-margin-top: 200px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: none; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: 70px;
-  margin-left: 61px;
-  padding: 10px;
-  border: 1px solid #888;
-  width: 60%;
-  height: 30%;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-/* The Close Button */
-.close {
-  color: #0F68DB;
-  font-size: 20px;
-  font-weight: bold;
-  position: relative;
-  left: -11%;
-  top: 25%;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-#myBtn{
-background:transparent;
-border: none;
-}
-
-.th1{
-font-size: 20px;
-}
-
-#btn-1,#btn-2,#btn-3{
-margin-left: -5px;
-height: 20px;
-width: 20px;
-}
-
-.theme{
-font-size:20px;
-padding: 10px;
-text-align: left;
-color:#1F51FF;
-font-weight:bold;
-}
-
-}
-
-@media (prefers-color-scheme: light) {
 
 body{
-background: linear-gradient(to right,#282C2F,#090909);
+background: var(--bg-color);
 }
 
 .navbar{
   padding: 15px;
-  background-color: #202124;
+  background-color:var(--nav-bar);
   width: 500%;
   height: 40px;
   }
@@ -276,7 +47,7 @@ background: linear-gradient(to right,#282C2F,#090909);
     border-radius: 10px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: var(--text-color);
 }
 
 
@@ -284,7 +55,7 @@ background: linear-gradient(to right,#282C2F,#090909);
 #loader {
   height: 702px;
   width: 360px;
-  background: #111;
+  background: var(--load-screen);
   }
   
   .name{
@@ -300,8 +71,9 @@ h2{
 font-family: 'Poppins', sans-serif;
 font-size: 25px;
 margin: 250px 55px;
-color: #fff;
+color: var(--text-color);
 }
+
 
 input[type="text"]{
     width: 270px;
@@ -314,7 +86,7 @@ input[type="text"]{
     font-family: 'Poppins', sans-serif;
     margin: 30px 3px;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: var(--text-color);
 
 
 
@@ -330,12 +102,12 @@ input[type="text"]{
     border-radius: 10px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .amt,.input-group-text{
 font-size: 20px;
-color:#fff ;
+color: var(--text-color);
 margin: 2px;
 padding: 15px;
 font-weight: bold;
@@ -353,11 +125,11 @@ input[type="text2"]{
     margin: 3px 3px;
     background: rgba(255, 255, 255, 0.1);
     padding-left: 25px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 h3{
-color: #fff;
+color: var(--text-color);
 
 }
 
@@ -365,7 +137,7 @@ color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .calculate {
@@ -377,7 +149,7 @@ color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     font-size:15px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .reset {
@@ -391,11 +163,11 @@ color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.5);
     margin: 10px ;
     font-size:15px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 #amount,#discount-amount,#pay{
-    color: #fff;
+    color: var(--text-color);
     width: 270px;
     height: 55px;
     padding-left: 25px;
@@ -410,9 +182,10 @@ color: #fff;
     }
     
 .fas {
-color: #fff;
+color: var(--icon-color);
 position: absolute;
-border: 3px solid #fff;
+left: -50px;
+border: 3px solid var(--icon-color);
 border-radius:50px;
 padding: 5px;
 transition: all .5s linear;
@@ -423,91 +196,7 @@ left: 5%;
 
 
 
-.calc{
-color: #fff;
-font-size:100px;
-padding-left:127px;
-text-align:center;
-margin-top: 200px;
-}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: none; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #202124;
-  margin: 70px;
-  margin-left: 61px;
-  padding: 10px;
-  border: 1px solid #888;
-  width: 60%;
-  height: 30%;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-/* The Close Button */
-/* The Close Button */
-.close {
-  color: #0F68DB;
-  font-size: 20px;
-  font-weight: bold;
-  position: relative;
-  left: -11%;
-  top: 25%;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-#myBtn{
-background:transparent;
-border: none;
-}
-
-.th1{
-font-size: 20px;
-color: #fff;
-}
-
-#btn-1,#btn-2,#btn-3{
-margin-left: -5px;
-height: 20px;
-width: 20px;
-}
-
-.theme{
-font-size:20px;
-padding: 10px;
-text-align: left;
-color: #1F51FF;
-font-weight:bold;
-}
-
-
-
-
-
-
-}
 
 h1{
     color: #1F51FF;
@@ -522,7 +211,7 @@ button{
   width: 100px;
   border: 2px solid #111;
   background-color: transparent;
-  color: #111;
+  color: var(--text-color);
   cursor: pointer;
   border-radius: 5px;
   transition: 0.1s;
@@ -553,7 +242,8 @@ button:hover{
   flex-direction: column;
   gap: 10px;
   transition: all 0.7s;
-  color: #111;
+  color: var(--text-color);
+  
 }
 
 
@@ -594,7 +284,8 @@ button:hover{
 }
 #equal{
     background-color: #1F51FF;
-    color: white;
+    color: #fff;
+    
 }
 #equal:hover{
     background-color: rgb(37, 35, 59);
@@ -619,7 +310,7 @@ color:#1F51FF;
 }
 
 
-.icon{
+.icon,img{
 justify-content: center;
 align-items: center;
 margin-top: -10px;
@@ -752,3 +443,10 @@ height: 55px;
 border-radius: 10px;
 }
 
+
+.calc{
+font-size:100px;
+text-align:center;
+margin-left:127px;
+margin-top: 200px;
+}
