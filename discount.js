@@ -1,19 +1,24 @@
-const calculate = document.querySelector('.calculate');
+const bill_amount = document.getElementById('bill_amount');
+const select_percentage = document.getElementById('select_percentage');
+const discount_amount = document.getElementById('discount_amount');
+const final_amount = document.getElementById('final_amount');
 
-calculate.addEventListener('click', (e)=> {
-    e.preventDefault();
+const btn_1 = document.getElementById('btn_1').addEventListener("click", (e)=>{
+    if((bill_amount.value !== "") && (select_percentage.value !== "-percentage-")){
+        let discount = bill_amount.value * (select_percentage.value / 100);
+        discount_amount.value = discount.toFixed(2);
+    }
+    
+    if((bill_amount.value !== "") && (select_percentage.value = "-percentage-") && (discount_amount.value !== "")){
+        let final = bill_amount.value - discount_amount.value;
+        final_amount.value = final.toFixed(2);
+    }
+})
 
-    const billAmt = document.getElementById('amount').value;
 
-    const percentage = document.getElementById('discount-percentage').value;
-
-    const discountAmt = document.getElementById('discount-amount');
-    const FinalPay = document.getElementById('pay');
-
-
-    discountAmt.value = billAmt * percentage / 100;
-    FinalPay.value = billAmt - discountAmt.value;
-});
-
-function play() {var audio = document.getElementById("audio"); audio.play();
-		}
+const btn_2 = document.getElementById('btn_2').addEventListener("click", (e)=>{
+    bill_amount.value = "";
+    select_percentage.value = "-percentage-";
+    discount_amount.value = "";
+    final_amount.value = "";
+})

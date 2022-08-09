@@ -50,9 +50,10 @@ background: var(--bg-color);
   background: var(--load-screen);
   }
   
+  
   .name{
   font-size: 39px;
-  color: #1F51FF;
+  color: var(--heading-color);
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   margin-left:10px;
@@ -62,7 +63,7 @@ background: var(--bg-color);
 footer{
 font-family: 'Poppins', sans-serif;
 font-size: 25px;
-margin: 55px;
+margin:  55px;
 margin-top:260px;
 color: var(--text-color);
 }
@@ -133,7 +134,7 @@ color: var(--text-color);
     color: var(--text-color);
 }
 
-.calculate {
+.cal-btn{
     padding:2px;
     background: #1F51FF;
     text-transform: capitalize;
@@ -145,7 +146,7 @@ color: var(--text-color);
     color: var(--text-color);
 }
 
-.reset {
+.reset-btn {
     padding: ;
     background: #1F51FF;
     text-transform: capitalize;
@@ -159,7 +160,7 @@ color: var(--text-color);
     color: var(--text-color);
 }
 
-#amount,#discount-amount,#pay{
+#bill_amount,#select_percentage,#final_amount{
     color: var(--text-color);
     width: 270px;
     height: 55px;
@@ -368,7 +369,7 @@ background-color:#1F51FF;
     border-radius: 30px;
     margin: 25px;
     margin-left: 35px;
-    padding: 1px;
+    padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.1);
@@ -387,10 +388,12 @@ label {
 }
 
 
-#discount-percentage {
+
+
+#select_percentage {
     margin:  1em 0;
     height: 50px;
-    width:  100%;
+    width:  90%;
     padding:0.5em 0.75em ;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.1);
@@ -398,10 +401,10 @@ label {
     color: #1F51FF;
 }
 
-.calculate,.reset,#dark3-mode{
+.cal-btn,.reset-btn,#dark3-mode{
     margin: 20px 5px;
 }
-#dark3-mode,.calculate,.reset{
+#dark3-mode,.cal-btn,.reset-btn{
     width: 80px;
     height:55px;
     
@@ -409,7 +412,7 @@ label {
 
 
 
-.calculate:hover {
+.cal-btn:hover {
     opacity: 0.7;
 }
 
@@ -438,17 +441,31 @@ border-radius: 10px;
 
 
 .calc{
-font-size:100px;
 text-align:center;
 margin-left:127px;
 margin-top: 200px;
 }
 
+input[type="text3"]{
+    width: 270px;
+    height: 60px;
+    padding-left: 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 3px 3px;
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+
+
+
 }
 
 
 @media (prefers-color-scheme: light){
-
 body{
 background: linear-gradient(to right,#282C2F,#090909);
 }
@@ -565,7 +582,7 @@ color: #ffffff;
     color: #ffffff;
 }
 
-.calculate {
+.cal-btn{
     padding:2px;
     background: #1F51FF;
     text-transform: capitalize;
@@ -577,7 +594,7 @@ color: #ffffff;
     color: #ffffff;
 }
 
-.reset {
+.reset-btn{
     padding: ;
     background: #1F51FF;
     text-transform: capitalize;
@@ -591,7 +608,7 @@ color: #ffffff;
     color: #ffffff;
 }
 
-#amount,#discount-amount,#pay{
+#bill_amount,#select_percentage,#final_amount{
     color: #ffffff;
     width: 270px;
     height: 55px;
@@ -819,10 +836,10 @@ label {
 }
 
 
-#discount-percentage {
+#select_percentage {
     margin:  1em 0;
     height: 50px;
-    width:  100%;
+    width:  90%;
     padding:0.5em 0.75em ;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.1);
@@ -830,10 +847,10 @@ label {
     color: #1F51FF;
 }
 
-.calculate,.reset,#dark3-mode{
+.cal-btn,.reset-btn,#dark3-mode{
     margin: 20px 5px;
 }
-#dark3-mode,.calculate,.reset{
+#dark3-mode,.cal-btn,.reset-btn{
     width: 80px;
     height:55px;
     
@@ -841,7 +858,7 @@ label {
 
 
 
-.calculate:hover {
+.cal-btn:hover {
     opacity: 0.7;
 }
 
@@ -875,3 +892,19 @@ margin-left:127px;
 margin-top: 200px;
 }
 
+
+input[type="text3"]{
+    width: 270px;
+    height: 60px;
+    padding-left: 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 3px 3px;
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+
+}

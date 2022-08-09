@@ -63,17 +63,19 @@ dark">
         </div>
        
        
-      
-       <i id="check" onclick="changeStatus()" class="fas fa-adjust"></i>
+      <i id="check" onclick="changeStatus()" class="fas fa-adjust"></i>
+       
+    
        
        
-       <a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img class="icon" src="Images/GitHub-Mark.png" height="50px" width="50px"></a>
-       
+
+  
+     
     </div>
     
     <div class="page two">
     <ul class="navbar2">
-   <h1><a onClick="slide('prev')">&nbsp;<</a>&nbsp;CurrencyConverter&nbsp;
+   <h1><a onClick="slide('prev')">&nbsp;<</a>&nbsp;CurrencyConverter&nbsp;<a onclick="slide('next')">></a>
     </h1>
     </ul>
      <div class="container3"> 
@@ -234,12 +236,12 @@ dark">
      
      <!-- reset button -->
      <button class="btn btn-primary m-2"
-     onclick="clearVal();play()">
+      onclick="clearVal();play()">
      Reset
      </button>
      
      </div>
-     
+    
      </div>
      
      <div id="finalAmount" class="text-center">
@@ -256,15 +258,57 @@ dark">
      </div>
      </div>
      
-    <a class="icon" href="https://github.com/SPIDROID381/Calculator.github.io"><img class="icon" src="Images/GitHub-Mark.png" height="50px" width="50px"></a>
     
     
      </div>
+     
+     <div class="page three">
+     <ul class="navbar3">
+     <h1><a onClick="slide('prev')">&nbsp;<</a>&nbsp;DiscountCalculator&nbsp;
+     </h1>
+     </ul>
+     <div class="container4">
+     <div class="input-item">
+    <label for="enter Bill Amount" class="text-1">Enter Bill Amount: </label>
+    <input type="text3" class="bill-amount" id="bill_amount" autocomplete="off" required=""><br>
+    </div>
+    
+    <label for="Select Discount (%)" class="text-2">Select Discount (%) </label>
+    <select class="select-dis" id="select_percentage" required="">
+    <option value="-percentage-">-percentage-</option>
+    <option value="10">10%</option>
+    <option value="25">25%</option>
+    <option value="40">40%</option>
+    <option value="80">80%</option>
+    <option value="100">100%</option>
+    </select>
+ 
+    
+    
+   <div class="input-item">
+    <label for="Discount Amount" class="text-3">Discount Amount: </label>
+    <input type="text3" class="dis-amount" id="discount_amount" disabled="">
+    </div>
+    
+    <div class="input-item">
+    <label for="Final Pay" class="text-4">Final Pay: </label>
+    <input type="text3"  class="final-amount" id="final_amount" disabled="">
+    </div>
+    
+    <div class="text-center">
+    <button class="cal-btn" id="btn_1">Calculate</button>
+    <button class="reset-btn" id="btn_2">Reset</button>
+    </div>
+    
+    </div>
+     
+ </div>    
+  </div>   
     </div>
  </div>
-</div>
 <script src="script.js"></script>
 <script src="converter.js"></script>
+<script src="discount.js"></script>
 </body> 
 </html>
  
