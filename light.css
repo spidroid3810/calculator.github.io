@@ -109,7 +109,7 @@ font-weight: bold;
 }
 
 
-input[type="text2"]{
+input[type="number"]{
     width: 270px;
     height: 55px;
     border: none;
@@ -447,19 +447,7 @@ margin-left:127px;
 margin-top: 200px;
 }
 
-input[type="text3"]{
-    width: 270px;
-    height: 60px;
-    padding-left: 25px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    margin: 3px 3px;
-    background: rgba(255, 255, 255, 0.1);
-    
-}
+
 
 
 }
@@ -556,7 +544,7 @@ font-weight: bold;
 }
 
 
-input[type="text2"]{
+input[type=number]{
     width: 270px;
     height: 55px;
     border: none;
@@ -893,19 +881,8 @@ margin-top: 200px;
 }
 
 
-input[type="text3"]{
-    width: 270px;
-    height: 60px;
-    padding-left: 25px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    margin: 3px 3px;
-    background: rgba(255, 255, 255, 0.1);
-    
-}
+
+
+
 
 }
-
