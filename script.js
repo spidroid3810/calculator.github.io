@@ -96,6 +96,6 @@ const pages = document.querySelectorAll(".page");
     link.href = 'dark.css';
     } else{
     localStorage.setItem('darkMode', "true");       //same code but adapted for dark theme
-    link.href = '';
+    link.href = 'light.css';
     }
     }
