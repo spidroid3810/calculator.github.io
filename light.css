@@ -370,7 +370,7 @@ background-color:#1F51FF;
     border-radius: 30px;
     margin: 25px;
     margin-left: 25px;
-    padding: 10px;
+    padding: 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.1);
@@ -885,4 +885,4 @@ margin-top: 200px;
 
 
 
-}
+}v

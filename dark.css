@@ -5,19 +5,20 @@
   font-family: 'Poppins', sans-serif;
 }
 
- 
 
-
- :root{
+:root {
   --bg-color: linear-gradient(to right, #38ef7d, #11998e); 
   --text-color: #000000;
   --nav-bar: #fff;
+  --heading-color: #1F51FF;
   --load-screen: #fff;
   --icon-color: #343434;
- }
+}
 
 
 @media (prefers-color-scheme: dark){
+
+
 body{
 background: var(--bg-color);
 }
@@ -449,11 +450,10 @@ margin-top: 200px;
 
 
 
-
 }
 
-
 @media (prefers-color-scheme: light){
+
 body{
 background: linear-gradient(to right,#282C2F,#090909);
 }
@@ -544,7 +544,7 @@ font-weight: bold;
 }
 
 
-input[type="number"]{
+input[type=number]{
     width: 270px;
     height: 55px;
     border: none;
@@ -879,6 +879,7 @@ text-align:center;
 margin-left:127px;
 margin-top: 200px;
 }
+
 
 
 
