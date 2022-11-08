@@ -9,7 +9,7 @@
       el.style.position = "fixed";
 
       el.className = "Screensaver";
-      el.innerHTML = `<div></div><div><div>${(currentScript &&
+      el.innerHTML = `<div><div>${(currentScript &&
         currentScript.getAttribute("message")) ||
        "😴" + window.location.hostname}</div></div>`;
 
