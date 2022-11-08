@@ -9,9 +9,9 @@
       el.style.position = "fixed";
 
       el.className = "Screensaver";
-      el.innerHTML = `<div><div>${(currentScript &&
+      el.innerHTML = `<div></div><div><div>${(currentScript &&
         currentScript.getAttribute("message")) ||
-        window.location.hostname}<div class="fas fa-calculator" style="font-size:50px;color: rgb(10, 251, 130);"></div></div></div>`;
+       "😴" + window.location.hostname}</div></div>`;
 
       const width = el.offsetWidth;
       const height = el.offsetHeight;
@@ -28,24 +28,30 @@
 #${id} div {
   width: ${width}px;
   height: ${height}px;
-  line-height: 1;
+  text-align: center;
+  position:fixed;
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #${id} > div {
   animation: x${id} 13s linear infinite alternate;
 }
 #${id} > div > div {
-  animation: y${id} 7s linear infinite alternate;
+  animation: y${id} 7s  linear infinite alternate;
 }
 @keyframes x${id} {
-  100% {
-    transform: translateX(calc(100vw - ${width}px));
-  }
+  
 }
 
 @keyframes y${id} {
-  100% {
-    transform: translateY(calc(100vh - ${height}px));
-  }
+  
+
 }
 `;
       let timeoutId = null;
