@@ -9,9 +9,9 @@
       el.style.position = "fixed";
 
       el.className = "Screensaver";
-      el.innerHTML = `<div></div><div><div>${(currentScript &&
+      el.innerHTML = `<div><div>${(currentScript &&
         currentScript.getAttribute("message")) ||
-       "😴" + window.location.hostname}</div></div>`;
+       "😴<br>Calculator is Sleeping"}</div></div>`;
 
       const width = el.offsetWidth;
       const height = el.offsetHeight;
@@ -34,10 +34,12 @@
   margin-right: auto;
   width: 100%;
   height: 100%;
-  font-size: 30px;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 }
 #${id} > div {
   animation: x${id} 13s linear infinite alternate;
@@ -47,7 +49,8 @@
 }
 @keyframes x${id} {
   
-}
+  
+  }
 
 @keyframes y${id} {
   
