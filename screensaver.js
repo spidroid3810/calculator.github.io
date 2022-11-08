@@ -34,7 +34,7 @@
   margin-right: auto;
   width: 100%;
   height: 100%;
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
