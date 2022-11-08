@@ -7,15 +7,14 @@
 }
 
 body {
-  margin-top:100px;
+  margin-top:80px;
   font-family: "Rubik", sans-serif;
   display: grid;
   place-items: center;
   background-color: var(--color-bg);
   color: #fff;
-  overflow: hidden;
+  overflow: scroll;
   user-select: none;
-  
 }
 
 
@@ -105,16 +104,16 @@ color: darkblue;
 
 
 nav{
-background:#343434;
-height: 80px;
+background:rgba(255, 255, 255, 0.2);
+height: 60px;
 width: 100%;
 position: fixed;
 top: 0;
 display: flex;
 align-items: center;
- justify-content: space-between;
- padding: 0 50px 0 100px;
+ justify-content: center;
  flex-wrap: wrap;
+z-index:2;
 }
 
 nav .logo{
@@ -123,3 +122,32 @@ nav .logo{
   font-weight: 600;
 }
 
+@media (min-width: 500px) {
+
+.display{
+height: 12rem;
+
+}
+
+.calc{
+  width: 35rem;
+}
+
+
+
+.operators{
+  width: 140px;
+}
+
+.buttons > div {
+  font-size: 1.8em;
+}
+
+.screen{
+font-size: 4.5em;
+
+}
+
+
+
+ }
