@@ -15,7 +15,22 @@
 <body>
 <nav>
 <div class="logo">
-          <b>CALCULATOR</b>  
+          <b>CALCULATOR</b><div class="setting"><i  class="fas fa-gear">
+          <span style="line-height: 30px;"  class="tooltiptext">
+          Sound Off
+          <label class="switch">
+          <input onclick="enableMute();onlyOne(this)" name="check"  type="checkbox">
+          <span class="slider round"></span>
+          </label>
+          <br>
+          <br>
+          Sound On
+          <label  class="switch">
+          <input onclick="disableMute();onlyOne(this)" name="check" type="checkbox">
+          <span class="slider round"></span>
+          </label>
+          </span>
+          </div></i>  
            </div>
           
 </nav>
@@ -59,8 +74,8 @@
 
 
 
-    <audio>
-        <source src="Audio/Glass click.mp3" type="audio/mpeg">
+    <audio id="myAudio" >
+        <source  src="Glass click.mp3" type="audio/mpeg">
     </audio>
 
     <script src="script.js"></script>

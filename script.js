@@ -57,4 +57,23 @@ document.getElementById("myDiv").style.color = "rgb(10, 251, 130)";
 }
 
 
+var x = document.getElementById("myAudio");
+
+function enableMute() { 
+ x.muted = true;
+} 
+
+function disableMute() { 
+ x.muted = false;
+}
+
+
+
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+
 
