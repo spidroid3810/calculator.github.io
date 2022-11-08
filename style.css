@@ -1,0 +1,125 @@
+
+
+
+:root {
+  --color-bg: rgb(47, 0, 90);
+ 
+}
+
+body {
+  margin-top:100px;
+  font-family: "Rubik", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-bg);
+  color: #fff;
+  overflow: hidden;
+  user-select: none;
+  
+}
+
+
+
+.calc{
+  position: relative;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.display{
+  position: relative;
+  height: 10rem;
+}
+
+.screen {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 94%;
+  font-size: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: scroll;
+  text-align: right;
+}
+
+.operators{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: -1;
+}
+
+.buttons{
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+ 
+}
+
+.buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 1.2em;
+}
+
+
+.buttons > div:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+sup{
+  font-size: 0.8em;
+  transform: translateY(-6px);
+}
+
+.buttons .del:hover{
+background: rgba(243, 0, 75, 1);
+border-top-right-radius:1rem;
+color: darkred;
+}
+
+.buttons .sign:hover{
+background:rgb(10, 251, 130);
+color: green; 
+}
+
+
+.buttons .num:hover{
+background: #3AD2FF;
+color: darkblue;
+}
+
+
+nav{
+background:#343434;
+height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
+display: flex;
+align-items: center;
+ justify-content: space-between;
+ padding: 0 50px 0 100px;
+ flex-wrap: wrap;
+}
+
+nav .logo{
+  color:rgb(10, 251, 130);
+  font-size: 35px;
+  font-weight: 600;
+}
+

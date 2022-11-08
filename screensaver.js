@@ -11,7 +11,7 @@
       el.className = "Screensaver";
       el.innerHTML = `<div><div>${(currentScript &&
         currentScript.getAttribute("message")) ||
-       "😴<br>Calculator is Sleeping"}</div></div>`;
+       "😴<br>I am Sleeping<br>Click to wake me"}</div></div>`;
 
       const width = el.offsetWidth;
       const height = el.offsetHeight;
@@ -23,7 +23,7 @@
   left: 0; top: 0; right: 0; bottom: 0;
   z-index: 100000;
   color: rgb(10, 251, 130);
-  background-color: #000;
+  background-color:#282828;
 }
 #${id} div {
   width: ${width}px;
@@ -35,6 +35,7 @@
   width: 100%;
   height: 100%;
   font-size: 50px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,8 +49,14 @@
   animation: y${id} 7s  linear infinite alternate;
 }
 @keyframes x${id} {
-  
-  
+50%{
+color:rgba(243, 0, 75, 1);
+}
+100%{
+color: #3AD2FF;
+}
+
+
   }
 
 @keyframes y${id} {
