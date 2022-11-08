@@ -11,7 +11,7 @@
       el.className = "Screensaver";
       el.innerHTML = `<div><div>${(currentScript &&
         currentScript.getAttribute("message")) ||
-        window.location.hostname}</div></div>`;
+        window.location.hostname}<div class="fas fa-calculator" style="font-size:50px;color: rgb(10, 251, 130);"></div></div></div>`;
 
       const width = el.offsetWidth;
       const height = el.offsetHeight;
@@ -22,8 +22,8 @@
 #${id} {
   left: 0; top: 0; right: 0; bottom: 0;
   z-index: 100000;
-  color: #eee;
-  background-color: rgb(10, 251, 130);
+  color: rgb(10, 251, 130);
+  background-color: #000;
 }
 #${id} div {
   width: ${width}px;

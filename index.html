@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator | The Blood Coders</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
 
@@ -23,14 +23,14 @@
 
             <div class="buttons">
 
-                <div onclick="color3()"  class="sign1">AC</div>
-                <div onclick="color3()" class="sign2">(</div>
-                <div onclick="color3()" class="sign3">)</div>
+                <div onclick="color3()"  class="sign">AC</div>
+                <div onclick="color3()" class="sign">(</div>
+                <div onclick="color3()" class="sign">)</div>
                 <div onclick="color1()" class="del"><i class="ri-delete-back-2-fill"></i></div>
-                <div onclick="color3()" class="sign4">&times;<sup>2</sup></div>
-                <div onclick="color3()" class="sign5" style="font-size: 0.9em;">&plus;/&minus;</div>
-                <div onclick="color3()" class="sign6">%</div>
-                <div onclick="color3()" class="sign7">/</div>
+                <div onclick="color3()" class="sign">&times;<sup>2</sup></div>
+                <div onclick="color3()" class="sign" style="font-size: 0.9em;">&plus;/&minus;</div>
+                <div onclick="color3()" class="sign">%</div>
+                <div onclick="color3()" class="sign">/</div>
                 <div onclick="color2()" class="num">7</div>
                 <div onclick="color2()" class="num">8</div>
                 <div onclick="color2()" class="num">9</div>
@@ -38,15 +38,15 @@
                 <div onclick="color2()" class="num">4</div>
                 <div onclick="color2()" class="num">5</div>
                 <div onclick="color2()" class="num">6</div>
-                <div onclick="color3()" class="sign8">-</div>
+                <div onclick="color3()" class="sign">-</div>
                 <div onclick="color2()" class="num">1</div>
                 <div onclick="color2()" class="num">2</div>
                 <div onclick="color2()" class="num">3</div>
-                <div onclick="color3()" class="sign9">&plus;</div>
+                <div onclick="color3()" class="sign">&plus;</div>
                 <div onclick="color2()" class="num">00</div>
                 <div onclick="color2()" class="num">0</div>
                 <div onclick="color2()" class="num">.</div>
-                <div onclick="color3()" class="sign10">=</div>
+                <div onclick="color3()" class="sign">=</div>
                 <div class="operators"></div>
 
             </div>
@@ -59,7 +59,7 @@
     </audio>
 
     <script src="script.js"></script>
-    <script src="screensaver.js"></script>
+    <script src="screensaver.js" timeout="3000"></script>
 </body>
 
 </html>
@@ -166,7 +166,7 @@ border-top-right-radius:1rem;
 color: darkred;
 }
 
-.buttons .sign1:hover{
+.buttons .sign:hover{
 background:rgb(10, 251, 130);
 color: green; 
 }
