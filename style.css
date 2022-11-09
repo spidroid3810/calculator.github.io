@@ -332,7 +332,7 @@ input:checked + .slider:before {
 @media (min-width: 500px) {
 .setting .tooltiptext{
 position: fixed;
- top: 1%;
+ top: 5%;
  right: 1%;
 
 
