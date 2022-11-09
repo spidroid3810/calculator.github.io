@@ -162,12 +162,13 @@ transition:.5s ease-in-out;
 }
 
 
-
 .switch {
   position: relative;
   display: inline-block;
-  width: 55px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
+  vertical-align:middle;
+  margin:-6px 4px 0 0;
 }
 
 .switch input { 
@@ -191,10 +192,10 @@ transition:.5s ease-in-out;
 .slider:before {
   position: absolute;
   content: "";
-  height: 23px;
-  width: 23px;
-  left: 3px;
-  bottom: 4px;
+  height: 20px;
+  width: 20px;
+  left: 2.5px;
+  bottom: 2.5px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -236,7 +237,7 @@ input:checked + .slider:before {
  color: #fff;
  text-align: center;
  border-radius: 6px;
- padding: 10px 0;
+ padding: 10px;
  font-size:20px;
  font-family: "Rubik", sans-serif; 
  /* Position the tooltip */
@@ -297,7 +298,7 @@ input[type="checkbox"]{
   nav ul{
     position: fixed;
     top: 70px;
-    right: -100%;
+    right: 100%;
     background: var(--color-bg);
     height: 100vh;
     width: 100%;
@@ -315,13 +316,13 @@ input[type="checkbox"]{
   nav ul li a{
     color:#eee;
     width: 100%;
-    margin-right: -100%;
+    margin-right: 100%;
     display: block;
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   #click:checked ~ ul li a{
-    margin-left: 0px;
+    margin-right: 0;
   }
   nav ul li a.active,
   nav ul li a:hover {
