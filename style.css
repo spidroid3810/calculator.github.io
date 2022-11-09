@@ -1,6 +1,5 @@
 
 
-
 :root {
   --color-bg: rgb(47, 0, 90);
  
@@ -117,21 +116,32 @@ z-index:2;
 }
 
 nav .logo{
-  color:rgb(10, 251, 130);
+  color: #eee;
   font-size: 35px;
   font-weight: 600;
+  font-family:"Teko",sans-serif;
 }
 
-.fas{
+svg{
 position: fixed;
-top:2.5%;
+display: flex;
+top:0;
 right: 0;
-padding-right:10px;
+justify-content: space-between;
+padding: 15px;
+color:rgb(10, 251, 130);
 }
 
-.fas:hover{
-color: #ccc;
+.rotate{
+transition:.5s ease-in-out;
 }
+
+.rotate:hover{
+  rotate: 3.1416rad;
+  color:rgb(10, 251, 130);
+}
+
+
 
 .switch {
   position: relative;
@@ -210,14 +220,23 @@ input:checked + .slider:before {
  font-size:20px;
  font-family: "Rubik", sans-serif; 
  /* Position the tooltip */
- position: absolute;
+ position: fixed;
  z-index: 1;
- top: 160%;
- left: -100%;
- margin-left: -100px;
+ top: 11%;
+ right: 1%;
 }
 
 .setting:hover .tooltiptext {
  display: block;
 }
 
+@media (min-width: 500px) {
+.setting .tooltiptext{
+position: fixed;
+ top: 29%;
+ right: 1%;
+
+
+}
+
+}
