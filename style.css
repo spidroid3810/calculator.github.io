@@ -219,20 +219,12 @@ svg{
 position: fixed;
 display: flex;
 top:0;
-right: 0;
+left: 0;
 padding: 15px;
 color:rgb(10, 251, 130);
 }
 
-.fas{
-position: fixed;
-display: flex;
-top:0;
-left: 0;
-justify-content: space-between;
-padding: 17px;
-color:rgb(10, 251, 130);
-}
+
 
 
 .rotate{
