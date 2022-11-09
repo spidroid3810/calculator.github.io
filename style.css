@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 
 :root {
   --color-bg: rgb(47, 0, 90);
@@ -119,7 +123,13 @@ nav .logo{
   color: #eee;
   font-size: 35px;
   font-weight: 600;
-  font-family:"Teko",sans-serif;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
 }
 
 svg{
@@ -127,10 +137,20 @@ position: fixed;
 display: flex;
 top:0;
 right: 0;
-justify-content: space-between;
 padding: 15px;
 color:rgb(10, 251, 130);
 }
+
+.fas{
+position: fixed;
+display: flex;
+top:0;
+left: 0;
+justify-content: space-between;
+padding: 17px;
+color:rgb(10, 251, 130);
+}
+
 
 .rotate{
 transition:.5s ease-in-out;
@@ -173,7 +193,7 @@ transition:.5s ease-in-out;
   content: "";
   height: 23px;
   width: 23px;
-  left: 4px;
+  left: 3px;
   bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
@@ -221,7 +241,7 @@ input:checked + .slider:before {
  font-family: "Rubik", sans-serif; 
  /* Position the tooltip */
  position: fixed;
- z-index: 1;
+ z-index: -1;
  top: 11%;
  right: 1%;
 }
@@ -229,6 +249,91 @@ input:checked + .slider:before {
 .setting:hover .tooltiptext {
  display: block;
 }
+
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color:rgb(10, 251, 130);
+  background: ;
+}
+nav .menu-btn i{
+  color: rgb(10, 251, 130);
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+
+  }
+  
+  } 
+  
+@media (max-width: 920px){
+  
+  
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    background: var(--color-bg);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    right: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    color:#eee;
+    width: 100%;
+    margin-right: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: rgb(10, 251, 130);
+  }
+  
+}
+
+
+
+
 
 @media (min-width: 500px) {
 .setting .tooltiptext{
