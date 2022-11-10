@@ -318,7 +318,7 @@ input:checked + .slider:before {
  /* Position the tooltip */
  position: fixed;
  z-index: -1;
- top: 11%;
+ margin-top:55px;
  left: 1%;
 }
 
