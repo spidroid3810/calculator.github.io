@@ -10,7 +10,7 @@
 }
 
 body {
-  margin-top:80px;
+  margin-top:90px;
   font-family: "Rubik", sans-serif;
   display: grid;
   place-items: center;
@@ -66,7 +66,7 @@ body {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   overflow: hidden;
-  cursor: pointer;
+  cursor: none;
  
 }
 
@@ -269,7 +269,7 @@ transition:.5s ease-in-out;
   content: "";
   height: 20px;
   width: 20px;
-  left: 2.5px;
+  left: 2px;
   bottom: 2.5px;
   background-color: white;
   -webkit-transition: .4s;
@@ -332,10 +332,11 @@ input:checked + .slider:before {
 @media (min-width: 500px) {
 .setting .tooltiptext{
 position: fixed;
- top: 4%;
- right: 1%;
-
+margin-top: 55px;
 
 }
+
+
+
 
 }
