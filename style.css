@@ -71,6 +71,8 @@ body {
 .operators2{
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -106,6 +108,7 @@ body {
 .buttons3{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  
 }
 
 
@@ -405,10 +408,9 @@ background-color:rgb(10, 251, 130);
 color: green;
 }
 
-.btn{
+.btn,.btn3{
 height:5rem;
   background-color:transparent;
-  border-radius:0.2rem;
   overflow: hidden;
   cursor: none;
   border: none;
@@ -418,16 +420,19 @@ height:5rem;
   font-weight:500;
   color: #fff;
   padding: 10px;
+  
 }
 
 #btn1:hover{
 background: #3AD2FF;
 color: darkblue;
+border-top-left-radius: 1rem;
 }
 
-.btn:hover{
+.btn3:hover{
 background: rgba(243, 0, 75, 1);
 color: darkred;
+  border-top-right-radius: 1rem;
 }
 #btn2:hover{
 background:rgb(10, 251, 130);
