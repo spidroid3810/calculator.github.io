@@ -47,6 +47,17 @@ body {
   text-align: right;
 }
 
+.searchBox {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 94%;
+  font-size: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-align: right;
+}
+
 .operators{
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
@@ -54,6 +65,16 @@ body {
   top: 0;
   width: 80px;
   height: 100%;
+  z-index: -1;
+}
+
+.operators2{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
   z-index: -1;
 }
 
@@ -69,6 +90,24 @@ body {
   cursor: none;
  
 }
+
+.buttons2{
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  cursor: none;
+}
+
+.buttons3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 
 .buttons > div {
   display: flex;
@@ -105,6 +144,12 @@ background: #3AD2FF;
 color: darkblue;
 }
 
+input[type="number"]{
+background-color: transparent;
+border: none;
+outline: none;
+color: #3AD2FF;
+}
 
 nav{
 background:#282828;
@@ -121,7 +166,7 @@ z-index:2;
 
 nav .logo{
   color: #eee;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -328,7 +373,71 @@ input:checked + .slider:before {
  display: block;
 }
 
+.input-group-text{
+font-size: 1.2em;
+ text-align: left;
+ margin: 2px;
+ padding: 10px;
+ font-weight: bold;
+}
 
+#sel1,#sel2{
+height: 4rem;
+  background-color: transparent;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  cursor: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+
+#sel1:hover{
+background-color:rgb(10, 251, 130);
+color: green;
+}
+
+#sel2:hover{
+background-color:rgb(10, 251, 130);
+color: green;
+}
+
+.btn{
+height:5rem;
+  background-color:transparent;
+  border-radius:0.2rem;
+  overflow: hidden;
+  cursor: none;
+  border: none;
+  outline: none;
+  margin-bottom: -11px;
+  font-size:1rem;
+  font-weight:500;
+  color: #fff;
+  padding: 10px;
+}
+
+#btn1:hover{
+background: #3AD2FF;
+color: darkblue;
+}
+
+.btn:hover{
+background: rgba(243, 0, 75, 1);
+color: darkred;
+}
+#btn2:hover{
+background:rgb(10, 251, 130);
+color: green;
+}
+
+.finalValue{
+color:rgb(10, 251, 130);
+
+}
 
 
 @media (min-width: 500px) {
