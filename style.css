@@ -227,14 +227,16 @@ color:rgb(10, 251, 130);
 
 
 
-.rotate{
-transition:.5s ease-in-out;
+.rotate:hover{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color:rgb(10, 251, 130);
+  transition:.5s ease-in-out;
 }
 
-.rotate:hover{
-  rotate: 3.1416rad;
-  color:rgb(10, 251, 130);
-}
 
 
 .switch {
