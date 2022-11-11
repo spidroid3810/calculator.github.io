@@ -94,11 +94,9 @@ body {
 }
 
 .buttons2{
-  height: 25rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   overflow: hidden;
@@ -108,7 +106,11 @@ body {
 .buttons3{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  cursor: none;
 }
 
 
@@ -409,7 +411,7 @@ color: green;
 }
 
 .btn,.btn3{
-height:5rem;
+height:5.7rem;
   background-color:transparent;
   overflow: hidden;
   cursor: none;
@@ -426,13 +428,11 @@ height:5rem;
 #btn1:hover{
 background: #3AD2FF;
 color: darkblue;
-border-top-left-radius: 1rem;
 }
 
 .btn3:hover{
 background: rgba(243, 0, 75, 1);
 color: darkred;
-  border-top-right-radius: 1rem;
 }
 #btn2:hover{
 background:rgb(10, 251, 130);
