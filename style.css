@@ -385,7 +385,7 @@ input:checked + .slider:before {
 
 .setting .tooltiptext {
  display: none;
- width: 180px;
+ width: 210px;
  background-color: #282828;
  color: #fff;
  text-align: center;

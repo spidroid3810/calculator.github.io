@@ -33,21 +33,6 @@ document.getElementById("bill_amount").style.color = "rgba(243, 0, 75, 1)";
 }
 
 
-function play() {var audio = document.getElementById("myAudio"); audio.play();
-
-
-
-}
-var x = document.getElementById("myAudio");
-
-function enableMute() { 
- x.muted = true;
-}
-
-
-function disableMute() { 
- x.muted = false;
-}
 
 function onlyOne(checkbox) {
     var checkboxes = document.getElementsByName('check')

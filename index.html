@@ -20,16 +20,9 @@
           <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
           </svg>          
           <span class="tooltiptext">
-          Sound Off
+          Button Sound
           <label  class="switch">
-          <input onclick="enableMute();onlyOne(this)" name="check"  type="checkbox">
-          <span class="slider round"></span>
-          </label>
-          <br>
-          <br>
-          Sound On
-          <label  class="switch">
-          <input onclick="disableMute();onlyOne(this)" name="check" type="checkbox" checked>
+          <input id="MyElement"  type="checkbox" >
           <span class="slider round"></span>
           </label>
           </span>
@@ -54,30 +47,30 @@
 
             <div class="buttons">
 
-                <div onclick="color3()"  class="sign">AC</div>
-                <div onclick="color3()" class="sign">(</div>
-                <div onclick="color3()" class="sign">)</div>
-                <div onclick="color1()" class="del"><i class="ri-delete-back-2-fill"></i></div>
-                <div onclick="color3()" class="sign">&times;<sup>2</sup></div>
-                <div onclick="color3()" class="sign" style="font-size: 0.9em;">&plus;/&minus;</div>
-                <div onclick="color3()" class="sign">%</div>
-                <div onclick="color3()" class="sign">/</div>
-                <div onclick="color2()" class="num">7</div>
-                <div onclick="color2()" class="num">8</div>
-                <div onclick="color2()" class="num">9</div>
-                <div onclick="color3()" class="sign">&times;</div>
-                <div onclick="color2()" class="num">4</div>
-                <div onclick="color2()" class="num">5</div>
-                <div onclick="color2()" class="num">6</div>
-                <div onclick="color3()" class="sign">-</div>
-                <div onclick="color2()" class="num">1</div>
-                <div onclick="color2()" class="num">2</div>
-                <div onclick="color2()" class="num">3</div>
-                <div onclick="color3()" class="sign">&plus;</div>
-                <div onclick="color2()" class="num">00</div>
-                <div onclick="color2()" class="num">0</div>
-                <div onclick="color2()" class="num">.</div>
-                <div onclick="color3()" class="sign">=</div>
+                <div data-sound="webping-1" onclick="color3()"  class="sign">AC</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">(</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">)</div>
+                <div data-sound="webping-1" onclick="color1()" class="del"><i class="ri-delete-back-2-fill"></i></div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">&times;<sup>2</sup></div>
+                <div data-sound="webping-1" onclick="color3()" class="sign" style="font-size: 0.9em;">&plus;/&minus;</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">%</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">/</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">7</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">8</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">9</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">&times;</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">4</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">5</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">6</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">-</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">1</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">2</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">3</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">&plus;</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">00</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">0</div>
+                <div data-sound="webping-1" onclick="color2()" class="num">.</div>
+                <div data-sound="webping-1" onclick="color3()" class="sign">=</div>
                 <div class="operators"></div>
 
             </div>
@@ -85,9 +78,13 @@
         </div>
 
 
-    <audio id="myAudio" >
+    <audio id="webping-1" preload="auto">
         <source  src="Audio/Glass click.mp3" type="audio/mpeg">
     </audio>
+
+
+
+
 
 
 
@@ -98,3 +95,38 @@
 </body>
 
 </html>
+
+
+<script type="text/javascript">
+
+
+// Playing audio based on .active
+
+document.querySelectorAll("[data-sound]").forEach(function (element) {
+ // Play associated audio
+ element.addEventListener("mouseenter", function (event) {
+   // element = $("body");'
+   if ($("#MyElement").is(".active")) var soundKey = element.dataset.sound;
+   var audioElement = document.querySelector("#" + soundKey);
+
+   if (!audioElement) return;
+
+   audioElement.currentTime = 0;
+   audioElement.play();
+ });
+});
+
+// Saving classes to localstorage
+
+$("#MyElement").addClass(localStorage.getItem("ClassName"));
+
+$("#MyElement").on("click", function () {
+ if ($(this).hasClass("active")) {
+   $(this).removeClass("active").addClass("inactive");
+   localStorage.setItem("ClassName", "inactive");
+ } else {
+   $(this).removeClass("inactive").addClass("active");
+   localStorage.setItem("ClassName", "active");
+ }
+});
+</script>

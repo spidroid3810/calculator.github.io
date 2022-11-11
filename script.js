@@ -6,17 +6,13 @@ const buttons = document
 const screen = document
     .querySelector('.screen');
 
-const audio = document
-    .querySelector('audio');
+
 
 buttons
     .addEventListener('click', (e) => {
 
         let value = e.target.textContent;
         let screenVal = screen.textContent;
-
-        audio.play();
-
 
         switch (value) {
             case 'AC':
@@ -57,16 +53,6 @@ document.getElementById("myDiv").style.color = "rgb(10, 251, 130)";
 }
 
 
-var x = document.getElementById("myAudio");
-
-function enableMute() { 
- x.muted = true;
-} 
-
-function disableMute() { 
- x.muted = false;
-}
-
 
 
 function onlyOne(checkbox) {
@@ -75,5 +61,3 @@ function onlyOne(checkbox) {
         if (item !== checkbox) item.checked = false
     })
 }
-
-
