@@ -40,7 +40,7 @@
               </label>
               <ul>
               <li><a  href="index.html">Calculator</a></li>
-              <li><a  href="#">Exchange Rate</a></li>
+              <li><a  href="rate.html">Exchange Rate</a></li>
               <li><a href="#">Discount Calculator</a></li>
               </ul>
          
@@ -59,6 +59,7 @@
         </div>
         
         <label for="Select Discount (%)" class="input-group-text">Select Discount (%) </label>
+        <div>
         <select class="sel3" id="select_percentage" required="">
         <option value="-percentage-">Select-Percentage</option>
         <option value="10">10%</option>
@@ -67,7 +68,7 @@
         <option value="80">80%</option>
         <option value="100">100%</option>
         </select>
-        
+        </div>
         
         
         <div class="input-group-text">
@@ -81,8 +82,8 @@
         </div>
         <div class="buttons3">
         
-        <button class="cal-btn" id="btn_1">Calculate</button>
-        <button class="reset-btn" id="btn_2">Reset</button>
+        <button onclick="play()" class="cal-btn" id="btn_1">Calculate</button>
+        <button onclick="play()" class="reset-btn" id="btn_2">Reset</button>
         <button id="backSpace" class="btn3"
         onclick="play();back()">
         <i class="ri-delete-back-2-fill"></i>
