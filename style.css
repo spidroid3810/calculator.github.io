@@ -82,7 +82,7 @@ body {
 
 .operators3{
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   left: 0;
