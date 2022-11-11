@@ -80,9 +80,9 @@ body {
 }
 
 
-.operators3{
+.operators2{
   position: absolute;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.1);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   left: 0;
@@ -112,7 +112,7 @@ body {
   grid-template-columns: repeat(1, 1fr);
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border-top-left-radius: 1rem;
+ border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   overflow: hidden;
   cursor: none;
@@ -120,8 +120,6 @@ body {
 
 .buttons3{
   display: grid;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   grid-template-columns: repeat(3, 1fr);
     border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -131,9 +129,9 @@ body {
 
 .buttons4{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  grid-template-columns: repeat(1, 1fr);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   overflow: hidden;
