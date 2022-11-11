@@ -41,7 +41,7 @@
               <ul>
               <li><a  href="index.html">Calculator</a></li>
               <li><a  href="#">Exchange Rate</a></li>
-              <li><a href="#">Discount Calculator</a></li>
+              <li><a href="discount.html">Discount Calculator</a></li>
               </ul>
          
           
@@ -52,6 +52,9 @@
                  <input type="number" class="form-control searchBox" placeholder="0.00" id="amount" >
             </div>
  <div class="buttons2">
+   <div class="input-group-text">
+ <h3>Amount To Convert:</h3>
+ </div>
             <div class="input-group-text">From</div>
             <div class="classic">
             <select class="form-control from" id="sel1" onclick="play()">
@@ -171,8 +174,7 @@
             
             <!-- Display the converted amount -->
             <h3>Converted Amount:
-            <span class="finalValue">
-            </span>
+            <span class="finalValue"></span>
             </h3>
             </div>
             </div>
@@ -196,6 +198,8 @@
             onclick="play();backSpace()">
             <i class="ri-delete-back-2-fill"></i>
             </button>
+            
+            
             </div>
            
        
