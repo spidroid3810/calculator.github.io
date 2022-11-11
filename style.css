@@ -58,6 +58,17 @@ body {
   text-align: right;
 }
 
+#bill_amount{
+  position: absolute;
+  bottom: 0.5rem;
+  width: 94%;
+  font-size: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-align: right;
+}
+
 .operators{
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
@@ -79,6 +90,19 @@ body {
   height: 80px;
   z-index: -1;
 }
+
+.operators3{
+  position: absolute;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  z-index: -1;
+}
+
+
 
 .buttons{
   height: 25rem;
@@ -113,6 +137,15 @@ body {
   cursor: none;
 }
 
+.buttons4{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  cursor: none;
+}
 
 .buttons > div {
   display: flex;
@@ -171,7 +204,7 @@ z-index:2;
 
 nav .logo{
   color: #eee;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -212,7 +245,7 @@ input[type="checkbox"]{
 }
 @media (max-width: 1000px){
   nav{
-    padding: 0 40px 0 60px;
+    padding: 0 20px 0 60px;
 
   }
   
@@ -386,7 +419,7 @@ font-size: 1.2em;
  font-weight: bold;
 }
 
-#sel1,#sel2{
+#sel1,#sel2,.sel3{
 height: 4rem;
   background-color: transparent;
   border-top-left-radius: 1rem;
@@ -410,6 +443,11 @@ background-color:rgb(10, 251, 130);
 color: green;
 }
 
+.sel3:hover{
+background-color:rgb(10, 251, 130);
+color: green;
+}
+
 .btn,.btn3{
 height:5.7rem;
   background-color:transparent;
@@ -425,9 +463,33 @@ height:5.7rem;
   
 }
 
+.cal-btn,.reset-btn{
+height:5.7rem;
+  background-color:transparent;
+  overflow: hidden;
+  cursor: none;
+  border: none;
+  outline: none;
+  font-size:1rem;
+  font-weight:500;
+  color: #fff;
+  padding: 10px;
+  
+}
+
 #btn1:hover{
 background: #3AD2FF;
 color: darkblue;
+}
+
+.cal-btn:hover{
+background: #3AD2FF;
+color: darkblue;
+}
+
+.reset-btn:hover{
+background:rgb(10, 251, 130);
+color: green;
 }
 
 .btn3:hover{
@@ -444,6 +506,15 @@ color:rgb(10, 251, 130);
 
 }
 
+#final_amount,#discount_amount{
+color:rgb(10, 251, 130);
+font-size:20px;
+font-weight:700;
+}
+
+#bill_amount{
+color:#3AD2FF;
+}
 
 @media (min-width: 500px) {
 .setting .tooltiptext{

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav>
+<div class="logo">
+          <b>Discount&nbsp;Calculator</b></div><div class="setting"> <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+          <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+          <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+          </svg>          
+          <span class="tooltiptext">
+          Sound Off
+          <label  class="switch">
+          <input onclick="enableMute();onlyOne(this)" name="check"  type="checkbox">
+          <span class="slider round"></span>
+          </label>
+          <br>
+          <br>
+          Sound On
+          <label  class="switch">
+          <input onclick="disableMute();onlyOne(this)" name="check" type="checkbox" checked>
+          <span class="slider round"></span>
+          </label>
+          </span>
+          </div> 
+              <input type="checkbox" id="click">
+              <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+              </label>
+              <ul>
+              <li><a  href="index.html">Calculator</a></li>
+              <li><a  href="#">Exchange Rate</a></li>
+              <li><a href="#">Discount Calculator</a></li>
+              </ul>
+         
+          
+</nav>
+ 
+        <div class="calc">
+            <div class="display">
+            <input type="number" class="bill-amount" id="bill_amount" autocomplete="off" placeholder="0.00" required=""><br>
+            </div>
+
+ <div class="buttons4">
+
+       <div class="input-group-text">
+       <label for="enter Bill Amount">Enter Bill Amount: </label>
+        </div>
+        
+        <label for="Select Discount (%)" class="input-group-text">Select Discount (%) </label>
+        <select class="sel3" id="select_percentage" required="">
+        <option value="-percentage-">Select-Percentage</option>
+        <option value="10">10%</option>
+        <option value="25">25%</option>
+        <option value="40">40%</option>
+        <option value="80">80%</option>
+        <option value="100">100%</option>
+        </select>
+        
+        
+        
+        <div class="input-group-text">
+        <label for="Discount Amount" class="">Discount Amount: </label>
+        <input type="number" class="dis-amount" id="discount_amount" disabled="">
+        </div>
+        
+        <div class="input-group-text">
+        <label for="Final Pay" class="">Final Pay: </label>
+        <input type="number"  class="final-amount" id="final_amount" disabled="">
+        </div>
+        <div class="buttons3">
+        
+        <button class="cal-btn" id="btn_1">Calculate</button>
+        <button class="reset-btn" id="btn_2">Reset</button>
+        <button id="backSpace" class="btn3"
+        onclick="play();back()">
+        <i class="ri-delete-back-2-fill"></i>
+        </button>
+        </div>
+        
+         <div class="operator3"></div>
+         
+         </div>
+         </div>
+
+<audio id="myAudio" >
+    <source  src="Glass click.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+<script src="script.js"></script>
+<script src="discount.js"></script>
+<script src="screensaver.js" timeout="5000"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</body>
+
+</html>
