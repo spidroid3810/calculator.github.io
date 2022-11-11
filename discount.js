@@ -56,3 +56,9 @@ function onlyOne(checkbox) {
     })
 }
 
+function color4(){
+document.getElementById("bill_amount").style.color = "#3AD2FF";
+
+
+
+}

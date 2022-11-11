@@ -57,6 +57,8 @@ function clearVal() {
 	
 };
 
+
+
 function backSpace() {
 var bsp = document.getElementById("amount").value;
 document.getElementById("amount").value=bsp.substring(0,bsp.length -1);
@@ -91,4 +93,9 @@ function onlyOne(checkbox) {
     })
 }
 
+function color3(){
+document.getElementById("amount").style.color = "#3AD2FF";
 
+
+
+}
