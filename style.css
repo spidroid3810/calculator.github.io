@@ -170,7 +170,7 @@ color: green;
 
 .buttons .num:hover{
 background: #3AD2FF;
-color: darkblue;
+color: #4682B4;
 }
 
 input[type="number"]{
@@ -475,12 +475,12 @@ height:5rem;
 
 #btn1:hover{
 background: #3AD2FF;
-color: darkblue;
+color:  #4682B4;
 }
 
 .cal-btn:hover{
 background: #3AD2FF;
-color: darkblue;
+color:  #4682B4;
 }
 
 .reset-btn:hover{
