@@ -449,13 +449,12 @@ color: green;
 }
 
 .btn,.btn3{
-height:5.7rem;
+height:5rem;
   background-color:transparent;
   overflow: hidden;
   cursor: none;
   border: none;
   outline: none;
-  margin-bottom: -11px;
   font-size:1.2rem;
   font-weight:500;
   color: #fff;
