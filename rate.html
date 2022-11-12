@@ -42,15 +42,16 @@
  
         <div class="calc">
             <div class="display">
-                 <input type="number" class="form-control searchBox" placeholder="0.00" id="amount" >
+                 <input data-sound="webping-2" type="number" class="form-control searchBox" placeholder="0.00" onKeyUp="check()" maxlength="10" id="amount" >
             </div>
+   <div style="color:rgba(243, 0, 75, 1);text-align: center;background: #282828;" id="warning"></div>
  <div class="buttons2">
    <div class="input-group-text">
 Amount To Convert:
  </div>
             <div class="input-group-text">From</div>
             <div>
-            <select class="form-control from" id="sel1" onclick="play()">
+            <select data-sound="webping-1" class="form-control from" id="sel1" onclick="play()">
             <option value="">Select One …</option>
             <option value="USD">USD&nbsp;&nbsp;🇺🇸</option>
             <option value="AED">AED&nbsp;&nbsp;🇦🇪</option>
@@ -108,7 +109,7 @@ Amount To Convert:
             </div>
             <div class="input-group-text">To</div>
             <div>
-            <select class="form-control to" id="sel2" onclick="play()">
+            <select data-sound="webping-1" class="form-control to" id="sel2">
             <option value="">Select One …</option>
             <option value="USD">USD&nbsp;&nbsp;🇺🇸</option>
             <option value="AED">AED&nbsp;&nbsp;🇦🇪</option>
@@ -173,19 +174,19 @@ Amount To Convert:
             <div class="buttons3">
             
             <!-- convert button -->
-            <button data-sound="webping-1" id="btn1" class="btn btn-primary convert m-2"
+            <button data-sound="webping-3" id="btn1" class="btn btn-primary convert m-2"
             name="convert" onclick="color3()">
             Convert
             </button>
             
             <!-- reset button -->
-            <button data-sound="webping-1" id="btn2" class="btn btn-primary m-2"
+            <button data-sound="webping-2" id="btn2" class="btn btn-primary m-2"
             onclick="clearVal()">
             Reset
             </button>
             
             
-            <button data-sound="webping-1" id="backSpace" class="btn3"
+            <button data-sound="webping-4" id="backSpace" class="btn3"
             onclick="backSpace()">
             <i class="ri-delete-back-2-fill"></i>
             </button>
@@ -200,12 +201,21 @@ Amount To Convert:
        </div>
 
 
-    <audio id="webping-1" preload="auto">
+    <audio id="webping-1">
         <source  src="Audio/Glass click.mp3" type="audio/mpeg">
     </audio>
 
-
-
+    <audio id="webping-2">
+    <source  src="Audio/sign.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="webping-3">
+    <source  src="Audio/equal.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="webping-4">
+    <source  src="Audio/delete.mp3" type="audio/mpeg">
+    </audio>
 
     <script src="script.js"></script>
     <script src="rate.js"></script>
@@ -215,6 +225,7 @@ Amount To Convert:
 </html>
 
 
+
 <script type="text/javascript">
 
 
@@ -222,7 +233,7 @@ Amount To Convert:
 
 document.querySelectorAll("[data-sound]").forEach(function (element) {
  // Play associated audio
- element.addEventListener("mouseenter", function (event) {
+ element.addEventListener("click", function (event) {
    // element = $("body");'
    if ($("#MyElement").is(".active")) var soundKey = element.dataset.sound;
    var audioElement = document.querySelector("#" + soundKey);

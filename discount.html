@@ -42,7 +42,7 @@
  
         <div class="calc">
             <div class="display">
-            <input type="number" data-sound="webping-1"  class="bill-amount" id="bill_amount" autocomplete="off" placeholder="0.00" required=""><br>
+            <input data-sound="webping-2" type="number" data-sound="webping-1"  class="bill-amount" id="bill_amount" autocomplete="off" placeholder="0.00" required=""><br>
             </div>
 
  <div class="buttons4">
@@ -75,9 +75,9 @@
         </div>
         <div class="buttons3">
         
-        <button data-sound="webping-1" onclick="color4()" class="cal-btn" id="btn_1">Calculate</button>
-        <button data-sound="webping-1" class="reset-btn" id="btn_2">Reset</button>
-        <button data-sound="webping-1" id="backSpace" class="btn3" onclick="back()">
+        <button data-sound="webping-3" onclick="color4()" class="cal-btn" id="btn_1">Calculate</button>
+        <button data-sound="webping-2" class="reset-btn" id="btn_2">Reset</button>
+        <button data-sound="webping-4" id="backSpace" class="btn3" onclick="back()">
         <i class="ri-delete-back-2-fill"></i>
         </button>
         </div>
@@ -91,8 +91,17 @@
     <source  src="Audio/Glass click.mp3" type="audio/mpeg">
 </audio>
 
+<audio id="webping-2" preload="auto">
+        <source  src="Audio/sign.mp3" type="audio/mpeg">
+    </audio>
 
+<audio id="webping-3" preload="auto">
+        <source  src="Audio/equal.mp3" type="audio/mpeg">
+    </audio>
 
+<audio id="webping-4" preload="auto">
+        <source  src="Audio/delete.mp3" type="audio/mpeg">
+    </audio>
 
 <script src="script.js"></script>
 <script src="discount.js"></script>
@@ -109,7 +118,7 @@
 
 document.querySelectorAll("[data-sound]").forEach(function (element) {
  // Play associated audio
- element.addEventListener("mouseenter", function (event) {
+ element.addEventListener("click", function (event) {
    // element = $("body");'
    if ($("#MyElement").is(".active")) var soundKey = element.dataset.sound;
    var audioElement = document.querySelector("#" + soundKey);
