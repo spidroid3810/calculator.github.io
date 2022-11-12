@@ -386,7 +386,7 @@ input:checked + .slider:before {
  width: 210px;
  background-color: #282828;
  color: #fff;
- text-align: center;
+ text-align:center;
  border-radius: 6px;
  padding: 10px;
  font-size:20px;
@@ -413,8 +413,7 @@ font-size: 1.2em;
 #sel1,#sel2,.sel3{
 height: 4rem;
 background-color: rgba(255, 255, 255, 0);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-radius: 2px;
   overflow: hidden;
   cursor: none;
   border: none;
@@ -450,7 +449,8 @@ height:5rem;
   font-weight:500;
   color: #fff;
   padding: 10px;
-  
+  border-radius:2px;
+ font-family: "Rubik", sans-serif;
 }
 
 .btn3{
@@ -470,7 +470,8 @@ height:5rem;
   font-weight:500;
   color: #fff;
   padding: 10px;
-  
+  border-radius:2px;
+ font-family: "Rubik", sans-serif;
 }
 
 #btn1:hover{
