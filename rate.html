@@ -168,7 +168,7 @@ Amount To Convert:
             
             <!-- Display the converted amount -->
             Converted Amount:
-            <span class="finalValue"></span>
+            <span id="value" class="finalValue"></span>
             </div>
             </div>
             <div class="buttons3">
@@ -180,7 +180,7 @@ Amount To Convert:
             </button>
             
             <!-- reset button -->
-            <button data-sound="webping-2" id="btn2" class="btn btn-primary m-2"
+            <button data-sound="webping-1" id="btn2" class="btn btn-primary m-2"
             onclick="clearVal()">
             Reset
             </button>
@@ -201,20 +201,24 @@ Amount To Convert:
        </div>
 
 
-    <audio id="webping-1">
+    <audio id="webping-1" preload="auto">
         <source  src="Audio/Glass click.mp3" type="audio/mpeg">
     </audio>
 
-    <audio id="webping-2">
+    <audio id="webping-2" preload="auto">
     <source  src="Audio/sign.mp3" type="audio/mpeg">
     </audio>
     
-    <audio id="webping-3">
+    <audio id="webping-3" preload="auto">
     <source  src="Audio/equal.mp3" type="audio/mpeg">
     </audio>
     
-    <audio id="webping-4">
+    <audio id="webping-4" preload="auto">
     <source  src="Audio/delete.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="webping-5" preload="auto">
+    <source  src="Audio/Ac.mp3" type="audio/mpeg">
     </audio>
 
     <script src="script.js"></script>
