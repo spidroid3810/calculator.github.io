@@ -10,7 +10,7 @@
 }
 
 body {
-  margin-top:90px;
+  margin-top:70px;
   font-family: "Rubik", sans-serif;
   display: grid;
   place-items: center;
@@ -18,7 +18,6 @@ body {
   color: #fff;
   overflow: scroll;
   user-select: none;
-  
 }
 
 
@@ -305,7 +304,7 @@ input:checked + .slider:before {
 .setting .tooltiptext {
  display: none;
  width: 230px;
- background-color: #282828;
+ background-color: #333;
  color: #fff;
  text-align:left;
  border-radius: 6px;
@@ -459,9 +458,8 @@ color:#3AD2FF;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 65px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: #282828;
   z-index: 10;
   left:0;
   text-align: center;
@@ -499,15 +497,7 @@ color:#3AD2FF;
   transition: all 0.5s ease;
   border-bottom: 5px solid rgb(10, 251, 130);
 }
-.bottom-slider {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  background: #ff5f14;
-  transition: left 0.3s ease;
-  
-}
+
 
 a{
 text-decoration: none;
