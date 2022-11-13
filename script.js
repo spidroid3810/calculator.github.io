@@ -6,13 +6,14 @@ const buttons = document
 const screen = document
     .querySelector('.screen');
 
-
-
+  
 buttons
     .addEventListener('click', (e) => {
 
         let value = e.target.textContent;
         let screenVal = screen.textContent;
+
+     
 
         switch (value) {
             case 'AC':
@@ -31,6 +32,7 @@ buttons
             case '':
                 screen.textContent = screenVal.substring(0, screenVal.length-1);
                 return;
+           
         }
 
         screen.textContent = screenVal + value;
@@ -44,6 +46,8 @@ document.getElementById("myDiv").style.color = "rgba(243, 0, 75, 1)";
 
 function color2(){
 document.getElementById("myDiv").style.color = "#3AD2FF";
+
+
 
 }
 
@@ -61,3 +65,4 @@ function onlyOne(checkbox) {
         if (item !== checkbox) item.checked = false
     })
 }
+

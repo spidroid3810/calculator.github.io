@@ -47,3 +47,13 @@ document.getElementById("bill_amount").style.color = "#3AD2FF";
 
 
 }
+
+function updScreen(val) {
+
+var x = document.getElementById(
+"bill_amount").value;
+
+document.getElementById("bill_amount")
+.value = x + val;
+
+}

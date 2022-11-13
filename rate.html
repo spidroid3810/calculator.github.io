@@ -37,17 +37,14 @@
  
         <div class="calc">
             <div class="display">
-                 <input data-sound="webping-2" type="number" class="form-control searchBox" placeholder="0.00" onKeyUp="check()" maxlength="10" id="amount" >
+                 <input data-sound="webping-2" type="number" class="form-control searchBox" onKeyUp="check()" id="amount" placeholder="0.00">
             </div>
    <div style="color:rgba(243, 0, 75, 1);text-align: center;background: #282828;" id="warning"></div>
  <div class="buttons2">
-   <div class="input-group-text">
-Amount To Convert:
- </div>
             <div class="input-group-text">From</div>
             <div>
             <select data-sound="webping-1" class="form-control from" id="sel1" onclick="play()">
-            <option value="">Select One …</option>
+            <option value="">Select Currency</option>
             <option value="USD">USD&nbsp;&nbsp;🇺🇸</option>
             <option value="AED">AED&nbsp;&nbsp;🇦🇪</option>
             <option value="ARS">ARS&nbsp;&nbsp;🇦🇷</option>
@@ -105,7 +102,7 @@ Amount To Convert:
             <div class="input-group-text">To</div>
             <div>
             <select data-sound="webping-1" class="form-control to" id="sel2">
-            <option value="">Select One …</option>
+            <option value="">Select Currency</option>
             <option value="USD">USD&nbsp;&nbsp;🇺🇸</option>
             <option value="AED">AED&nbsp;&nbsp;🇦🇪</option>
             <option value="ARS">ARS&nbsp;&nbsp;🇦🇷</option>
@@ -159,37 +156,37 @@ Amount To Convert:
             <option value="UYU">UYU&nbsp;&nbsp;🇺🇾</option>
             <option value="ZAR">ZAR&nbsp;&nbsp;🇿🇦</option>
             </select>
+            </div>
+            
             <div id="finalAmount" class="input-group-text">
             
             <!-- Display the converted amount -->
-            Converted Amount:
+            Converted&nbsp;Amount:
             <span id="value" class="finalValue"></span>
             </div>
-            </div>
+            
             <div class="buttons3">
             
+           
             <!-- convert button -->
-            <button data-sound="webping-3" id="btn1" class="btn btn-primary convert m-2"
-            name="convert" onclick="color3()">
+            <button data-sound="webping-3" id="btn2" class="btn btn-primary convert m-2"
+            name="convert" onclick="color5()">
             Convert
             </button>
-            
-            <!-- reset button -->
-            <button data-sound="webping-5" id="btn2" class="btn btn-primary m-2"
-            onclick="clearVal()">
-            Reset
-            </button>
-            
             
             <button data-sound="webping-4" id="backSpace" class="btn3"
             onclick="backSpace()">
             <i class="ri-delete-back-2-fill"></i>
+            </button> 
+            
+            <!-- reset button -->
+            <button data-sound="webping-5" id="btn2" class="btn btn-primary m-2"
+            onclick="clearVal();color5()">
+            AC
             </button>
-            
-            
+               
             </div>
-           
-       
+               
         <div class="operators2"></div>
             </div>
 

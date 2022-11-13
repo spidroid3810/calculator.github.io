@@ -34,7 +34,7 @@ body {
 
 .display{
   position: relative;
-  height: 10rem;
+  height: 9rem;
 }
 
 .screen {
@@ -44,7 +44,7 @@ body {
   font-size: 3em;
   left: 50%;
   transform: translateX(-50%);
-  overflow: hidden;
+  overflow: scroll;
   text-align: right;
 }
 
@@ -93,6 +93,27 @@ body {
   z-index: -1;
 }
 
+.operators3{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 240px;
+  z-index: -1;
+}
+
+.con1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  cursor: none;
+ 
+}
 
 
 .buttons{
@@ -181,6 +202,12 @@ outline: none;
 color: #3AD2FF;
 }
 
+input[type="text"]{
+background-color: transparent;
+border: none;
+outline: none;
+color: #3AD2FF;
+}
 
 
 svg{
@@ -237,10 +264,10 @@ color:rgb(10, 251, 130);
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
-  left: 2px;
-  bottom: 2.5px;
+  height: 18.5px;
+  width: 18.5px;
+  left: 3px;
+  bottom: 3.9px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -280,7 +307,7 @@ input:checked + .slider:before {
  width: 230px;
  background-color: #282828;
  color: #fff;
- text-align:center;
+ text-align:left;
  border-radius: 6px;
  padding: 10px;
  font-size:20px;
@@ -290,6 +317,7 @@ input:checked + .slider:before {
  z-index: -1;
  margin-top:45px;
  left: 1%;
+ 
 }
 
 .setting:hover .tooltiptext {
@@ -299,14 +327,14 @@ input:checked + .slider:before {
 .input-group-text{
 font-size: 1.2em;
  text-align: left;
- margin: 2px;
  padding: 10px;
  font-weight: bold;
+ margin: 2px;
 }
 
 #sel1,#sel2,.sel3{
 height: 4rem;
-background-color: rgba(255, 255, 255, 0);
+background-color: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   overflow: hidden;
   cursor: none;
@@ -315,6 +343,19 @@ background-color: rgba(255, 255, 255, 0);
   color: #fff;
   font-size: 1em;
 }
+
+#sel1,#sel2{
+margin-left:0;
+
+}
+
+.sel3{
+margin-left:20px;
+
+}
+
+
+
 
 
 #sel1:hover{
@@ -341,21 +382,17 @@ height:5rem;
   outline: none;
   font-size:1.2rem;
   font-weight:500;
-  color: #fff;
-  padding: 10px;
+  color: #fff; 
   border-radius:2px;
  font-family: "Rubik", sans-serif;
 }
 
-.btn3{
-font-size:1.9rem;
-
-}
 
 
-.cal-btn,.reset-btn{
+
+.btn5,.btn4,.cal-btn,.reset-btn{
 background-color: transparent;
-height:5rem;
+height:3rem;
   overflow: hidden;
   cursor: none;
   border: none;
@@ -374,14 +411,15 @@ color:  #4682B4;
 }
 
 .cal-btn:hover{
-background: #3AD2FF;
-color:  #4682B4;
+background:rgb(10, 251, 130);
+color: green;
 }
 
 .reset-btn:hover{
 background:rgb(10, 251, 130);
 color: green;
 }
+
 
 .btn3:hover{
 background: rgba(243, 0, 75, 1);
@@ -390,6 +428,13 @@ color: darkred;
 #btn2:hover{
 background:rgb(10, 251, 130);
 color: green;
+}
+
+
+
+.btn5:hover{
+background: rgba(243, 0, 75, 1);
+color: darkred;
 }
 
 .finalValue{
@@ -468,8 +513,36 @@ a{
 text-decoration: none;
 }
 
+.clrbox{
+display:flex;
 
+}
 
+.circle1{
+height: 30px;
+width: 30px;
+border-radius:100%;
+background: #383838;
+margin: 2px;
+}
+
+.circle2{
+height: 30px;
+width: 30px;
+border-radius:100%;
+background: #c2c2c2;
+margin: 2px;
+}
+
+.circle1:hover{
+  border: 3px solid rgb(10, 251, 130);
+
+}
+
+.circle2:hover{
+  border: 3px solid rgb(10, 251, 130);
+
+}
 
 
 .items-container {  

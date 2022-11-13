@@ -36,15 +36,12 @@
 </nav>
         <div class="calc">
             <div class="display">
-            <input data-sound="webping-2" type="number" data-sound="webping-1"  class="bill-amount" id="bill_amount" autocomplete="off" placeholder="0.00" required=""><br>
+            <input data-sound="webping-2" type="text" data-sound="webping-1"  class="bill-amount" id="bill_amount" autocomplete="off" placeholder="0.00" readonly><br>
             </div>
 
  <div class="buttons4">
 
-       <div class="input-group-text">
-       <label for="enter Bill Amount">Enter Bill Amount: </label>
-        </div>
-        
+        <div class="con1">
         <label for="Select Discount (%)" class="input-group-text">Select Discount (%) </label>
         <div>
         <select data-sound="webping-1" class="sel3" id="select_percentage" required="">
@@ -56,31 +53,95 @@
         <option value="100">100%</option>
         </select>
         </div>
-        
+        </div>
         
         <div class="input-group-text">
         <label for="Discount Amount" class="">Discount Amount: </label>
-        <input type="number" class="dis-amount" id="discount_amount" disabled="">
+        <input type="text" class="dis-amount" id="discount_amount" disabled="">
         </div>
         
         <div class="input-group-text">
         <label for="Final Pay" class="">Final Pay: </label>
-        <input type="number"  class="final-amount" id="final_amount" disabled="">
+        <input type="text"  class="final-amount" id="final_amount" disabled="">
         </div>
         <div class="buttons3">
         
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(7);color4()">
+        7
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(8);color4()">
+        8
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(9);color4()">
+        9
+        </button>
+       
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(4);color4()">
+        4
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(5);color4()">
+        5
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(6);color4()">
+        6
+        </button>
+           
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(3);color4()">
+        3
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(2);color4()">
+        2
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(1);color4">
+        1
+        </button>
+            
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen(0);color4()">
+        0
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        name="convert" onclick="updScreen('00');color4()">
+        00
+        </button>
+        
+        <button data-sound="webping-3" id="btn1" class="btn4"
+        onclick="updScreen('.');color4()">
+        .
+        </button>
+        
         <button data-sound="webping-3" onclick="color4()" class="cal-btn" id="btn_1">Calculate</button>
-        <button data-sound="webping-5" class="reset-btn" id="btn_2">Reset</button>
-        <button data-sound="webping-4" id="backSpace" class="btn3" onclick="back()">
+        
+        <button data-sound="webping-4" id="backSpace" class="btn5" onclick="back()">
         <i class="ri-delete-back-2-fill"></i>
         </button>
+       
+        <button data-sound="webping-5" onclick="color4()" class="reset-btn" id="btn_2">AC</button>
+        
         </div>
         
-         <div class="operators2"></div>
+         <div class="operators3"></div>
          
          </div>
          </div>
-
+         &nbsp;
+          
 <audio id="webping-1">
     <source  src="Audio/Glass click.mp3" type="audio/mpeg">
 </audio>

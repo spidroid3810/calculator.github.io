@@ -53,10 +53,7 @@ function displayResults(currency) {
 function clearVal() {
 	window.location.reload();
 	document.getElementsByClassName("finalValue").innerHTML = "";
-
-	
 };
-
 
 
 function backSpace() {
@@ -64,8 +61,10 @@ var bsp = document.getElementById("amount").value;
 document.getElementById("amount").value=bsp.substring(0,bsp.length -1);
 
 document.getElementById("amount").style.color = "rgba(243, 0, 75, 1)";
+ 
 
 }
+
 
 
 
@@ -78,9 +77,13 @@ function onlyOne(checkbox) {
     })
 }
 
-function color3(){
+function color5(){
 document.getElementById("amount").style.color = "#3AD2FF";
 
 
 
 }
+
+
+
+
