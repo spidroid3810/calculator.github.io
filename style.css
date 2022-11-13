@@ -18,6 +18,7 @@ body {
   color: #fff;
   overflow: scroll;
   user-select: none;
+  
 }
 
 
@@ -269,14 +270,14 @@ input:checked + .slider:before {
 }
 
 .setting {
- position: absolute;
+ position: relative;
  display: inline-block;
 }
 
 
 .setting .tooltiptext {
  display: none;
- width: 225px;
+ width: 230px;
  background-color: #282828;
  color: #fff;
  text-align:center;
