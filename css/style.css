@@ -11,7 +11,7 @@
 
 body {
   margin-top: 95px;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   display: grid;
   place-items: center;
   background-color: var(--color-bg);
@@ -333,7 +333,7 @@ font-size: 1.2em;
 
 #sel1,#sel2,.sel3{
 height: 4rem;
-background-color: transparent;
+background-color: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   overflow: hidden;
   cursor: none;
@@ -354,7 +354,10 @@ margin-left:20px;
 }
 
 
+#sel1,#sel2,.sel3{
+color:rgb(10, 251, 130);
 
+}
 
 
 #sel1:hover{
@@ -547,6 +550,16 @@ background: #1a1940;
 margin: 2px;
 }
 
+.clr4{
+height: 30px;
+width: 30px;
+border-radius:100%;
+background: #001923;
+margin: 2px;
+}
+
+
+
 
 .clr1:hover{
   border: 3px solid rgb(10, 251, 130);
@@ -563,6 +576,10 @@ margin: 2px;
 
 }
 
+.clr4:hover{
+  border: 3px solid rgb(10, 251, 130);
+
+}
 
 .items-container {  
   background: #333;_
