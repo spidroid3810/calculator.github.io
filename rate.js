@@ -86,4 +86,28 @@ document.getElementById("amount").style.color = "#3AD2FF";
 
 
 
+function changeBgColor(color){
+    // if provided color, set color to LS
+    if (color) window.localStorage.setItem('bgColor', color);
+    // if no provided color, check LS for color, and if no color in LS, fail silently
+    else if (!(color = window.localStorage.getItem('bgColor'))) return;
 
+    // update the page
+    var elements = document.getElementsByClassName("card-bg")
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.background=color;
+    }
+}
+
+window.addEventListener('DOMContentLoaded', () => changeBgColor());
+
+
+function updScreen(val) {
+
+var x = document.getElementById(
+"amount").value;
+
+document.getElementById("amount")
+.value = x + val;
+
+}
