@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="card-bg">
@@ -30,6 +31,7 @@
          <div class="clr1 " onclick="changeBgColor('var(--color-bg)');"></div>
          <div class="clr2" onclick="changeBgColor('#0f4075');"></div>
          <div class="clr3" onclick="changeBgColor('#1a1940');"></div>
+         <div class="clr4" onclick="changeBgColor('#001923');"></div>
          </div>
          </span>
           </div>   
@@ -181,7 +183,7 @@
             
             <button data-sound="webping-4" id="backSpace" class="btn3"
             onclick="backSpace()">
-            <i class="ri-delete-back-2-fill"></i>
+            <i style="font-size:25px;" class="fas fa-backspace"></i>
             </button> 
             
             <!-- reset button -->
@@ -218,9 +220,9 @@
     <source  src="Audio/Ac.mp3" type="audio/mpeg">
     </audio>
 
-    <script src="script.js"></script>
-    <script src="rate.js"></script>
-    <script src="screensaver.js" timeout="5000"></script>
+    <script src="js/script.js"></script>
+    <script src="js/rate.js"></script>
+    <script src="js/screensaver.js" timeout="5000"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </body>
 </html>
