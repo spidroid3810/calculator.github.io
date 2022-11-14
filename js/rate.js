@@ -27,7 +27,20 @@ search.addEventListener('input', updateValue);
 // function for updating value
 function updateValue(e) {
 	searchValue = e.target.value;
+	
+	
 }
+
+function updScreen(val) {
+
+var x = document.getElementById(
+"bill_amount").value;
+
+document.getElementById("bill_amount")
+.value = x + val;
+
+}
+
 
 // when user clicks, it calls function getresults
 convert.addEventListener("click", getResults);
@@ -51,7 +64,9 @@ function displayResults(currency) {
 
 // when user click on reset button
 function clearVal() {
-	window.location.reload();
+    document.getElementById("amount").value = "";
+	document.getElementById("sel1").value = "";
+	document.getElementById("sel2").value = "";
 	document.getElementsByClassName("finalValue").innerHTML = "";
 };
 
