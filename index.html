@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="card-bg" >
 <nav>
 <div class="items-container">
 <a class="nav"><div class="setting"> <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -25,6 +25,12 @@
          <input id="MyElement" type="checkbox" >
          <span class="slider round"></span>
          </label>
+         Change Theme
+         <div class="clrbox">
+         <div class="clr1 " onclick="changeBgColor('var(--color-bg)');"></div>
+         <div class="clr2" onclick="changeBgColor('#0f4061');"></div>
+         <div class="clr3" onclick="changeBgColor('#1a1940');"></div>
+         </div>
          </span>
           </div>   
        </a>  

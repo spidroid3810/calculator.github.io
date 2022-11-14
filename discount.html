@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="card-bg">
 <nav>
 <div class="items-container">
 <a class="nav"><div class="setting"> <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -25,7 +25,12 @@
          <input id="MyElement" type="checkbox" >
          <span class="slider round"></span>
          </label>
-         </span>
+        Change Theme
+        <div class="clrbox">
+        <div class="clr1 " onclick="changeBgColor('var(--color-bg)');"></div>
+        <div class="clr2" onclick="changeBgColor('#0f4075');"></div>
+        <div class="clr3" onclick="changeBgColor('#1a1940');"></div>
+        </div></span>
           </div>   
        </a>  
      <a class="navs" href="index.html">Calculator</a>
@@ -41,10 +46,10 @@
  <div class="buttons4">
 
         <div class="con1">
-        <label for="Select Discount (%)" class="input-group-text">Select Discount (%) </label>
+        <label for="Select Discount (%)" class="input-group-text">Select Discount (%)</label>
         <div>
         <select data-sound="webping-1" class="sel3" id="select_percentage" required="">
-        <option value="-percentage-">Select-Percentage</option>
+        <option value="-percentage-">Select&nbsp;Percentage</option>
         <option value="10">10%</option>
         <option value="25">25%</option>
         <option value="40">40%</option>
@@ -106,7 +111,7 @@
         </button>
         
         <button data-sound="webping-3" id="btn1" class="btn4"
-        onclick="updScreen(1);color4">
+        onclick="updScreen(1);color4()">
         1
         </button>
             
@@ -139,8 +144,7 @@
          
          </div>
          </div>
-      
-          
+ 
 <audio id="webping-1">
     <source  src="Audio/Glass click.mp3" type="audio/mpeg">
 </audio>

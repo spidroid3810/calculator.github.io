@@ -10,7 +10,7 @@
 }
 
 body {
-  margin-top:70px;
+  margin-top: 95px;
   font-family: "Rubik", sans-serif;
   display: grid;
   place-items: center;
@@ -33,7 +33,7 @@ body {
 
 .display{
   position: relative;
-  height: 9rem;
+  height: 7rem;
 }
 
 .screen {
@@ -266,7 +266,7 @@ color:rgb(10, 251, 130);
   height: 18.5px;
   width: 18.5px;
   left: 3px;
-  bottom: 3.9px;
+  bottom: 3.1px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -326,14 +326,14 @@ input:checked + .slider:before {
 .input-group-text{
 font-size: 1.2em;
  text-align: left;
- padding: 10px;
+ padding: 6.5px;
  font-weight: bold;
  margin: 2px;
 }
 
 #sel1,#sel2,.sel3{
 height: 4rem;
-background-color: rgba(255, 255, 255, 0.1);
+background-color: transparent;
   border-radius: 2px;
   overflow: hidden;
   cursor: none;
@@ -463,6 +463,7 @@ color:#3AD2FF;
   z-index: 10;
   left:0;
   text-align: center;
+  
 }
 .items-container--top {
   position: fixed;
@@ -503,33 +504,61 @@ a{
 text-decoration: none;
 }
 
+.cal-btn,.reset-btn,.btn,.sign{
+color:rgb(10, 251, 130);
+}
+
+#backSpace,.del{
+ color: rgba(243, 0, 75, 1);
+
+}
+
+#backSpace:hover{
+color: darkred;
+
+}
+
 .clrbox{
 display:flex;
 
 }
 
-.circle1{
+.clr1{
 height: 30px;
 width: 30px;
 border-radius:100%;
-background: #383838;
+background: var(--color-bg);
 margin: 2px;
 }
 
-.circle2{
+.clr2{
 height: 30px;
 width: 30px;
 border-radius:100%;
-background: #c2c2c2;
+background: #0f4075;
 margin: 2px;
 }
 
-.circle1:hover{
+.clr3{
+height: 30px;
+width: 30px;
+border-radius:100%;
+background: #1a1940;
+margin: 2px;
+}
+
+
+.clr1:hover{
   border: 3px solid rgb(10, 251, 130);
 
 }
 
-.circle2:hover{
+.clr2:hover{
+  border: 3px solid rgb(10, 251, 130);
+
+}
+
+.clr3:hover{
   border: 3px solid rgb(10, 251, 130);
 
 }
