@@ -1,89 +1,98 @@
-// include api for currency change
-const api = "https://api.exchangerate-api.com/v4/latest/USD";
+const dropList = document.querySelectorAll("form select"),
+fromCurrency = document.querySelector(".from select"),
+toCurrency = document.querySelector(".to select"),
+getButton = document.querySelector("form .cal-btn");
 
-// for selecting different controls
-var search = document.querySelector(".searchBox");
-var convert = document.querySelector(".convert");
-var fromCurrecy = document.querySelector(".from");
-var toCurrecy = document.querySelector(".to");
-var finalValue = document.querySelector(".finalValue");
-var finalAmount = document.getElementById("finalAmount");
-var resultFrom;
-var resultTo;
-var searchValue;
+for (let i = 0; i < dropList.length; i++) {
+    for(let currency_code in country_list){
+        let selected = i == 0 ? currency_code == "USD" ? "selected" : "" : currency_code == "INR" ? "selected" : "";
+        let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
+        dropList[i].insertAdjacentHTML("beforeend", optionTag);
+    }
+    dropList[i].addEventListener("change", e =>{
+        loadFlag(e.target);
+    });
+}
 
-// Event when currency is changed
-fromCurrecy.addEventListener('change', (event) => {
-	resultFrom = `${event.target.value}`;
+function loadFlag(element){
+    for(let code in country_list){
+        if(code == element.value){
+            let imgTag = element.parentElement.querySelector("img");
+            imgTag.src = `https://flagcdn.com/48x36/${country_list[code].toLowerCase()}.png`;
+        }
+    }
+}
+
+window.addEventListener("load", ()=>{
+    getExchangeRate();
 });
 
-// Event when currency is changed
-toCurrecy.addEventListener('change', (event) => {
-	resultTo = `${event.target.value}`;
+getButton.addEventListener("click", e =>{
+    e.preventDefault();
+    getExchangeRate();
 });
 
-search.addEventListener('input', updateValue);
+const exchangeIcon = document.querySelector("form .icon");
+exchangeIcon.addEventListener("click", ()=>{
+    let tempCode = fromCurrency.value;
+    fromCurrency.value = toCurrency.value;
+    toCurrency.value = tempCode;
+    loadFlag(fromCurrency);
+    loadFlag(toCurrency);
+    getExchangeRate();
+})
 
-// function for updating value
-function updateValue(e) {
-	searchValue = e.target.value;
-	
-	
+function getExchangeRate(){
+    const amount = document.querySelector("form input");
+    const exchangeRateTxt = document.querySelector("form .exchange-rate");
+    let amountVal = amount.value;
+    if(amountVal == "" || amountVal == ""){
+        amount.value = "";
+        amountVal = 0;
+    }
+    exchangeRateTxt.innerHTML = `<p style="color:#3AD2FF;">Getting exchange rate...</p>`;
+    let url = `https://v6.exchangerate-api.com/v6/1b1ba32696aef13beef91910/latest/${fromCurrency.value}`;
+    fetch(url).then(response => response.json()).then(result =>{
+        let exchangeRate = result.conversion_rates[toCurrency.value];
+        let totalExRate = (amountVal * exchangeRate).toFixed(2);
+        exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
+    }).catch(() =>{
+        exchangeRateTxt.innerHTML = `<p style="color: rgba(243, 0, 75, 1);">Something went wrong.</p>`;
+    });
 }
 
 function updScreen(val) {
 
 var x = document.getElementById(
-"bill_amount").value;
+"amount").value;
 
-document.getElementById("bill_amount")
+document.getElementById("amount")
 .value = x + val;
 
 }
 
-
-// when user clicks, it calls function getresults
-convert.addEventListener("click", getResults);
-
-// function getresults
-function getResults() {
-	fetch(`${api}`)
-		.then(currency => {
-			return currency.json();
-		}).then(displayResults);
-}
-
-// display results after convertion
-function displayResults(currency) {
-	let fromRate = currency.rates[resultFrom];
-	let toRate = currency.rates[resultTo];
-	finalValue.innerHTML =
-	((toRate / fromRate) * searchValue).toFixed(2);
-	finalAmount.style.display = "block";
-}
-
-// when user click on reset button
-function clearVal() {
-    document.getElementById("amount").value = "";
-	document.getElementById("sel1").value = "";
-	document.getElementById("sel2").value = "";
-	document.getElementsByClassName("finalValue").innerHTML = "";
-};
-
-
-function backSpace() {
+function backSpaces() {
 var bsp = document.getElementById("amount").value;
 document.getElementById("amount").value=bsp.substring(0,bsp.length -1);
 
 document.getElementById("amount").style.color = "rgba(243, 0, 75, 1)";
- 
 
 }
 
+function clearVal() {
+    document.getElementById("amount").value = "";
+	document.getElementById("rate").innerHTML = "";
+	document.getElementById("amount").style.color = "#3AD2FF";
+	
+	
+};
+
+function color4(){
+document.getElementById("amount").style.color = "#3AD2FF";
 
 
 
-
+}
 
 function onlyOne(checkbox) {
     var checkboxes = document.getElementsByName('check')
@@ -91,14 +100,6 @@ function onlyOne(checkbox) {
         if (item !== checkbox) item.checked = false
     })
 }
-
-function color5(){
-document.getElementById("amount").style.color = "#3AD2FF";
-
-
-
-}
-
 
 
 function changeBgColor(color){
@@ -115,14 +116,3 @@ function changeBgColor(color){
 }
 
 window.addEventListener('DOMContentLoaded', () => changeBgColor());
-
-
-function updScreen(val) {
-
-var x = document.getElementById(
-"amount").value;
-
-document.getElementById("amount")
-.value = x + val;
-
-}
