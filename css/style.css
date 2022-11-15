@@ -62,6 +62,17 @@ body {
   text-align: right;
 }
 
+#amount{
+  position: absolute;
+  bottom: 0.5rem;
+  width: 94%;
+  font-size: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-align: right;
+}
+
 #bill_amount{
   position: absolute;
   bottom: 0.5rem;
@@ -71,6 +82,81 @@ body {
   transform: translateX(-50%);
   overflow: hidden;
   text-align: right;
+}
+
+.wrapper form{
+  margin: 40px 0 20px 0;
+}
+form :where(input, select){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align:center;
+}
+form input{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+form input:focus{
+  padding: 0 14px;
+  border: 2px solid #675AFE;
+}
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+}
+.select-box img{
+  max-width: 21px;
+}
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+  color: #fff;
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.drop-list .icon{
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+  color:#3AD2FF;
+}
+form .exchange-rate{
+  font-size: 17px;
+  text-align:center;
+  color: rgb(10, 251, 130) ;
+}
+
+.select-box:hover{
+background: rgb(10, 251, 130) ;
 }
 
 .operators{
@@ -92,7 +178,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 240px;
   z-index: -1;
 }
 
@@ -335,7 +421,7 @@ font-size: 1.2em;
  margin: 2px;
 }
 
-#sel1,#sel2,.sel3{
+.sel3{
 height: 4rem;
 background-color: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
@@ -347,10 +433,6 @@ background-color: rgba(255, 255, 255, 0.1);
   font-size: 1em;
 }
 
-#sel1,#sel2{
-margin-left:0;
-
-}
 
 .sel3{
 margin-left:20px;
@@ -358,21 +440,13 @@ margin-left:20px;
 }
 
 
-#sel1,#sel2,.sel3{
+.sel3{
 color:rgb(10, 251, 130);
 
 }
 
 
-#sel1:hover{
-background-color:rgb(10, 251, 130);
-color: green;
-}
 
-#sel2:hover{
-background-color:rgb(10, 251, 130);
-color: green;
-}
 
 .sel3:hover{
 background-color:rgb(10, 251, 130);
