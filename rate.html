@@ -17,7 +17,7 @@
  }
 </style>
 
-</head><body class="card-bg">
+</head><body onload="load()" class="card-bg">
 <nav>
 <div class="items-container">
 <a class="nav"><div class="setting"> <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -27,7 +27,7 @@
          <span class="tooltiptext">
          Button Sound
          <label  class="switch">
-         <input id="MyElement" type="checkbox" >
+         <input id="MyElement" type="checkbox" onclick="save()">
          <span class="slider round"></span>
          </label>
         Change Theme
@@ -137,7 +137,7 @@
       </button>
       
       
-      <button data-sound="webping-3" onclick="color4()" class="cal-btn" id="btn_1">Calculate</button>
+      <button data-sound="webping-3" onclick="color4()" class="cal-btn" id="btn_1">Convert</button>
       
       <button data-sound="webping-5" onclick="clearVal()" class="reset-btn" id="btn_2">AC</button>
       
@@ -173,7 +173,7 @@
     <source  src="Audio/Ac.mp3" type="audio/mpeg">
     </audio>
     
-    
+    <script src="js/script.js"></script>
     <script src="js/country-list.js"></script>
     <script src="js/rate.js"></script>
     <script src="js/screensaver.js" timeout="5000"></script>

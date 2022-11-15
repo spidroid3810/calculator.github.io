@@ -21,7 +21,7 @@
     
     </head>
 
-<body class="card-bg" >
+<body onload="load()" class="card-bg" >
 <nav>
 <div class="items-container">
 <a class="nav"><div class="setting"> <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -31,7 +31,7 @@
          <span class="tooltiptext">
          Button Sound
          <label  class="switch">
-         <input id="MyElement" type="checkbox" >
+         <input id="MyElement" type="checkbox" onclick="save()" >
          <span class="slider round"></span>
          </label>
          Change Theme
