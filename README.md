@@ -2,5 +2,8 @@
 ## ***Glass Calculator-***
 ![Glass Calculator](cal1.jpg)
 ## ***Currency Converter-***
-![Currency Converter](cal2.jpg)
+![Exchange Rate](cal2.jpg)
+## ***Discount Calculator-***
+![Discount Calculator](cal3.jpg)
+
 
