@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Rubik;
   }
-
+  
+ 
+ 
+ 
 :root {
   --color-bg: rgb(47, 0, 90);
  
@@ -11,7 +15,7 @@
 
 body {
   margin-top: 95px;
-  font-family: 'Rubik', sans-serif;
+  font-family: Rubik;
   display: grid;
   place-items: center;
   background-color: var(--color-bg);
@@ -386,7 +390,7 @@ height:5rem;
   font-weight:500;
   color: #fff; 
   border-radius:2px;
- font-family: "Rubik", sans-serif;
+ font-family: Rubik;
 }
 
 
@@ -404,7 +408,7 @@ height:3rem;
   color: #fff;
   padding: 10px;
   border-radius:2px;
- font-family: "Rubik", sans-serif;
+ font-family: Rubik;
 }
 
 #btn1:hover{
