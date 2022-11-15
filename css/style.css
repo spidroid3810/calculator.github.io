@@ -160,6 +160,11 @@ form .exchange-rate{
 background: rgb(10, 251, 130) ;
 }
 
+select:hover{
+color: green;
+
+}
+
 .operators{
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
@@ -436,7 +441,7 @@ background: transparent;
 
 
 .sel3{
-margin-left:20px;
+left: 0;
 
 }
 
