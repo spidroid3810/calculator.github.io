@@ -97,6 +97,7 @@ form p{
   font-size: 18px;
   margin-bottom: 5px;
   text-align:center;
+  font-weight:700;
 }
 form input{
   height: 50px;
@@ -414,7 +415,7 @@ input:checked + .slider:before {
 }
 
 .input-group-text{
-font-size: 1.2em;
+font-size: 18px;
  text-align: left;
  padding: 6.5px;
  font-weight: bold;
