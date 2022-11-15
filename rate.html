@@ -7,10 +7,16 @@
     <title>Calculator</title>
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/fontawesome.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
      <link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+
+@font-face {
+ font-family: Rubik;
+ src: url(Rubik/static/Rubik-Regular.ttf);
+ }
+</style>
+
 </head>
 
 <body class="card-bg">
@@ -181,16 +187,18 @@
             Convert
             </button>
             
-            <button data-sound="webping-4" id="backSpace" class="btn3"
-            onclick="backSpace()">
-            <i style="font-size:25px;" class="fas fa-backspace"></i>
-            </button> 
-            
             <!-- reset button -->
             <button data-sound="webping-5" id="btn2" class="btn btn-primary m-2"
             onclick="clearVal();color5()">
             AC
             </button>
+               
+            
+            <button data-sound="webping-4" id="backSpace" class="btn3"
+            onclick="backSpace()">
+            <i style="font-size:25px;" class="fas fa-backspace"></i>
+            </button> 
+            
                
             </div>
                
@@ -223,7 +231,7 @@
     <script src="js/script.js"></script>
     <script src="js/rate.js"></script>
     <script src="js/screensaver.js" timeout="5000"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
 </body>
 </html>
 

@@ -8,9 +8,15 @@
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/fontawesome.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+@font-face {
+ font-family: Rubik;
+ src: url(Rubik/static/Rubik-Regular.ttf);
+ }
+
+</style>
 </head>
 
 <body class="card-bg">
@@ -134,11 +140,12 @@
         
         <button data-sound="webping-3" onclick="color4()" class="cal-btn" id="btn_1">Calculate</button>
         
+        <button data-sound="webping-5" onclick="color4()" class="reset-btn" id="btn_2">AC</button>
+        
+        
         <button data-sound="webping-4" id="backSpace" class="btn5" onclick="back()">
         <i class="fas fa-backspace"></i>
         </button>
-       
-        <button data-sound="webping-5" onclick="color4()" class="reset-btn" id="btn_2">AC</button>
         
         </div>
         
@@ -170,7 +177,7 @@
 <script src="js/script.js"></script>
 <script src="js/discount.js"></script>
 <script src="js/screensaver.js" timeout="5000"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="jquery.js"></script>
 </body>
 </html>
 
