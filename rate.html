@@ -17,9 +17,7 @@
  }
 </style>
 
-</head>
-
-<body class="card-bg">
+</head><body class="card-bg">
 <nav>
 <div class="items-container">
 <a class="nav"><div class="setting"> <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -32,186 +30,133 @@
          <input id="MyElement" type="checkbox" >
          <span class="slider round"></span>
          </label>
-         Change Theme
-         <div class="clrbox">
-         <div class="clr1 " onclick="changeBgColor('var(--color-bg)');"></div>
-         <div class="clr2" onclick="changeBgColor('#0f4075');"></div>
-         <div class="clr3" onclick="changeBgColor('#1a1940');"></div>
-         <div class="clr4" onclick="changeBgColor('#001923');"></div>
-         </div>
-         </span>
+        Change Theme
+        <div class="clrbox">
+        <div class="clr1 " onclick="changeBgColor('var(--color-bg)');"></div>
+        <div class="clr2" onclick="changeBgColor('#0f4075');"></div>
+        <div class="clr3" onclick="changeBgColor('#1a1940');"></div>
+        <div class="clr4" onclick="changeBgColor('#001923');"></div>
+        </div></span>
           </div>   
        </a>  
      <a class="navs" href="index.html">Calculator</a>
      <a class="navs active" href="#">Exchange Rate</a>
-     <a class="navs" href="discount.html">Discount Calculator</a>
+     <a class="navs " href="discount.html">Discount Calculator</a>
    </div>
 </nav>
- 
         <div class="calc">
-            <div class="display">
-                 <input data-sound="webping-2" type="number" class="form-control searchBox" onKeyUp="check()" id="amount" placeholder="0.00">
+      <form action="#">
+        <div class="amount">
+        <div class="display">
+          <input type="text" value="" id="amount" placeholder="0.00" disabled>
+        </div>
+        </div>
+        <div class="buttons2">
+        <div class="drop-list">
+          <div class="from">
+          
+            <p>From</p>
+            <div class="select-box">
+              <img src="us.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
             </div>
-   <div style="color:rgba(243, 0, 75, 1);text-align: center;background: #282828;" id="warning"></div>
- <div class="buttons2">
-            <div class="input-group-text">From</div>
-            <div>
-            <select data-sound="webping-1" class="form-control from" id="sel1" onclick="play()">
-            <option value="">Select Currency</option>
-            <option value="USD">USD&nbsp;&nbsp;🇺🇸</option>
-            <option value="AED">AED&nbsp;&nbsp;🇦🇪</option>
-            <option value="ARS">ARS&nbsp;&nbsp;🇦🇷</option>
-            <option value="AUD">AUD&nbsp;&nbsp;🇦🇺</option>
-            <option value="BGN">BGN&nbsp;&nbsp;🇧🇬</option>
-            <option value="BRL">BRL&nbsp;&nbsp;🇧🇷</option>
-            <option value="BSD">BSD&nbsp;&nbsp;🇧🇸</option>
-            <option value="CAD">CAD&nbsp;&nbsp;🇨🇦</option>
-            <option value="CHF">CHF&nbsp;&nbsp;🇨🇭</option>
-            <option value="CLP">CLP&nbsp;&nbsp;🇨🇱</option>
-            <option value="CNY">CNY&nbsp;&nbsp;🇨🇳</option>
-            <option value="COP">COP&nbsp;&nbsp;🇨🇴</option>
-            <option value="CZK">CZK&nbsp;&nbsp;🇨🇿</option>
-            <option value="DKK">DKK&nbsp;&nbsp;🇩🇰</option>
-            <option value="DOP">DOP&nbsp;&nbsp;🇩🇴</option>
-            <option value="EGP">EGP&nbsp;&nbsp;🇪🇬</option>
-            <option value="EUR">EUR&nbsp;&nbsp;🇪🇺</option>
-            <option value="FJD">FJD&nbsp;&nbsp;🇫🇯</option>
-            <option value="GBP">GBP&nbsp;&nbsp;🇬🇧</option>
-            <option value="GTQ">GTQ&nbsp;&nbsp;🇬🇹</option>
-            <option value="HKD">HKD&nbsp;&nbsp;🇭🇰</option>
-            <option value="HRK">HRK&nbsp;&nbsp;🇭🇷</option>
-            <option value="HUF">HUF&nbsp;&nbsp;🇭🇺</option>
-            <option value="IDR">IDR&nbsp;&nbsp;🇮🇩</option>
-            <option value="ILS">ILS&nbsp;&nbsp;🇮🇱</option>
-            <option value="INR">INR&nbsp;&nbsp;🇮🇳</option>
-            <option value="ISK">ISK&nbsp;&nbsp;🇮🇸</option>
-            <option value="JPY">JPY&nbsp;&nbsp;🇯🇵</option>
-            <option value="KRW">KRW&nbsp;&nbsp;🇰🇷</option>
-            <option value="KZT">KZT&nbsp;&nbsp;🇰🇿</option>
-            <option value="MVR">MVR&nbsp;&nbsp;🇲🇻</option>
-            <option value="MXN">MXN&nbsp;&nbsp;🇲🇽</option>
-            <option value="MYR">MYR&nbsp;&nbsp;🇲🇾</option>
-            <option value="NOK">NOK&nbsp;&nbsp;🇳🇴</option>
-            <option value="NZD">NZD&nbsp;&nbsp;🇳🇿</option>
-            <option value="PAB">PAB&nbsp;&nbsp;🇵🇦</option>
-            <option value="PEN">PEN&nbsp;&nbsp;🇵🇪</option>
-            <option value="PHP">PHP&nbsp;&nbsp;🇵🇭</option>
-            <option value="PKR">PKR&nbsp;&nbsp;🇵🇰</option>
-            <option value="PLN">PLN&nbsp;&nbsp;🇵🇱</option>
-            <option value="PYG">PYG&nbsp;&nbsp;🇵🇾</option>
-            <option value="RON">RON&nbsp;&nbsp;🇷🇴</option>
-            <option value="RUB">RUB&nbsp;&nbsp;🇷🇺</option>
-            <option value="SAR">SAR&nbsp;&nbsp;🇸🇦</option>
-            <option value="SEK">SEK&nbsp;&nbsp;🇸🇪</option>
-            <option value="SGD">SGD&nbsp;&nbsp;🇸🇬</option>
-            <option value="THB">THB&nbsp;&nbsp;🇹🇭</option>
-            <option value="TRY">TRY&nbsp;&nbsp;🇹🇷</option>
-            <option value="TWD">TWD&nbsp;&nbsp;🇹🇼</option>
-            <option value="UAH">UAH&nbsp;&nbsp;🇺🇦</option>
-            <option value="UYU">UYU&nbsp;&nbsp;🇺🇾</option>
-            <option value="ZAR">ZAR&nbsp;&nbsp;🇿🇦</option>
-            </select>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="in.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
             </div>
-            <div class="input-group-text">To</div>
-            <div>
-            <select data-sound="webping-1" class="form-control to" id="sel2">
-            <option value="">Select Currency</option>
-            <option value="USD">USD&nbsp;&nbsp;🇺🇸</option>
-            <option value="AED">AED&nbsp;&nbsp;🇦🇪</option>
-            <option value="ARS">ARS&nbsp;&nbsp;🇦🇷</option>
-            <option value="AUD">AUD&nbsp;&nbsp;🇦🇺</option>
-            <option value="BGN">BGN&nbsp;&nbsp;🇧🇬</option>
-            <option value="BRL">BRL&nbsp;&nbsp;🇧🇷</option>
-            <option value="BSD">BSD&nbsp;&nbsp;🇧🇸</option>
-            <option value="CAD">CAD&nbsp;&nbsp;🇨🇦</option>
-            <option value="CHF">CHF&nbsp;&nbsp;🇨🇭</option>
-            <option value="CLP">CLP&nbsp;&nbsp;🇨🇱</option>
-            <option value="CNY">CNY&nbsp;&nbsp;🇨🇳</option>
-            <option value="COP">COP&nbsp;&nbsp;🇨🇴</option>
-            <option value="CZK">CZK&nbsp;&nbsp;🇨🇿</option>
-            <option value="DKK">DKK&nbsp;&nbsp;🇩🇰</option>
-            <option value="DOP">DOP&nbsp;&nbsp;🇩🇴</option>
-            <option value="EGP">EGP&nbsp;&nbsp;🇪🇬</option>
-            <option value="EUR">EUR&nbsp;&nbsp;🇪🇺</option>
-            <option value="FJD">FJD&nbsp;&nbsp;🇫🇯</option>
-            <option value="GBP">GBP&nbsp;&nbsp;🇬🇧</option>
-            <option value="GTQ">GTQ&nbsp;&nbsp;🇬🇹</option>
-            <option value="HKD">HKD&nbsp;&nbsp;🇭🇰</option>
-            <option value="HRK">HRK&nbsp;&nbsp;🇭🇷</option>
-            <option value="HUF">HUF&nbsp;&nbsp;🇭🇺</option>
-            <option value="IDR">IDR&nbsp;&nbsp;🇮🇩</option>
-            <option value="ILS">ILS&nbsp;&nbsp;🇮🇱</option>
-            <option value="INR">INR&nbsp;&nbsp;🇮🇳</option>
-            <option value="ISK">ISK&nbsp;&nbsp;🇮🇸</option>
-            <option value="JPY">JPY&nbsp;&nbsp;🇯🇵</option>
-            <option value="KRW">KRW&nbsp;&nbsp;🇰🇷</option>
-            <option value="KZT">KZT&nbsp;&nbsp;🇰🇿</option>
-            <option value="MVR">MVR&nbsp;&nbsp;🇲🇻</option>
-            <option value="MXN">MXN&nbsp;&nbsp;🇲🇽</option>
-            <option value="MYR">MYR&nbsp;&nbsp;🇲🇾</option>
-            <option value="NOK">NOK&nbsp;&nbsp;🇳🇴</option>
-            <option value="NZD">NZD&nbsp;&nbsp;🇳🇿</option>
-            <option value="PAB">PAB&nbsp;&nbsp;🇵🇦</option>
-            <option value="PEN">PEN&nbsp;&nbsp;🇵🇪</option>
-            <option value="PHP">PHP&nbsp;&nbsp;🇵🇭</option>
-            <option value="PKR">PKR&nbsp;&nbsp;🇵🇰</option>
-            <option value="PLN">PLN&nbsp;&nbsp;🇵🇱</option>
-            <option value="PYG">PYG&nbsp;&nbsp;🇵🇾</option>
-            <option value="RON">RON&nbsp;&nbsp;🇷🇴</option>
-            <option value="RUB">RUB&nbsp;&nbsp;🇷🇺</option>
-            <option value="SAR">SAR&nbsp;&nbsp;🇸🇦</option>
-            <option value="SEK">SEK&nbsp;&nbsp;🇸🇪</option>
-            <option value="SGD">SGD&nbsp;&nbsp;🇸🇬</option>
-            <option value="THB">THB&nbsp;&nbsp;🇹🇭</option>
-            <option value="TRY">TRY&nbsp;&nbsp;🇹🇷</option>
-            <option value="TWD">TWD&nbsp;&nbsp;🇹🇼</option>
-            <option value="UAH">UAH&nbsp;&nbsp;🇺🇦</option>
-            <option value="UYU">UYU&nbsp;&nbsp;🇺🇾</option>
-            <option value="ZAR">ZAR&nbsp;&nbsp;🇿🇦</option>
-            </select>
-            </div>
-            
-            <div id="finalAmount" class="input-group-text">
-            
-            <!-- Display the converted amount -->
-            Converted&nbsp;Amount:
-            <span id="value" class="finalValue"></span>
-            </div>
-            
-            <div class="buttons3">
-            
-           
-            <!-- convert button -->
-            <button data-sound="webping-3" id="btn2" class="btn btn-primary convert m-2"
-            name="convert" onclick="color5()">
-            Convert
-            </button>
-            
-            <!-- reset button -->
-            <button data-sound="webping-5" id="btn2" class="btn btn-primary m-2"
-            onclick="clearVal();color5()">
-            AC
-            </button>
-               
-            
-            <button data-sound="webping-4" id="backSpace" class="btn3"
-            onclick="backSpace()">
-            <i style="font-size:25px;" class="fas fa-backspace"></i>
-            </button> 
-            
-               
-            </div>
-               
-        <div class="operators2"></div>
-            </div>
-
-       </div>
-
-
+          </div>
+      </div>
+      <br>
+        <div class="exchange-rate"></div>
+     <br>
+     
+     <div class="buttons3">   
+     
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(7);color4()">
+      7
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(8);color4()">
+      8
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(9);color4()">
+      9
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(4);color4()">
+      4
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(5);color4()">
+      5
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(6);color4()">
+      6
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(3);color4()">
+      3
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(2);color4()">
+      2
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(1);color4()">
+      1
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen(0);color4()">
+      0
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+       onclick="updScreen('00');color4()">
+      00
+      </button>
+      
+      <button data-sound="webping-3" id="btn1" class="btn4"
+      onclick="updScreen('.');color4()">
+      .
+      </button>
+      
+      
+      <button data-sound="webping-3" onclick="color4()" class="cal-btn" id="btn_1">Calculate</button>
+      
+      <button data-sound="webping-5" onclick="clearVal()" class="reset-btn" id="btn_2">AC</button>
+      
+      
+      <button data-sound="webping-4" id="backSpace" class="btn5" onclick="backSpaces()">
+      <i class="fas fa-backspace"></i>
+      </button>
+      
+      </div>
+    </div>  
+      <div class="operators2"></div>
+      
+      </form>
+    </div>
+    
     <audio id="webping-1" preload="auto">
-        <source  src="Audio/Glass click.mp3" type="audio/mpeg">
+    <source  src="Audio/Glass click.mp3" type="audio/mpeg">
     </audio>
-
+    
     <audio id="webping-2" preload="auto">
     <source  src="Audio/sign.mp3" type="audio/mpeg">
     </audio>
@@ -227,15 +172,15 @@
     <audio id="webping-5" preload="auto">
     <source  src="Audio/Ac.mp3" type="audio/mpeg">
     </audio>
-
-    <script src="js/script.js"></script>
+    
+    
+    <script src="js/country-list.js"></script>
     <script src="js/rate.js"></script>
     <script src="js/screensaver.js" timeout="5000"></script>
     <script src="js/jquery.js"></script>
-</body>
+    
+  </body>
 </html>
-
-
 
 <script type="text/javascript">
 
