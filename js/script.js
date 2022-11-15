@@ -79,3 +79,14 @@ function changeBgColor(color){
 }
 
 window.addEventListener('DOMContentLoaded', () => changeBgColor());
+
+
+function load(){    
+    var checked = JSON.parse(localStorage.getItem('MyElement'));
+    document.getElementById("MyElement").checked = checked;
+}
+
+function save(){
+    var checkbox = document.getElementById('MyElement');
+    localStorage.setItem('MyElement', checkbox.checked);
+}
