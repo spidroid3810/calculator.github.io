@@ -1,4 +1,4 @@
-# Glass Calculator & Currency Converter Made With HTML,CSS and JS.
+# Glass Calculator with Exchange Rate & Discount Calculator Made With HTML,CSS and JS.
 ## ***Glass Calculator-***
 ![Glass Calculator](cal1.jpg)
 ## ***Currency Converter-***
