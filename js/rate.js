@@ -94,12 +94,7 @@ document.getElementById("amount").style.color = "#3AD2FF";
 
 }
 
-function onlyOne(checkbox) {
-    var checkboxes = document.getElementsByName('check')
-    checkboxes.forEach((item) => {
-        if (item !== checkbox) item.checked = false
-    })
-}
+
 
 
 function changeBgColor(color){
