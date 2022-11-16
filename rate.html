@@ -48,7 +48,7 @@
       <form action="#">
         <div class="amount">
         <div class="display">
-          <input type="text" value="" id="amount" placeholder="0.00" disabled>
+          <input type="text" value="" id="amount" placeholder="0.00"  disabled>
         </div>
         </div>
         <div class="buttons2">
@@ -56,15 +56,15 @@
           <div class="from">
           
             <p>From</p>
-            <div class="select-box">
+            <div data-sound="webping-1" class="select-box">
               <img src="Images/us.png" alt="flag">
               <select> <!-- Options tag are inserted from JavaScript --> </select>
             </div>
           </div>
-          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div data-sound="webping-3" class="icon"><i class="fas fa-exchange-alt"></i></div>
           <div class="to">
             <p>To</p>
-            <div class="select-box">
+            <div data-sound="webping-1" class="select-box">
               <img src="Images/in.png" alt="flag">
               <select> <!-- Options tag are inserted from JavaScript --> </select>
             </div>
@@ -72,7 +72,7 @@
       </div>
       <br>
       <p>Converted Amount:</p>
-        <div class="exchange-rate"></div>
+        <div id="rate" class="exchange-rate"></div>
      <br>
      <div class="buttons3">   
      
