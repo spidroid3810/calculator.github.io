@@ -30,6 +30,10 @@ buttons
             case '':
                 screen.textContent = screenVal.substring(0, screenVal.length-1);
                 return;
+                
+            case '+/-': 
+                screen.textContent = eval(- screenVal);
+            return;
            
         }
 
@@ -57,12 +61,8 @@ document.getElementById("myDiv").style.color = "rgb(10, 251, 130)";
 
 
 
-function onlyOne(checkbox) {
-    var checkboxes = document.getElementsByName('check')
-    checkboxes.forEach((item) => {
-        if (item !== checkbox) item.checked = false
-    })
-}
+
+
 
 
 function changeBgColor(color){
@@ -90,3 +90,5 @@ function save(){
     var checkbox = document.getElementById('MyElement');
     localStorage.setItem('MyElement', checkbox.checked);
 }
+
+
