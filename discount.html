@@ -34,10 +34,12 @@
          </label>
         Change Theme
         <div class="clrbox">
-        <div id="clr1" class="clr ring" onclick="changeBgColor('var(--color-bg)');"></div>
+        <div id="clr1" class="clr" onclick="changeBgColor('var(--color-bg)');"></div>
         <div id="clr2" class="clr" onclick="changeBgColor('#0f4061');"></div>
         <div id="clr3" class="clr" onclick="changeBgColor('#1a1940');"></div>
         <div id="clr4" class="clr" onclick="changeBgColor('#001923');"></div>
+        <div id="clr5" class="clr" onclick="changeBgColor('rgb(106, 90, 205)');"></div>
+        <div id="clr6" class="clr" onclick="changeBgColor('rgb(255, 155, 0)');"></div>
         </div></span>
           </div>   
        </a>  
@@ -177,13 +179,11 @@
 <script src="js/discount.js"></script>
 <script src="js/screensaver.js" timeout="5000"></script>
 <script src="js/jquery.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
 
 
 <script type="text/javascript">
-AOS.init();
 
 // Playing audio based on .active
 
@@ -215,6 +215,7 @@ $("#MyElement").on("click", function () {
  }
 });
 
+
 function make_button_active(tab) {
  //Get item siblings
  var siblings = tab.siblings();
@@ -244,7 +245,6 @@ $(document).ready(function(){
  });
 
 });
-
 
 
 
