@@ -19,7 +19,7 @@ body {
   display: grid;
   place-items: center;
   color: #fff;
-  background: #000;
+  background: #000000;
   overflow: scroll;
   user-select: none;
   } 
@@ -638,6 +638,24 @@ background: #001923;
 margin: 2px;
 }
 
+#clr5{
+height: 30px;
+width: 30px;
+border-radius:100%;
+background: rgb(106, 90, 205);
+margin: 2px;
+}
+
+#clr6{
+height: 30px;
+width: 30px;
+border-radius:100%;
+background: rgb(255, 155, 0);
+margin: 2px;
+}
+
+
+
 
 
 .clrbox .clr:hover, .clrbox .clr.active{
@@ -661,9 +679,11 @@ margin-top: 55px;
 
 }
 
-.nav {
-  flex: 0.3.5;
+.nav{
+ flex: 0.3;
 }
+
+
 
 
 
