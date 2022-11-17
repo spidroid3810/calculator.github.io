@@ -18,13 +18,13 @@ body {
   font-family: Rubik;
   display: grid;
   place-items: center;
-  background-color: var(--color-bg);
   color: #fff;
+  background: #000;
   overflow: scroll;
   user-select: none;
-}
-
-
+  } 
+  
+ 
 
 .calc{
   position: relative;
@@ -223,6 +223,7 @@ color: green;
   cursor: none;
  
 }
+
 
 .buttons2{
   display: grid;
@@ -584,6 +585,7 @@ color:#3AD2FF;
 
 a{
 text-decoration: none;
+
 }
 
 .cal-btn,.reset-btn,.btn,.sign{
