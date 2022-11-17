@@ -33,10 +33,10 @@
          </label>
         Change Theme
         <div class="clrbox">
-        <div class="clr1 " onclick="changeBgColor('var(--color-bg)');"></div>
-        <div class="clr2" onclick="changeBgColor('#0f4075');"></div>
-        <div class="clr3" onclick="changeBgColor('#1a1940');"></div>
-        <div class="clr4" onclick="changeBgColor('#001923');"></div>
+        <div id="clr1" class="clr" onclick="changeBgColor('var(--color-bg)');"></div>
+        <div id="clr2" class="clr" onclick="changeBgColor('#0f4061');"></div>
+        <div id="clr3" class="clr" onclick="changeBgColor('#1a1940');"></div>
+        <div id="clr4" class="clr" onclick="changeBgColor('#001923');"></div>
         </div></span>
           </div>   
        </a>  
@@ -215,4 +215,39 @@ $("#MyElement").on("click", function () {
    localStorage.setItem("ClassName", "active");
  }
 });
+
+function make_button_active(tab) {
+ //Get item siblings
+ var siblings = tab.siblings();
+
+ //Remove active class on all buttons
+ siblings.each(function(){
+     $(this).removeClass('active');
+ })
+
+ //Add the clicked button class
+ tab.addClass('active');
+}
+
+//Attach events to menu
+$(document).ready(function(){
+   
+ if (localStorage) { 
+     var ind = localStorage['tab']       
+     make_button_active($('.clrbox .clr').eq(ind));
+ }
+     
+ $(".clrbox .clr").click(function () {
+     if(localStorage){ 
+         localStorage['tab'] = $(this).index();
+     }
+     make_button_active($(this));
+ });
+
+});
+
+
+
+
+
 </script>
