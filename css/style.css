@@ -585,7 +585,6 @@ color:#3AD2FF;
 
 a{
 text-decoration: none;
-
 }
 
 .cal-btn,.reset-btn,.btn,.sign{
@@ -607,7 +606,7 @@ display:flex;
 
 }
 
-.clr1{
+#clr1{
 height: 30px;
 width: 30px;
 border-radius:100%;
@@ -615,7 +614,7 @@ background: var(--color-bg);
 margin: 2px;
 }
 
-.clr2{
+#clr2{
 height: 30px;
 width: 30px;
 border-radius:100%;
@@ -623,7 +622,7 @@ background: #0f4075;
 margin: 2px;
 }
 
-.clr3{
+#clr3{
 height: 30px;
 width: 30px;
 border-radius:100%;
@@ -631,7 +630,7 @@ background: #1a1940;
 margin: 2px;
 }
 
-.clr4{
+#clr4{
 height: 30px;
 width: 30px;
 border-radius:100%;
@@ -641,26 +640,14 @@ margin: 2px;
 
 
 
-
-.clr1:hover{
+.clrbox .clr:hover, .clrbox .clr.active{
   border: 3px solid rgb(10, 251, 130);
-
 }
 
-.clr2:hover{
-  border: 3px solid rgb(10, 251, 130);
 
-}
 
-.clr3:hover{
-  border: 3px solid rgb(10, 251, 130);
 
-}
 
-.clr4:hover{
-  border: 3px solid rgb(10, 251, 130);
-
-}
 
 .items-container {  
   background: #333;_
