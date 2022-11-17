@@ -17,7 +17,8 @@
  }
 </style>
 
-</head><body onload="load()" class="card-bg">
+</head>
+<body onload="load()" class="card-bg ">
 <nav>
 <div class="items-container">
 <a class="nav"><div class="setting"> <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -39,9 +40,9 @@
         </div></span>
           </div>   
        </a>  
-     <a class="navs" href="index.html">Calculator</a>
-     <a class="navs active" href="#">Exchange Rate</a>
-     <a class="navs " href="discount.html">Discount Calculator</a>
+     <a class="navs" target="iframe_a" href="index.html">Calculator</a>
+     <a class="navs active" target="iframe_a" href="#">Exchange Rate</a>
+     <a class="navs " target="iframe_a" href="discount.html">Discount Calculator</a>
    </div>
 </nav>
         <div class="calc">
@@ -56,7 +57,7 @@
           <div class="from">
           
             <p>From</p>
-            <div data-sound="webping-1" class="select-box">
+            <div data-sound="webping-2" class="select-box">
               <img src="Images/us.png" alt="flag">
               <select> <!-- Options tag are inserted from JavaScript --> </select>
             </div>
@@ -64,7 +65,7 @@
           <div data-sound="webping-3" class="icon"><i class="fas fa-exchange-alt"></i></div>
           <div class="to">
             <p>To</p>
-            <div data-sound="webping-1" class="select-box">
+            <div data-sound="webping-2" class="select-box">
               <img src="Images/in.png" alt="flag">
               <select> <!-- Options tag are inserted from JavaScript --> </select>
             </div>
@@ -76,62 +77,62 @@
      <br>
      <div class="buttons3">   
      
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(7);color4()">
       7
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(8);color4()">
       8
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(9);color4()">
       9
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(4);color4()">
       4
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(5);color4()">
       5
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(6);color4()">
       6
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(3);color4()">
       3
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(2);color4()">
       2
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(1);color4()">
       1
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen(0);color4()">
       0
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
        onclick="updScreen('00');color4()">
       00
       </button>
       
-      <button data-sound="webping-3" id="btn1" class="btn4"
+      <button data-sound="webping-1" id="btn1" class="btn4"
       onclick="updScreen('.');color4()">
       .
       </button>
@@ -178,12 +179,12 @@
     <script src="js/rate.js"></script>
     <script src="js/screensaver.js" timeout="5000"></script>
     <script src="js/jquery.js"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
 
 <script type="text/javascript">
-
+AOS.init();
 
 // Playing audio based on .active
 
