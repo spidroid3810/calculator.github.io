@@ -19,7 +19,7 @@ body {
   display: grid;
   place-items: center;
   color: #fff;
-  background: #000000;
+  background: none;
   overflow: scroll;
   user-select: none;
   } 
