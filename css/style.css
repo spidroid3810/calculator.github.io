@@ -360,10 +360,10 @@ color:rgb(10, 251, 130);
 .slider:before {
   position: absolute;
   content: "";
-  height: 18.5px;
-  width: 18.5px;
-  left: 3px;
-  bottom: 3.1px;
+  height: 17px;
+  width: 17px;
+  left: 3.9px;
+  bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -397,10 +397,13 @@ input:checked + .slider:before {
  display: inline-block;
 }
 
+h4{
+color:  rgb(10, 251, 130);
+}
 
 .setting .tooltiptext {
  display: none;
- width: 230px;
+ width: 250px;
  background-color: #333;
  color: #fff;
  text-align:left;
@@ -413,11 +416,23 @@ input:checked + .slider:before {
  z-index: -1;
  margin-top:45px;
  left: 1%;
- 
 }
 
-.setting:hover .tooltiptext {
- display: block;
+
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -30px;
+}
+
+.close:hover,
+.close:focus {
+  color:  rgb(10, 251, 130);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .input-group-text{
