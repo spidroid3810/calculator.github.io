@@ -427,6 +427,11 @@ input:checked + .slider:before {
  display: inline-block;
 }
 
+.set{
+border-bottom:1px solid #fff;
+
+}
+
 h4{
 color:  rgb(10, 251, 130);
 }
@@ -646,12 +651,16 @@ color: darkred;
 
 }
 
-
+.theme{
+margin-left: 0;
+margin-top:15px;
+}
 
 .clrbox{
 display:grid;
  grid-template-columns: auto auto auto auto; 
  gap: 10px;
+ margin-left:0;
 }
 
 #clr1{
