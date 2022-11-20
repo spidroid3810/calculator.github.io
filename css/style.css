@@ -8,19 +8,13 @@
  
  @media (prefers-color-scheme: light){
  
- .items-container{
- background: #fff;_
- color: #333;
- }
+ 
  
  }
  
  @media (prefers-color-scheme: dark){
  
- .items-container{
- background: #333;_
- }
- 
+
  
  
 :root {
