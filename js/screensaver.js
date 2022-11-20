@@ -9,9 +9,8 @@
       el.style.position = "fixed";
 
       el.className = "Screensaver";
-      el.innerHTML = `<div><div>${(currentScript &&
-        currentScript.getAttribute("message")) ||
-       "😴<br>I am Sleeping<br>Click to wake me"}</div></div>`;
+      el.innerHTML = `<div>${(currentScript && currentScript.getAttribute("message")) ||
+       "😴<br>I am Sleeping<br>Click to wake me"}</div>`;
 
       const width = el.offsetWidth;
       const height = el.offsetHeight;
@@ -23,7 +22,7 @@
   left: 0; top: 0; right: 0; bottom: 0;
   z-index: 100000;
   color: rgb(10, 251, 130);
-  background-color:#282828;
+  background-color: #151835;
 }
 #${id} div {
   width: ${width}px;
@@ -39,7 +38,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
   
 }
 #${id} > div {
@@ -63,6 +61,9 @@ color: #3AD2FF;
   
 
 }
+
+
+
 `;
       let timeoutId = null;
       let timeout =
