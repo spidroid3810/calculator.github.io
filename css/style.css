@@ -8,22 +8,24 @@
  
  @media (prefers-color-scheme: light){
  
- body{
- background: var(--color-bg);
+ .items-container{
+ background: #fff;_
+ color: #333;
  }
+ 
  }
  
  @media (prefers-color-scheme: dark){
  
- body{
- background: var(--color-bg2);
+ .items-container{
+ background: #333;_
  }
- }
+ 
  
  
 :root {
   --color-bg: rgb(106, 90, 205);
-  --color-bg2: #1a1940;
+  --color-bg2: #001923;
 }
 
 body {
@@ -32,7 +34,6 @@ body {
   display: grid;
   place-items: center;
   color: #fff;
-  background: none;
   overflow: scroll;
   user-select: none;
   }
@@ -251,7 +252,7 @@ color: green;
   border-top-right-radius: 1rem;
   overflow: hidden;
   cursor: none;
- 
+  
 }
 
 
@@ -312,6 +313,7 @@ color: darkred;
 
 .buttons .sign:hover{
 background:rgb(10, 251, 130);
+;
 color: green; 
 }
 
@@ -724,10 +726,6 @@ background: #4169E1;
 .clrbox .clr:hover, .clrbox .clr.active{
   border: 3px solid rgb(10, 251, 130);
 }
-
-
-
-
 
 
 .items-container {  
