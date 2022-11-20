@@ -25,26 +25,26 @@
           <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
           <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
           </svg>          
-         <div id="myModal" class="tooltiptext nav-bg nav-clr">
-         <h4 class="set">Settings</h4><span class="close">&times;</span>
-         <p class="theme">Button Sound
-         <label  class="switch">
-         <input id="MyElement" type="checkbox" onclick="save()" >
-         <span class="slider round"></span>
-         </label></p>
-         <p class="theme">Change Theme
-         <div class="clrbox">
-         <div id="clr1" class="clr" onclick="changeBgColor('var(--color-bg)');"></div>
-         <div id="clr2" class="clr" onclick="changeBgColor('#0f4061');"></div>
-         <div id="clr3" class="clr" onclick="changeBgColor('#1a1940');"></div>
-         <div id="clr4" class="clr" onclick="changeBgColor('#001923');"></div>
-         <div id="clr5" class="clr" onclick="changeBgColor('rgb(106, 90, 205)');"></div>
-         <div id="clr6" class="clr" onclick="changeBgColor('rgb(255, 155, 0)');"></div>
-         <div id="clr7" class="clr" onclick="changeBgColor('#ff4440');"></div>
-         <div id="clr8" class="clr" onclick="changeBgColor('#4169E1');"></div>
-         </div></p>
-         </div>
-         </div>
+           <div id="myModal" class="tooltiptext">
+           <h4 class="set">Settings</h4><span class="close">&times;</span>
+           <p class="theme">Button Sound
+           <label  class="switch">
+           <input id="MyElement" type="checkbox" onclick="save()" >
+           <span class="slider round"></span>
+           </label></p>
+           <p class="theme">Change Theme
+           <div class="clrbox">
+           <div id="clr1" class="clr" onclick="changeBgColor('rgb(47, 0, 90)');"></div>
+           <div id="clr2" class="clr" onclick="changeBgColor('#0f4061');"></div>
+           <div id="clr3" class="clr" onclick="changeBgColor('#1a1940');"></div>
+           <div id="clr4" class="clr" onclick="changeBgColor('#001923');"></div>
+           <div id="clr5" class="clr" onclick="changeBgColor('rgb(106, 90, 205)');"></div>
+           <div id="clr6" class="clr" onclick="changeBgColor('rgb(255, 155, 0)');"></div>
+           <div id="clr7" class="clr" onclick="changeBgColor('#ff4440');"></div>
+           <div id="clr8" class="clr" onclick="changeBgColor('#4169E1');"></div>
+           </div></p>
+           </div>
+           </div>
        </a>  
      <a class="navs" target="iframe_a" href="index.html">Calculator</a>
      <a class="navs active" target="iframe_a" href="#">Exchange Rate</a>
@@ -185,12 +185,10 @@
     <script src="js/rate.js"></script>
     <script src="js/screensaver.js" timeout="5000"></script>
     <script src="js/jquery.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
 
 <script type="text/javascript">
-AOS.init();
 
 // Playing audio based on .active
 
@@ -222,6 +220,7 @@ $("#MyElement").on("click", function () {
  }
 });
 
+
 function make_button_active(tab) {
  //Get item siblings
  var siblings = tab.siblings();
@@ -251,7 +250,6 @@ $(document).ready(function(){
  });
 
 });
-
 
 
 
