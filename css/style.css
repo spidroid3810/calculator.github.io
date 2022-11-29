@@ -10,6 +10,7 @@
  
  
  
+ 
  }
  
  @media (prefers-color-scheme: dark){
@@ -23,6 +24,7 @@
 }
 
 body {
+  background: #001923;
   margin-top: 95px;
   font-family: Rubik;
   display: grid;
@@ -32,7 +34,7 @@ body {
   user-select: none;
   }
    
-   
+  
    
    
 ::placeholder {
@@ -72,6 +74,7 @@ body {
   transform: translateX(-50%);
   overflow: scroll;
   text-align: right;
+  
 }
 
 .searchBox {
@@ -307,7 +310,6 @@ color: darkred;
 
 .buttons .sign:hover{
 background:rgb(10, 251, 130);
-;
 color: green; 
 }
 
@@ -727,6 +729,7 @@ background: #4169E1;
   padding: 30px;
 }
 
+
 @media (min-width: 500px) {
 .setting .tooltiptext{
 position: fixed;
@@ -739,7 +742,6 @@ margin-top: 55px;
 }
 
 
-
-
+}
 
 }
