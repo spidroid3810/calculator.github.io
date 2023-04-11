@@ -6,22 +6,25 @@
   }
   
  
- @media (prefers-color-scheme: light){
- 
- 
- 
- 
- }
- 
- @media (prefers-color-scheme: dark){
- 
 
- 
- 
-:root {
-  --color-bg: rgb(106, 90, 205);
-  --color-bg2: #001923;
+@media (prefers-color-scheme: light){
+.items-container {  
+  background: #fff;_
+  padding: 30px;
+  color: #111;
 }
+
+}
+
+@media (prefers-color-scheme: dark){
+.items-container {  
+  background: #333;_
+  padding: 30px;
+  color:#fff;
+}
+
+}
+
 
 body {
   background: #001923;
@@ -159,7 +162,7 @@ form .drop-list{
   font-size: 16px;
   background: none;
   margin: 0 -5px 0 5px;
-  color: #fff;
+  color: #fff01f;
 }
 .select-box select::-webkit-scrollbar{
   width: 8px;
@@ -181,15 +184,16 @@ form .drop-list{
 form .exchange-rate{
   font-size: 17px;
   text-align:center;
-  color: rgb(10, 251, 130) ;
+  color: rgb(10, 251, 130);
 }
 
 .select-box:hover{
-background: rgb(10, 251, 130) ;
+background: #fff01f;
+color:orange;
 }
 
 select:hover{
-color: green;
+color: orange;
 
 }
 
@@ -309,8 +313,8 @@ color: darkred;
 }
 
 .buttons .sign:hover{
-background:rgb(10, 251, 130);
-color: green; 
+background:#fff10f;
+color: orange; 
 }
 
 
@@ -484,7 +488,7 @@ background-color: rgba(255, 255, 255, 0.1);
   cursor: none;
   border: none;
   outline: none;
-  color: #fff;
+  color: #fff01f;
   font-size: 1em;
 }
 
@@ -499,8 +503,8 @@ margin-left: 0;
 
 
 .sel3:hover{
-background-color:rgb(10, 251, 130);
-color: green;
+background-color:#fff01f;
+color: orange;
 }
 
 .btn,.btn3{
@@ -635,7 +639,16 @@ a{
 text-decoration: none;
 }
 
-.cal-btn,.reset-btn,.btn,.sign{
+.sign{
+color: #fff01f;
+}
+
+#res:hover{
+background:rgb(10, 251, 130);
+color: green;
+}
+
+.cal-btn,.reset-btn,.btn,#res{
 color:rgb(10, 251, 130);
 }
 
@@ -724,10 +737,7 @@ background: #4169E1;
 }
 
 
-.items-container {  
-  background: #333;_
-  padding: 30px;
-}
+
 
 
 @media (min-width: 500px) {
@@ -744,4 +754,3 @@ margin-top: 55px;
 
 }
 
-}
