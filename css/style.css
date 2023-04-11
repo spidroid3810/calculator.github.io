@@ -14,6 +14,15 @@
   color: #111;
 }
 
+body{
+color:#111;
+}
+
+.setting .tooltiptext {
+background: #fff;
+color: #111;
+}
+
 }
 
 @media (prefers-color-scheme: dark){
