@@ -54,6 +54,11 @@ document.getElementById("myDiv").style.color = "#3AD2FF";
 }
 
 function color3(){
+document.getElementById("myDiv").style.color = "#fff01f";
+
+}
+
+function color(){
 document.getElementById("myDiv").style.color = "rgb(10, 251, 130)";
 
 }
